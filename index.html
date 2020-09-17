@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>MySQL实战45讲</title>
-
     <style>
-
-        .main {
+        .image {
             display: flex;
-            height: 100vh;
+            width: 1150px;
+            margin: 0 auto;
         }
 
-        .left {
+        .li_class {
+            width: 0;
             flex: 1;
-            width: 0;
-            height: 100%;
-            overflow-y: auto;
         }
 
-        .right {
-            flex: 3;
-            width: 0;
-            height: 100%;
-            overflow-y: auto;
+        .li_width {
+            height: 30px;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
-<body>
-<div class="main">
-    <div class="left" id="left"></div>
-    <div class="right">
-        <iframe id="content">
 
-        </iframe>
+<body>
+<div class="image">
+    <img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt="logo" onclick="window.open('frame.html')" />
+</div>
+
+<div class="image">
+    <div class="li_class" id="left">
+    </div>
+
+    <div class="li_class" id="right">
     </div>
 </div>
+
 </body>
 <script>
-
     let data = [
         "00 开篇词讲这一次，让我们一起来搞懂MySQL",
         "01 讲基础架构：一条SQL查询语句是如何执行的",
@@ -92,19 +89,16 @@
         "45 直播回顾讲林晓斌：我的MySQL心路历程"
     ]
 
-    function load(index) {
-        document.getElementById("content").src = window.location.href + data[index].replace(" ", "") + ".html";
-
-    }
-
     let left = '';
+    let right = '';
     for (let i = 0; i < data.length; i++) {
-        left += ("<div class='li_width' ><a onclick='load(" + i + ")' href='javascript:void(0)'>" + data[i] + "</a></div>"
-        )
-        ;
+        if (i < 23) {
+            left += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
+        } else {
+            right += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
+        }
     }
     document.getElementById("left").innerHTML = left;
-
-
+    document.getElementById("right").innerHTML = right;
 </script>
 </html>
