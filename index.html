@@ -27,7 +27,7 @@
 
 <body>
 <div class="image">
-    <img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt="logo" onclick="window.open('frame.html')" />
+    <img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt="logo" onclick="window.open('./iframe/index.html')" />
 </div>
 
 <div class="image">
@@ -92,10 +92,12 @@
     let left = '';
     let right = '';
     for (let i = 0; i < data.length; i++) {
+        let hrefHTML = "./iframe/" + data[i].replace(" ", "");
+        console.log(hrefHTML);
         if (i < 23) {
-            left += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
+            left  += "<div class='li_width' ><a href=" + hrefHTML + '.html target="_blank">' + data[i] + "</a></div>";
         } else {
-            right += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
+            right += "<div class='li_width' ><a href=" + hrefHTML + '.html target="_blank">' + data[i] + "</a></div>";
         }
     }
     document.getElementById("left").innerHTML = left;
