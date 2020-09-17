@@ -92,7 +92,8 @@
     let left = '';
     let right = '';
     for (let i = 0; i < data.length; i++) {
-        let hrefHTML = "./iframe/" + data[i].replace(" ", "");
+        // let hrefHTML = "./iframe/" + data[i].replace(" ", "");
+        let hrefHTML = data[i].replace(" ", "");
         console.log(hrefHTML);
         if (i < 23) {
             left  += "<div class='li_width' ><a href=" + hrefHTML + '.html target="_blank">' + data[i] + "</a></div>";
