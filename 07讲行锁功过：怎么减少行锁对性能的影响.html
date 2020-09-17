@@ -1,0 +1,456 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                07讲行锁功过：怎么减少行锁对性能的影响
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/70/03/70d664b0f1d2110c28d017da234fc903.jpg">
+
+                <div>
+                  <audio controls="controls" height="100" width="100">
+                    <source src="07讲行锁功过：怎么减少行锁对性能的影响.mp3" type="audio/mp3" />
+                    <embed height="100" width="100" src="07讲行锁功过：怎么减少行锁对性能的影响.mp3" />
+                  </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在上一篇文章中，我跟你介绍了MySQL的全局锁和表级锁，今天我们就来讲讲MySQL的行锁。</p><p>MySQL的行锁是在引擎层由各个引擎自己实现的。但并不是所有的引擎都支持行锁，比如MyISAM引擎就不支持行锁。不支持行锁意味着并发控制只能使用表锁，对于这种引擎的表，同一张表上任何时刻只能有一个更新在执行，这就会影响到业务并发度。InnoDB是支持行锁的，这也是MyISAM被InnoDB替代的重要原因之一。</p><p>我们今天就主要来聊聊InnoDB的行锁，以及如何通过减少锁冲突来提升业务并发度。</p><p>顾名思义，行锁就是针对数据表中行记录的锁。这很好理解，比如事务A更新了一行，而这时候事务B也要更新同一行，则必须等事务A的操作完成后才能进行更新。</p><p>当然，数据库中还有一些没那么一目了然的概念和设计，这些概念如果理解和使用不当，容易导致程序出现非预期行为，比如两阶段锁。</p><h1>从两阶段锁说起</h1><p>我先给你举个例子。在下面的操作序列中，事务B的update语句执行时会是什么现象呢？假设字段id是表t的主键。<br>
+<img src="https://static001.geekbang.org/resource/image/51/10/51f501f718e420244b0a2ec2ce858710.jpg" alt=""></p><p>这个问题的结论取决于事务A在执行完两条update语句后，持有哪些锁，以及在什么时候释放。你可以验证一下：实际上事务B的update语句会被阻塞，直到事务A执行commit之后，事务B才能继续执行。</p><!-- [[[read_end]]] --><p>知道了这个答案，你一定知道了事务A持有的两个记录的行锁，都是在commit的时候才释放的。</p><p>也就是说，<strong>在InnoDB事务中，行锁是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是两阶段锁协议。</strong></p><p>知道了这个设定，对我们使用事务有什么帮助呢？那就是，<span class="orange">如果你的事务中需要锁多个行，要把最可能造成锁冲突、最可能影响并发度的锁尽量往后放。</span>我给你举个例子。</p><p>假设你负责实现一个电影票在线交易业务，顾客A要在影院B购买电影票。我们简化一点，这个业务需要涉及到以下操作：</p><ol>
+<li>
+<p>从顾客A账户余额中扣除电影票价；</p>
+</li>
+<li>
+<p>给影院B的账户余额增加这张电影票价；</p>
+</li>
+<li>
+<p>记录一条交易日志。</p>
+</li>
+</ol><p>也就是说，要完成这个交易，我们需要update两条记录，并insert一条记录。当然，为了保证交易的原子性，我们要把这三个操作放在一个事务中。那么，你会怎样安排这三个语句在事务中的顺序呢？</p><p>试想如果同时有另外一个顾客C要在影院B买票，那么这两个事务冲突的部分就是语句2了。因为它们要更新同一个影院账户的余额，需要修改同一行数据。</p><p>根据两阶段锁协议，不论你怎样安排语句顺序，所有的操作需要的行锁都是在事务提交的时候才释放的。所以，如果你把语句2安排在最后，比如按照3、1、2这样的顺序，那么影院账户余额这一行的锁时间就最少。这就最大程度地减少了事务之间的锁等待，提升了并发度。</p><p>好了，现在由于你的正确设计，影院余额这一行的行锁在一个事务中不会停留很长时间。但是，这并没有完全解决你的困扰。</p><p>如果这个影院做活动，可以低价预售一年内所有的电影票，而且这个活动只做一天。于是在活动时间开始的时候，你的MySQL就挂了。你登上服务器一看，CPU消耗接近100%，但整个数据库每秒就执行不到100个事务。这是什么原因呢？</p><p>这里，我就要说到死锁和死锁检测了。</p><h1>死锁和死锁检测</h1><p>当并发系统中不同线程出现循环资源依赖，涉及的线程都在等待别的线程释放资源时，就会导致这几个线程都进入无限等待的状态，称为死锁。这里我用数据库中的行锁举个例子。<br>
+<img src="https://static001.geekbang.org/resource/image/4d/52/4d0eeec7b136371b79248a0aed005a52.jpg" alt=""></p><p>这时候，事务A在等待事务B释放id=2的行锁，而事务B在等待事务A释放id=1的行锁。 事务A和事务B在互相等待对方的资源释放，就是进入了死锁状态。当出现死锁以后，有两种策略：</p><ul>
+<li>一种策略是，直接进入等待，直到超时。这个超时时间可以通过参数innodb_lock_wait_timeout来设置。</li>
+<li>另一种策略是，发起死锁检测，发现死锁后，主动回滚死锁链条中的某一个事务，让其他事务得以继续执行。将参数innodb_deadlock_detect设置为on，表示开启这个逻辑。</li>
+</ul><p>在InnoDB中，innodb_lock_wait_timeout的默认值是50s，意味着如果采用第一个策略，当出现死锁以后，第一个被锁住的线程要过50s才会超时退出，然后其他线程才有可能继续执行。对于在线服务来说，这个等待时间往往是无法接受的。</p><p>但是，我们又不可能直接把这个时间设置成一个很小的值，比如1s。这样当出现死锁的时候，确实很快就可以解开，但如果不是死锁，而是简单的锁等待呢？所以，超时时间设置太短的话，会出现很多误伤。</p><p>所以，正常情况下我们还是要采用第二种策略，即：主动死锁检测，而且innodb_deadlock_detect的默认值本身就是on。主动死锁检测在发生死锁的时候，是能够快速发现并进行处理的，但是它也是有额外负担的。</p><p>你可以想象一下这个过程：每当一个事务被锁的时候，就要看看它所依赖的线程有没有被别人锁住，如此循环，最后判断是否出现了循环等待，也就是死锁。</p><p>那如果是我们上面说到的所有事务都要更新同一行的场景呢？</p><p>每个新来的被堵住的线程，都要判断会不会由于自己的加入导致了死锁，这是一个时间复杂度是O(n)的操作。假设有1000个并发线程要同时更新同一行，那么死锁检测操作就是100万这个量级的。虽然最终检测的结果是没有死锁，但是这期间要消耗大量的CPU资源。因此，你就会看到CPU利用率很高，但是每秒却执行不了几个事务。</p><p>根据上面的分析，我们来讨论一下，<span class="orange">怎么解决由这种热点行更新导致的性能问题呢？</span>问题的症结在于，死锁检测要耗费大量的CPU资源。</p><p><strong>一种头痛医头的方法，就是如果你能确保这个业务一定不会出现死锁，可以临时把死锁检测关掉。</strong>但是这种操作本身带有一定的风险，因为业务设计的时候一般不会把死锁当做一个严重错误，毕竟出现死锁了，就回滚，然后通过业务重试一般就没问题了，这是业务无损的。而关掉死锁检测意味着可能会出现大量的超时，这是业务有损的。</p><p><strong>另一个思路是控制并发度。</strong>根据上面的分析，你会发现如果并发能够控制住，比如同一行同时最多只有10个线程在更新，那么死锁检测的成本很低，就不会出现这个问题。一个直接的想法就是，在客户端做并发控制。但是，你会很快发现这个方法不太可行，因为客户端很多。我见过一个应用，有600个客户端，这样即使每个客户端控制到只有5个并发线程，汇总到数据库服务端以后，峰值并发数也可能要达到3000。</p><p>因此，这个并发控制要做在数据库服务端。如果你有中间件，可以考虑在中间件实现；如果你的团队有能修改MySQL源码的人，也可以做在MySQL里面。基本思路就是，对于相同行的更新，在进入引擎之前排队。这样在InnoDB内部就不会有大量的死锁检测工作了。</p><p>可能你会问，<strong>如果团队里暂时没有数据库方面的专家，不能实现这样的方案，能不能从设计上优化这个问题呢？</strong></p><p>你可以考虑通过将一行改成逻辑上的多行来减少锁冲突。还是以影院账户为例，可以考虑放在多条记录上，比如10个记录，影院的账户总额等于这10个记录的值的总和。这样每次要给影院账户加金额的时候，随机选其中一条记录来加。这样每次冲突概率变成原来的1/10，可以减少锁等待个数，也就减少了死锁检测的CPU消耗。</p><p>这个方案看上去是无损的，但其实这类方案需要根据业务逻辑做详细设计。如果账户余额可能会减少，比如退票逻辑，那么这时候就需要考虑当一部分行记录变成0的时候，代码要有特殊处理。</p><h1>小结</h1><p>今天，我和你介绍了MySQL的行锁，涉及了两阶段锁协议、死锁和死锁检测这两大部分内容。</p><p>其中，我以两阶段协议为起点，和你一起讨论了在开发的时候如何安排正确的事务语句。这里的原则/我给你的建议是：如果你的事务中需要锁多个行，要把最可能造成锁冲突、最可能影响并发度的锁的申请时机尽量往后放。</p><p>但是，调整语句顺序并不能完全避免死锁。所以我们引入了死锁和死锁检测的概念，以及提供了三个方案，来减少死锁对数据库的影响。减少死锁的主要方向，就是控制访问相同资源的并发事务量。</p><p>最后，我给你留下一个问题吧。如果你要删除一个表里面的前10000行数据，有以下三种方法可以做到：</p><ul>
+<li>第一种，直接执行delete from T limit 10000;</li>
+<li>第二种，在一个连接中循环执行20次 delete from T limit 500;</li>
+<li>第三种，在20个连接中同时执行delete from T limit 500。</li>
+</ul><p>你会选择哪一种方法呢？为什么呢？</p><p>你可以把你的思考和观点写在留言区里，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>上期我给你留的问题是：当备库用–single-transaction做逻辑备份的时候，如果从主库的binlog传来一个DDL语句会怎么样？</p><p>假设这个DDL是针对表t1的， 这里我把备份过程中几个关键的语句列出来：</p><pre><code>Q1:SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+Q2:START TRANSACTION  WITH CONSISTENT SNAPSHOT；
+/* other tables */
+Q3:SAVEPOINT sp;
+/* 时刻 1 */
+Q4:show create table `t1`;
+/* 时刻 2 */
+Q5:SELECT * FROM `t1`;
+/* 时刻 3 */
+Q6:ROLLBACK TO SAVEPOINT sp;
+/* 时刻 4 */
+/* other tables */
+</code></pre><p>在备份开始的时候，为了确保RR（可重复读）隔离级别，再设置一次RR隔离级别(Q1);</p><p>启动事务，这里用 WITH CONSISTENT SNAPSHOT确保这个语句执行完就可以得到一个一致性视图（Q2)；</p><p>设置一个保存点，这个很重要（Q3）；</p><p>show create 是为了拿到表结构(Q4)，然后正式导数据 （Q5），回滚到SAVEPOINT sp，在这里的作用是释放 t1的MDL锁 （Q6。当然这部分属于“超纲”，上文正文里面都没提到。</p><p>DDL从主库传过来的时间按照效果不同，我打了四个时刻。题目设定为小表，我们假定到达后，如果开始执行，则很快能够执行完成。</p><p>参考答案如下：</p><ol>
+<li>
+<p>如果在Q4语句执行之前到达，现象：没有影响，备份拿到的是DDL后的表结构。</p>
+</li>
+<li>
+<p>如果在“时刻 2”到达，则表结构被改过，Q5执行的时候，报 Table definition has changed, please retry transaction，现象：mysqldump终止；</p>
+</li>
+<li>
+<p>如果在“时刻2”和“时刻3”之间到达，mysqldump占着t1的MDL读锁，binlog被阻塞，现象：主从延迟，直到Q6执行完成。</p>
+</li>
+<li>
+<p>从“时刻4”开始，mysqldump释放了MDL读锁，现象：没有影响，备份拿到的是DDL前的表结构。</p>
+</li>
+</ol><p>评论区留言点赞板：</p><blockquote>
+<p>@Aurora 给了最接近的答案；<br>
+@echo＿陈 问了一个好问题；<br>
+@壹笙☞漂泊 做了很好的总结。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">bluefantasy3</span>
+                            </div>
+                            <div class="bd">请教老师一个问题：<br>innodb行级锁是通过锁索引记录实现的。如果update的列没建索引，即使只update一条记录也会锁定整张表吗？比如update t set t.name=&#39;abc&#39; where t.name=&#39;cde&#39;;   name字段无索引。为何innodb不优化一下，只锁定name=&#39;cde&#39;的列？ <br></div>
+                            <span class="time">2018-11-28 08:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">第一个问题是好问题，我加到答疑文章中。简单的回答：是的。但是你可以再往前考虑一下，如果是 你的update 语句后面加个limit 1, 会怎么锁？<br><br><br>Innodb支持行锁，没有支持“列锁” 哈😄<br><br><br></p>
+                                <p class="reply-time">2018-11-28 10:25</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/04/96/dcb9504b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">荒漠甘泉</span>
+                            </div>
+                            <div class="bd">老师，本节课讲的不支持行锁的引擎，只能使用表锁，而表锁同一张表在同一时刻只能有一个更新。但是上节课讲的表级锁中的MDL锁，dml语句会产生MDL读锁，而MDL读锁不是互斥的，也就是说一张表可以同时有多个dml语句操作。感觉这两种说法有点矛盾，请老师解惑！ <br></div>
+                            <span class="time">2018-11-28 19:29</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不矛盾，MDL锁和表锁是两个不同的结构。<br><br>比如：<br>你要在myisam 表上更新一行，那么会加MDL读锁和表的写锁；<br>然后同时另外一个线程要更新这个表上另外一行，也要加MDL读锁和表写锁。<br><br>第二个线程的*MDL读锁是能成功加上*的，但是被表写锁堵住了。从语句现象上看，就是第二个线程要等第一个线程执行完成。<br></p>
+                                <p class="reply-time">2018-11-28 20:54</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/lCv05bnITsuq4UKB0NUvPL3YuXu6O281KygzPGxr2GPw5yOcZ4MfFQDTCQIrP5dsNnqs2rs5WPdiaM7EUIm2ekg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">木木北月生</span>
+                            </div>
+                            <div class="bd">老师，关于死锁检测innodb_deadlock_detect我想请教一下，是每条事务执行前都会进行检测吗？如果是这样，即使简单的更新单个表的语句，当每秒的并发量达到上千的话，岂不是也会消耗大量资源用于死锁检测吗？ <br></div>
+                            <span class="time">2018-12-03 14:28</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是个好问题<br>如果他要加锁访问的行上有锁，他才要检测。<br><br>这里面我担心你有两个误解，说明下：<br>1.   一致性读不会加锁，就不需要做死锁检测；<br><br>2. 并不是每次死锁检测都都要扫所有事务。比如某个时刻，事务等待状态是这样的：<br><br>   B在等A，<br>   D在等C，<br>   现在来了一个E，发现E需要等D，那么E就判断跟D、C是否会形成死锁，这个检测不用管B和A</p>
+                                <p class="reply-time">2018-12-03 14:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师，针对我的第一个问题。我就是想问怎么能拿到比较全得死锁信息以及把这些信息保存到文件里。<br>第二个问题，如果reset以后，是不是就失去了长连接的意义了呢？相当于再次进行连接。 <br></div>
+                            <span class="time">2018-11-28 23:15</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 就是持续监控，发现新的就存起来<br><br>2. 不会，reset_connection只是复位状态，恢复到连接和权限验证之后的状态，没有重连</p>
+                                <p class="reply-time">2018-11-29 01:59</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/ed/d2/e3ae7ddd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">三木禾</span>
+                            </div>
+                            <div class="bd">老师，如果开启事务，然后进行死锁检测，如果发现有其它线程因为这个线程的加入，导致其它线程的死锁，这个流程能帮着分析一下么 <br></div>
+                            <span class="time">2018-12-14 07:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">好问题<br><br>理论上说，之前没死锁，现在A加进来，出现了死锁，那么死锁的环里面肯定包含A，<br>因此只要从A出发去扫就好了</p>
+                                <p class="reply-time">2018-12-14 09:10</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/1f/2e/27d8b06d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">蓝天</span>
+                            </div>
+                            <div class="bd">老师：上一节讲的dml时会产生读MDL锁（表锁），也就是update会持有读MDL。读和读不互斥。但是对于行锁来说。两个update同时更新一条数据是互斥的。这个是因为多种锁同时存在时，以粒度最小的锁为准的原因么？ <br></div>
+                            <span class="time">2019-01-09 17:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不是“以粒度最小为准”<br>而是如果有多种锁，必须得“全部不互斥”才能并行，只要有一个互斥，就得等。<br><br>好问题<br></p>
+                                <p class="reply-time">2019-01-09 22:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/0b/70/a2c1723c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">武者</span>
+                            </div>
+                            <div class="bd">老师 你好 <br>有以下情况 帮忙分析下会锁表不<br><br>update a，b set a.name = b.name  where a.uid=b.uid and b.group=1；<br>update c，b set c.age=b.age where c.uid=b.uid and b.group = 1；<br><br>如果两个语句同时执行期间 是不是有个执行不了 要等b解锁。还是说没有更新b的字段b不会锁，两个可并行执行<br>请老师指导下<br><br> <br></div>
+                            <span class="time">2018-11-29 18:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个你得同时贴表结构。<br><br>还有，会不会锁，不是验证一下就可以吗，两个都用begin + 语句，<br><br>两阶段锁协议会帮助你😄</p>
+                                <p class="reply-time">2018-11-29 21:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ad/1b/0c558e7e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">泉</span>
+                            </div>
+                            <div class="bd">我选第二种。<br>第一种，需要锁资源多，事务较大，持有锁时间最长。<br>第三种，多个事务会对同一行产生锁竞争，消耗cpu资源。<br>请指正。 <br></div>
+                            <span class="time">2018-11-28 07:25</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/bd/6c7d4230.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tony Du</span>
+                            </div>
+                            <div class="bd">方案一，事务相对较长，则占用锁的时间较长，会导致其他客户端等待资源时间较长。<br>方案二，串行化执行，将相对长的事务分成多次相对短的事务，则每次事务占用锁的时间相对较短，其他客户端在等待相应资源的时间也较短。这样的操作，同时也意味着将资源分片使用（每次执行使用不同片段的资源），可以提高并发性。<br>方案三，人为自己制造锁竞争，加剧并发量。<br>方案二相对比较好，具体还要结合实际业务场景。<br><br>另，对于innodb的行锁，我觉得可以增加一讲，如何加锁（依赖于具体的隔离级别，是否有索引，是否是唯一索引，SQL的执行计划），特别是在RR隔离级别下的GAP锁，对于innodb，RR级别是可以防止幻读的。 <br></div>
+                            <span class="time">2018-11-28 11:31</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">分析得很好。<br><br>嗯嗯索引和锁的内容很多，也是需要慢慢安排😄<br>突然上概念怕大家看得不开心😓</p>
+                                <p class="reply-time">2018-11-28 12:36</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/e9/0b/53bf91d3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WL</span>
+                            </div>
+                            <div class="bd">继续把该讲内容总结为几个问题, 大家复习的时候可以先尝试回答这些问题检查自己的掌握程度:<br>	1. <br>两阶段锁的概念是什么? 对事务使用有什么帮助?<br>	2. <br>死锁的概念是什么? 举例说明出现死锁的情况.<br>	3. <br>死锁的处理策略有哪两种? <br>	4. <br>等待超时处理死锁的机制什么?有什么局限?<br>	5. <br>死锁检测处理死锁的机制是什么? 有什么局限?<br>	6. <br>有哪些思路可以解决热点更新导致的并发问题?<br><br> <br></div>
+                            <span class="time">2018-12-01 11:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">继续手动👍🏿</p>
+                                <p class="reply-time">2018-12-01 12:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师我有几个问题:<br>1.如何在死锁发生时,就把发生的sql语句抓出来？<br>2.在使用连接池的情况下,连接会复用.比如一个业务使用连接set sql_select_limit=1,释放掉以后.其他业务复用该连接时,这个参数也生效.请问怎么避免这种情况,或者怎么禁止业务set session？<br>3.很好奇双11的成交额,是通过redis累加的嘛？<br>4.不会改源码能成为专家嘛？😄<br> <br></div>
+                            <span class="time">2018-11-28 20:58</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. show engine innodb status 里面有信息，不过不是很全…<br>2. 5.7的reset_connection接口可以考虑一下<br>3. 用redis的话，为了避免超卖需要增加了很多机制来保证。修改都在数据库里执行就方便点。前提是要解决热点问题<br>4. 我认识几位处理问题和分析问题经验非常丰富的专家，不用懂源码，但是原理还是要很清楚的</p>
+                                <p class="reply-time">2018-11-28 23:43</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/34/3d/041f831f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">岁月安然</span>
+                            </div>
+                            <div class="bd">总结：<br>两阶段锁：在 InnoDB 事务中，行锁是在需要的时候才加上的，但并不是不需要了就立刻释放， 而是要等到事务结束时才释放。<br>建议：如果你的事务中需要锁多个行，要把最可能造成锁冲突、最可能影响并发度的锁尽量往后放。<br>死锁：当并发系统中不同线程出现循环资源依赖，涉及的线程都在等待别的线程释放资源时，就会导致这几个线程都进入无限等待的状态。<br>解决方案：<br>1、通过参数 innodb_lock_wait_timeout 根据实际业务场景来设置超时时间，InnoDB引擎默认值是50s。<br>2、发起死锁检测，发现死锁后，主动回滚死锁链条中的某一个事务，让其他事务得以继续执行。将参数 innodb_deadlock_detect 设置为 on，表示开启这个逻辑（默认是开启状态）。<br>如何解决热点行更新导致的性能问题？<br>1、如果你能确保这个业务一定不会出现死锁，可以临时把死锁检测关闭掉。一般不建议采用<br>2、控制并发度，对应相同行的更新，在进入引擎之前排队。这样在InnoDB内部就不会有大量的死锁检测工作了。<br>3、将热更新的行数据拆分成逻辑上的多行来减少锁冲突，但是业务复杂度可能会大大提高。<br><br>innodb行级锁是通过锁索引记录实现的，如果更新的列没建索引是会锁住整个表的。 <br></div>
+                            <span class="time">2018-11-29 11:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿这个总结</p>
+                                <p class="reply-time">2018-11-29 12:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/30/28/6e019a7a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">锅子</span>
+                            </div>
+                            <div class="bd">老师好，关于上一期的问题我有2疑问：<br>1.Q2，WITH CONSISTENT SNAPSHOT语句执行完可以确保得到一个一致性视图，为什么还会备份到Q2时间点之后更改的表结构啊？如果这样那是不是意味着如果有一个数据库一直有数据在写入的话，备份会一直都无法完成。<br>2.Q3设置了保存点，之后读到主库的DDL语句，那Q6又回滚到了Q3设置的保存点，那是不是就主从不一致了啊？ <br></div>
+                            <span class="time">2018-11-28 09:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/50/60/79cd253e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tan</span>
+                            </div>
+                            <div class="bd">不考虑数据表的访问并发量，单纯从这个三个方案来对比的话。<br>第一个方案，一次占用的锁时间较长，可能会导致其他客户端一直在等待资源。<br>第二个方案，分成多次占用锁，串行执行，不占有锁的间隙其他客户端可以工作，类似于现在多任务操作系统的时间分片调度，大家分片使用资源，不直接影响使用。<br>第三个方案，自己制造了锁竞争，加剧并发。<br>至于选哪一种方案要结合实际场景，综合考虑各个因素吧，比如表的大小，并发量，业务对此表的依赖程度等。 <br></div>
+                            <span class="time">2018-11-28 08:41</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">shawn</span>
+                            </div>
+                            <div class="bd">话说留言系统打不出大于小于号是为了防止xss攻击吧，推荐下，能不能用作转义的方式解决呢，留言里小于now()整个没有之后语句不通了<br>技术向的服务自己的技术得过关吧(手动滑稽) <br></div>
+                            <span class="time">2018-11-29 08:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/15/84/fa6937b9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">邓俊</span>
+                            </div>
+                            <div class="bd">答题：<br>这个要看数据库压力，如果数据库非常空闲，我选方案一，这样操作简单。如果数据库中这张表的压力非常大，我选方案三，极端情况下甚至我会制定方案四，每次只删一条。<br><br>老师，我有一个问题：<br>例题中的订票系统，影院的余额表可不可以用流水的方式来记录，每天闲时汇总一次，这样就没有update只有insert和select sum了。<br><br>用手机打字好累，表达的不详细，请谅解。 <br></div>
+                            <span class="time">2018-11-28 02:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，如果是没有边界条件，比如一直加钱，这种可以的。但是如果有“退款”的逻辑，就不行了。只记日志可能会给扣成负数。</p>
+                                <p class="reply-time">2018-11-28 18:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/de/8d/99536c5b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Aurora</span>
+                            </div>
+                            <div class="bd">针对第一层楼主提到的问题，我记得是，如果update 没有走索引，innodb内部是全表根据主键索引逐行扫描 逐行加锁，释放锁。 <br></div>
+                            <span class="time">2018-11-28 20:13</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">逐行加锁，<br><br>事务提交的时候统一释放。— 记得两阶段锁哈</p>
+                                <p class="reply-time">2018-11-28 20:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erPLyDtvoV5IZgCic99zfauGySv4ArucibEmmIKugLnhSaOF0csrCriaiaGupwibMJdYs4DtZtKrvvRfEw/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">everyok22</span>
+                            </div>
+                            <div class="bd">今天重读了一下这个表锁，我有一个问题，希望老师给解答一下：<br>我现在有一个用户领取奖口的业务，　业务里有奖品表：构造语句如下<br>CREATE TABLE `prize` (<br>  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT &#39;id&#39;,<br>  `name` varchar(20) DEFAULT NULL COMMENT &#39;用户名&#39;,<br>  `status` int(11) NOT NULL COMMENT &#39;状态（0表示未发给用户，1表示已发给用户）&#39;,<br>  `passwd` varchar(64) DEFAULT NULL COMMENT &#39;卡密&#39;,<br>  PRIMARY KEY (`id`)<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8;<br><br>这个奖品不同于商品，他有一定的特殊性，就是给每个人发的奖品里的passwd是不一样的。给用户发奖品的时候需要更新这个表的数据状态。语句如下：<br>			UPDATE <br>			  prize <br>			SET<br>			  STATUS = 1,<br>			  name = &#39;aaa&#39;<br>			WHERE STATUS = 0 <br>			LIMIT 1 <br>根据文章的内容，如果同时有1000个并发的话， 会超成锁冲突，但在发奖品的时候，这个奖品发给谁是不确定的， 有什么比较好的解决办法么。 <br></div>
+                            <span class="time">2018-12-27 15:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，你这样写冲突太厉害了，<br><br>是不是可以改用id做条件来更新？<br><br>其实发奖品不一定要发第一个对吧</p>
+                                <p class="reply-time">2018-12-27 17:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/cf/5c/d4e19eb6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">安小依</span>
+                            </div>
+                            <div class="bd">林老师，我是一名研究生，爬虫爬新闻存数据到 MySQL 里，突然 MySQL 崩掉了，重启不行，查看日志 看到<br>[ERROR] &#47;usr&#47;sbin&#47;mysqld: The table &#39;articles&#39; is full<br>InnoDB: Failing assertion: offset &gt; 0<br>InnoDB: We intentionally generate a memory trap.<br>InnoDB: Submit a detailed bug report to http:&#47;&#47;bugs.mysql.com.<br>InnoDB: If you get repeated assertion failures or crashes, even<br>InnoDB: immediately after the mysqld startup, there may be<br>InnoDB: corruption in the InnoDB tablespace. Please refer to<br>InnoDB: http:&#47;&#47;dev.mysql.com&#47;doc&#47;refman&#47;5.7&#47;en&#47;forcing-innodb-recovery.html<br>InnoDB: about forcing recovery.<br>09:37:14 UTC - mysqld got signal 6 ;<br>This could be because you hit a bug. It is also possible that this binary<br>or one of the libraries it was linked against is corrupt, improperly built,<br>or misconfigured. This error can also be caused by malfunctioning hardware.<br>Attempting to collect some information that could help diagnose the problem.<br>As this is a crash and something is definitely wrong, the information<br>collection process might fail.<br><br>key_buffer_size=16777216<br>read_buffer_size=131072<br>max_used_connections=50<br>max_threads=151<br>thread_count=48<br>connection_count=48<br>It is possible that mysqld could use up to<br>key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 75719 K  bytes of memory<br>Hope that&#39;s ok; if not, decrease some variables in the equation.<br><br>[Warning] InnoDB: Page 9 in the doublewrite buffer is not within space bounds: page [page id: space=36, page number=113547]<br><br>参考网上使用 innodb_force_recovery 试了几个，只有 6 可以重启 mysql 成功，但是重启后，虽然数据库还在，可是从表 articles 查询，却提示表不存在。看日志<br><br>[ERROR] InnoDB: Failed to find tablespace for table `news`.`articles` in the cache. Attempting to load the tablespace with space id 36<br><br>所有数据ibd,frm等还在，就是启动不起来，我想问一下现在如何才能重启成功或者恢复我的数据啊，辛苦爬了2个月爬虫，70万篇文章，结果一下回到解放前了。 <br></div>
+                            <span class="time">2018-11-29 19:26</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">数据字典没了，只从数据恢复做法很复杂。有binlog吗<br></p>
+                                <p class="reply-time">2018-11-29 23:18</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4a/45/04a13bf9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">bing</span>
+                            </div>
+                            <div class="bd">在开发时一般都是按照顺序加锁来避免死锁。比如都是按照先拿t1,再拿t2. <br></div>
+                            <span class="time">2018-11-28 22:08</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是个好的实践经验👍🏿</p>
+                                <p class="reply-time">2018-11-30 08:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                35讲join语句怎么优化
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/16/ca/16479caaf957faffa36a2db09f9899ca.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="35讲join语句怎么优化.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="35讲join语句怎么优化.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在上一篇文章中，我和你介绍了join语句的两种算法，分别是Index Nested-Loop Join(NLJ)和Block Nested-Loop Join(BNL)。</p><p>我们发现在使用NLJ算法的时候，其实效果还是不错的，比通过应用层拆分成多个语句然后再拼接查询结果更方便，而且性能也不会差。</p><p>但是，BNL算法在大表join的时候性能就差多了，比较次数等于两个表参与join的行数的乘积，很消耗CPU资源。</p><p>当然了，这两个算法都还有继续优化的空间，我们今天就来聊聊这个话题。</p><p>为了便于分析，我还是创建两个表t1、t2来和你展开今天的问题。</p><pre><code>create table t1(id int primary key, a int, b int, index(a));
+create table t2 like t1;
+drop procedure idata;
+delimiter ;;
+create procedure idata()
+begin
+  declare i int;
+  set i=1;
+  while(i&lt;=1000)do
+    insert into t1 values(i, 1001-i, i);
+    set i=i+1;
+  end while;
+  
+  set i=1;
+  while(i&lt;=1000000)do
+    insert into t2 values(i, i, i);
+    set i=i+1;
+  end while;
+
+end;;
+delimiter ;
+call idata();
+</code></pre><p>为了便于后面量化说明，我在表t1里，插入了1000行数据，每一行的a=1001-id的值。也就是说，表t1中字段a是逆序的。同时，我在表t2中插入了100万行数据。</p><h1>Multi-Range Read优化</h1><p>在介绍join语句的优化方案之前，我需要先和你介绍一个知识点，即：Multi-Range Read优化(MRR)。这个优化的主要目的是尽量使用顺序读盘。</p><p>在<a href="https://time.geekbang.org/column/article/69236">第4篇文章</a>中，我和你介绍InnoDB的索引结构时，提到了“回表”的概念。我们先来回顾一下这个概念。回表是指，InnoDB在普通索引a上查到主键id的值后，再根据一个个主键id的值到主键索引上去查整行数据的过程。</p><!-- [[[read_end]]] --><p>然后，有同学在留言区问到，回表过程是一行行地查数据，还是批量地查数据？</p><p>我们先来看看这个问题。假设，我执行这个语句：</p><pre><code>select * from t1 where a&gt;=1 and a&lt;=100;
+</code></pre><p>主键索引是一棵B+树，在这棵树上，每次只能根据一个主键id查到一行数据。因此，回表肯定是一行行搜索主键索引的，基本流程如图1所示。</p><p><img src="https://static001.geekbang.org/resource/image/17/11/1761edbd7734276ae0a213af3cdd3311.jpg" alt=""></p><center><span class="reference">图1 基本回表流程</span></center><p>如果随着a的值递增顺序查询的话，id的值就变成随机的，那么就会出现随机访问，性能相对较差。虽然“按行查”这个机制不能改，但是调整查询的顺序，还是能够加速的。</p><p><strong>因为大多数的数据都是按照主键递增顺序插入得到的，所以我们可以认为，如果按照主键的递增顺序查询的话，对磁盘的读比较接近顺序读，能够提升读性能。</strong></p><p>这，就是MRR优化的设计思路。此时，语句的执行流程变成了这样：</p><ol>
+<li>
+<p>根据索引a，定位到满足条件的记录，将id值放入read_rnd_buffer中;</p>
+</li>
+<li>
+<p>将read_rnd_buffer中的id进行递增排序；</p>
+</li>
+<li>
+<p>排序后的id数组，依次到主键id索引中查记录，并作为结果返回。</p>
+</li>
+</ol><p>这里，read_rnd_buffer的大小是由read_rnd_buffer_size参数控制的。如果步骤1中，read_rnd_buffer放满了，就会先执行完步骤2和3，然后清空read_rnd_buffer。之后继续找索引a的下个记录，并继续循环。</p><p>另外需要说明的是，如果你想要稳定地使用MRR优化的话，需要设置<code>set optimizer_switch="mrr_cost_based=off"</code>。（官方文档的说法，是现在的优化器策略，判断消耗的时候，会更倾向于不使用MRR，把mrr_cost_based设置为off，就是固定使用MRR了。）</p><p>下面两幅图就是使用了MRR优化后的执行流程和explain结果。</p><p><img src="https://static001.geekbang.org/resource/image/d5/c7/d502fbaea7cac6f815c626b078da86c7.jpg" alt=""></p><center><span class="reference">图2 MRR执行流程</span></center><p><img src="https://static001.geekbang.org/resource/image/a5/32/a513d07ebaf1ae044d44391c89bc6432.png" alt=""></p><center><span class="reference">图3 MRR执行流程的explain结果</span></center><p>从图3的explain结果中，我们可以看到Extra字段多了Using MRR，表示的是用上了MRR优化。而且，由于我们在read_rnd_buffer中按照id做了排序，所以最后得到的结果集也是按照主键id递增顺序的，也就是与图1结果集中行的顺序相反。</p><p>到这里，我们小结一下。</p><p><strong>MRR能够提升性能的核心</strong>在于，这条查询语句在索引a上做的是一个范围查询（也就是说，这是一个多值查询），可以得到足够多的主键id。这样通过排序以后，再去主键索引查数据，才能体现出“顺序性”的优势。</p><h1>Batched Key Access</h1><p>理解了MRR性能提升的原理，我们就能理解MySQL在5.6版本后开始引入的Batched Key Acess(BKA)算法了。这个BKA算法，其实就是对NLJ算法的优化。</p><p>我们再来看看上一篇文章中用到的NLJ算法的流程图：</p><p><img src="https://static001.geekbang.org/resource/image/10/3d/10e14e8b9691ac6337d457172b641a3d.jpg" alt=""></p><center><span class="reference">图4 Index Nested-Loop Join流程图</span></center><p>NLJ算法执行的逻辑是：从驱动表t1，一行行地取出a的值，再到被驱动表t2去做join。也就是说，对于表t2来说，每次都是匹配一个值。这时，MRR的优势就用不上了。</p><p>那怎么才能一次性地多传些值给表t2呢？方法就是，从表t1里一次性地多拿些行出来，一起传给表t2。</p><p>既然如此，我们就把表t1的数据取出来一部分，先放到一个临时内存。这个临时内存不是别人，就是join_buffer。</p><p>通过上一篇文章，我们知道join_buffer 在BNL算法里的作用，是暂存驱动表的数据。但是在NLJ算法里并没有用。那么，我们刚好就可以复用join_buffer到BKA算法中。</p><p>如图5所示，是上面的NLJ算法优化后的BKA算法的流程。</p><p><img src="https://static001.geekbang.org/resource/image/31/7e/31d85666542b9cb0b47a447a8593a47e.jpg" alt=""></p><center><span class="reference">图5 Batched Key Acess流程</span></center><p>图中，我在join_buffer中放入的数据是P1~P100，表示的是只会取查询需要的字段。当然，如果join buffer放不下P1~P100的所有数据，就会把这100行数据分成多段执行上图的流程。</p><p>那么，这个BKA算法到底要怎么启用呢？</p><p>如果要使用BKA优化算法的话，你需要在执行SQL语句之前，先设置</p><pre><code>set optimizer_switch='mrr=on,mrr_cost_based=off,batched_key_access=on';
+</code></pre><p>其中，前两个参数的作用是要启用MRR。这么做的原因是，BKA算法的优化要依赖于MRR。</p><h1>BNL算法的性能问题</h1><p>说完了NLJ算法的优化，我们再来看BNL算法的优化。</p><p>我在上一篇文章末尾，给你留下的思考题是，使用Block Nested-Loop Join(BNL)算法时，可能会对被驱动表做多次扫描。如果这个被驱动表是一个大的冷数据表，除了会导致IO压力大以外，还会对系统有什么影响呢？</p><p>在<a href="https://time.geekbang.org/column/article/79407">第33篇文章</a>中，我们说到InnoDB的LRU算法的时候提到，由于InnoDB对Bufffer Pool的LRU算法做了优化，即：第一次从磁盘读入内存的数据页，会先放在old区域。如果1秒之后这个数据页不再被访问了，就不会被移动到LRU链表头部，这样对Buffer Pool的命中率影响就不大。</p><p>但是，如果一个使用BNL算法的join语句，多次扫描一个冷表，而且这个语句执行时间超过1秒，就会在再次扫描冷表的时候，把冷表的数据页移到LRU链表头部。</p><p>这种情况对应的，是冷表的数据量小于整个Buffer Pool的3/8，能够完全放入old区域的情况。</p><p>如果这个冷表很大，就会出现另外一种情况：业务正常访问的数据页，没有机会进入young区域。</p><p>由于优化机制的存在，一个正常访问的数据页，要进入young区域，需要隔1秒后再次被访问到。但是，由于我们的join语句在循环读磁盘和淘汰内存页，进入old区域的数据页，很可能在1秒之内就被淘汰了。这样，就会导致这个MySQL实例的Buffer Pool在这段时间内，young区域的数据页没有被合理地淘汰。</p><p>也就是说，这两种情况都会影响Buffer Pool的正常运作。</p><p><strong>大表join操作虽然对IO有影响，但是在语句执行结束后，对IO的影响也就结束了。但是，对Buffer Pool的影响就是持续性的，需要依靠后续的查询请求慢慢恢复内存命中率。</strong></p><p>为了减少这种影响，你可以考虑增大join_buffer_size的值，减少对被驱动表的扫描次数。</p><p>也就是说，BNL算法对系统的影响主要包括三个方面：</p><ol>
+<li>
+<p>可能会多次扫描被驱动表，占用磁盘IO资源；</p>
+</li>
+<li>
+<p>判断join条件需要执行M*N次对比（M、N分别是两张表的行数），如果是大表就会占用非常多的CPU资源；</p>
+</li>
+<li>
+<p>可能会导致Buffer Pool的热数据被淘汰，影响内存命中率。</p>
+</li>
+</ol><p>我们执行语句之前，需要通过理论分析和查看explain结果的方式，确认是否要使用BNL算法。如果确认优化器会使用BNL算法，就需要做优化。优化的常见做法是，给被驱动表的join字段加上索引，把BNL算法转成BKA算法。</p><p>接下来，我们就具体看看，这个优化怎么做？</p><h1>BNL转BKA</h1><p>一些情况下，我们可以直接在被驱动表上建索引，这时就可以直接转成BKA算法了。</p><p>但是，有时候你确实会碰到一些不适合在被驱动表上建索引的情况。比如下面这个语句：</p><pre><code>select * from t1 join t2 on (t1.b=t2.b) where t2.b&gt;=1 and t2.b&lt;=2000;
+</code></pre><p>我们在文章开始的时候，在表t2中插入了100万行数据，但是经过where条件过滤后，需要参与join的只有2000行数据。如果这条语句同时是一个低频的SQL语句，那么再为这个语句在表t2的字段b上创建一个索引就很浪费了。</p><p>但是，如果使用BNL算法来join的话，这个语句的执行流程是这样的：</p><ol>
+<li>
+<p>把表t1的所有字段取出来，存入join_buffer中。这个表只有1000行，join_buffer_size默认值是256k，可以完全存入。</p>
+</li>
+<li>
+<p>扫描表t2，取出每一行数据跟join_buffer中的数据进行对比，</p>
+<ul>
+<li>如果不满足t1.b=t2.b，则跳过；</li>
+<li>如果满足t1.b=t2.b, 再判断其他条件，也就是是否满足t2.b处于[1,2000]的条件，如果是，就作为结果集的一部分返回，否则跳过。</li>
+</ul>
+</li>
+</ol><p>我在上一篇文章中说过，对于表t2的每一行，判断join是否满足的时候，都需要遍历join_buffer中的所有行。因此判断等值条件的次数是1000*100万=10亿次，这个判断的工作量很大。</p><p><img src="https://static001.geekbang.org/resource/image/92/60/92fbdbfc35da3040396401250cb33f60.png" alt=""></p><center><span class="reference">图6 explain结果</span></center><p><img src="https://static001.geekbang.org/resource/image/d8/9c/d862bc3e88305688df2c354a4b26809c.png" alt=""></p><center><span class="reference">图7 语句执行时间</span></center><p>可以看到，explain结果里Extra字段显示使用了BNL算法。在我的测试环境里，这条语句需要执行1分11秒。</p><p>在表t2的字段b上创建索引会浪费资源，但是不创建索引的话这个语句的等值条件要判断10亿次，想想也是浪费。那么，有没有两全其美的办法呢？</p><p>这时候，我们可以考虑使用临时表。使用临时表的大致思路是：</p><ol>
+<li>
+<p>把表t2中满足条件的数据放在临时表tmp_t中；</p>
+</li>
+<li>
+<p>为了让join使用BKA算法，给临时表tmp_t的字段b加上索引；</p>
+</li>
+<li>
+<p>让表t1和tmp_t做join操作。</p>
+</li>
+</ol><p>此时，对应的SQL语句的写法如下：</p><pre><code>create temporary table temp_t(id int primary key, a int, b int, index(b))engine=innodb;
+insert into temp_t select * from t2 where b&gt;=1 and b&lt;=2000;
+select * from t1 join temp_t on (t1.b=temp_t.b);
+</code></pre><p>图8就是这个语句序列的执行效果。</p><p><img src="https://static001.geekbang.org/resource/image/a8/c7/a80cdffe8173fa0fd8969ed976ac6ac7.png" alt=""></p><center> 图8 使用临时表的执行效果</center><p>可以看到，整个过程3个语句执行时间的总和还不到1秒，相比于前面的1分11秒，性能得到了大幅提升。接下来，我们一起看一下这个过程的消耗：</p><ol>
+<li>
+<p>执行insert语句构造temp_t表并插入数据的过程中，对表t2做了全表扫描，这里扫描行数是100万。</p>
+</li>
+<li>
+<p>之后的join语句，扫描表t1，这里的扫描行数是1000；join比较过程中，做了1000次带索引的查询。相比于优化前的join语句需要做10亿次条件判断来说，这个优化效果还是很明显的。</p>
+</li>
+</ol><p>总体来看，不论是在原表上加索引，还是用有索引的临时表，我们的思路都是让join语句能够用上被驱动表上的索引，来触发BKA算法，提升查询性能。</p><h1>扩展-hash join</h1><p>看到这里你可能发现了，其实上面计算10亿次那个操作，看上去有点儿傻。如果join_buffer里面维护的不是一个无序数组，而是一个哈希表的话，那么就不是10亿次判断，而是100万次hash查找。这样的话，整条语句的执行速度就快多了吧？</p><p>确实如此。</p><p>这，也正是MySQL的优化器和执行器一直被诟病的一个原因：不支持哈希join。并且，MySQL官方的roadmap，也是迟迟没有把这个优化排上议程。</p><p>实际上，这个优化思路，我们可以自己实现在业务端。实现流程大致如下：</p><ol>
+<li>
+<p><code>select * from t1;</code>取得表t1的全部1000行数据，在业务端存入一个hash结构，比如C++里的set、PHP的dict这样的数据结构。</p>
+</li>
+<li>
+<p><code>select * from t2 where b&gt;=1 and b&lt;=2000;</code> 获取表t2中满足条件的2000行数据。</p>
+</li>
+<li>
+<p>把这2000行数据，一行一行地取到业务端，到hash结构的数据表中寻找匹配的数据。满足匹配的条件的这行数据，就作为结果集的一行。</p>
+</li>
+</ol><p>理论上，这个过程会比临时表方案的执行速度还要快一些。如果你感兴趣的话，可以自己验证一下。</p><h1>小结</h1><p>今天，我和你分享了Index Nested-Loop Join（NLJ）和Block Nested-Loop Join（BNL）的优化方法。</p><p>在这些优化方法中：</p><ol>
+<li>
+<p>BKA优化是MySQL已经内置支持的，建议你默认使用；</p>
+</li>
+<li>
+<p>BNL算法效率低，建议你都尽量转成BKA算法。优化的方向就是给被驱动表的关联字段加上索引；</p>
+</li>
+<li>
+<p>基于临时表的改进方案，对于能够提前过滤出小数据的join语句来说，效果还是很好的；</p>
+</li>
+<li>
+<p>MySQL目前的版本还不支持hash join，但你可以配合应用端自己模拟出来，理论上效果要好于临时表的方案。</p>
+</li>
+</ol><p>最后，我给你留下一道思考题吧。</p><p>我们在讲join语句的这两篇文章中，都只涉及到了两个表的join。那么，现在有一个三个表join的需求，假设这三个表的表结构如下：</p><pre><code>CREATE TABLE `t1` (
+ `id` int(11) NOT NULL,
+ `a` int(11) DEFAULT NULL,
+ `b` int(11) DEFAULT NULL,
+ `c` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+create table t2 like t1;
+create table t3 like t2;
+insert into ... //初始化三张表的数据
+</code></pre><p>语句的需求实现如下的join逻辑：</p><pre><code>select * from t1 join t2 on(t1.a=t2.a) join t3 on (t2.b=t3.b) where t1.c&gt;=X and t2.c&gt;=Y and t3.c&gt;=Z;
+</code></pre><p>现在为了得到最快的执行速度，如果让你来设计表t1、t2、t3上的索引，来支持这个join语句，你会加哪些索引呢？</p><p>同时，如果我希望你用straight_join来重写这个语句，配合你创建的索引，你就需要安排连接顺序，你主要考虑的因素是什么呢？</p><p>你可以把你的方案和分析写在留言区，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>我在上篇文章最后留给你的问题，已经在本篇文章中解答了。</p><p>这里我再根据评论区留言的情况，简单总结下。根据数据量的大小，有这么两种情况：</p><ul>
+<li>@长杰 和 @老杨同志 提到了数据量小于old区域内存的情况；</li>
+<li>@Zzz 同学，很认真地看了其他同学的评论，并且提了一个很深的问题。对被驱动表数据量大于Buffer Pool的场景，做了很细致的推演和分析。</li>
+</ul><p>给这些同学点赞，非常好的思考和讨论。</p><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d1/7c/4639f22c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">郭健</span>
+                            </div>
+                            <div class="bd">老师，有几个问题还需要请教一下:<br>1.上一章t1表100条数据，t21000条数据，mysql会每次都会准确的找出哪张表是合理的驱动表吗？还是需要人为的添加straight_join。<br>2.像left join这种，左边一定是驱动表吧？以左边为标准查看右边有符合的条件，拼成一条数据，看到你给其他同学的评论说可能不是，这有些疑惑。<br>3.在做join的时候，有些条件是可以放在on中也可以放在where中，比如(t1.yn=1 和t2.yn=1)这种简单判断是否删除的。最主要的是，需要根据两个条件才能join的(productCode和custCode),需要两个都在on里，还是一个在on中，一个在where中更好呢？ <br></div>
+                            <span class="time">2019-02-07 00:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 正常是会自己找到合理的，但是用前explain是好习惯哈<br>2. 这个问题的展开我放到答疑文章中哈<br>3. 这也是好问题，需要分析是使用哪种算法，也放到答疑文章展开哈。<br><br>新年快乐~<br></p>
+                                <p class="reply-time">2019-02-07 09:32</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/36/542c96bf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mr.Strive.Z.H.L</span>
+                            </div>
+                            <div class="bd">老师你好，今天在回顾这篇文章做总结的时候，突然有一个疑惑：<br><br>我们假设t2的b上面有索引，该语句是左连接<br><br>select * from t1  left join t2 on (t1.b=t2.b) where t2.b&gt;=1 and t2.b&lt;=2000;<br><br>和<br><br>select * from t1  left join t2 on (t1.b=t2.b) and t2.b&gt;=1 and t2.b&lt;=2000;<br><br>到底在内部执行流程上到底有什么区别？？<br>因为实际工作中左连接用得挺多的。<br>（这篇文章都是直连，所以使用on和where最后的结果都一样，但是左连接就不是了）<br> <br></div>
+                            <span class="time">2019-02-13 11:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_02538c</span>
+                            </div>
+                            <div class="bd">过年了，还有新文章，给个赞。 另，where  和 order  与索引的关系，都讲过了，group by 是否也搞个篇章说一下。 <br></div>
+                            <span class="time">2019-02-02 21:12</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你说得对^_^  第37篇就是，新年快乐</p>
+                                <p class="reply-time">2019-02-03 09:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/5e/b8fada94.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ryoma</span>
+                            </div>
+                            <div class="bd">read_rnd_buffer_length 参数应该是 read_rnd_buffer_size，见文档：https:&#47;&#47;dev.mysql.com&#47;doc&#47;refman&#47;8.0&#47;en&#47;server-system-variables.html#sysvar_read_rnd_buffer_size <br></div>
+                            <span class="time">2019-02-02 20:21</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你说得对，多谢<br><br>发起勘误了<br><br>新年快乐</p>
+                                <p class="reply-time">2019-02-03 09:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/36/542c96bf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mr.Strive.Z.H.L</span>
+                            </div>
+                            <div class="bd">老师您好，新年快乐~~<br><br>关于三表join有一个疑惑点需要确认：<br><br>老师您在评论中说到，三表join不会是前两个表join后得到结果集，再和第三张表join。<br>针对这句话，我的理解是：<br>假设我们不考虑BKA，就按照一行行数据来判断的话，流程应该如下（我会将server端和innodb端分的很清楚）：<br>表是t1 ,t2 ,t3。  t1 straight_join t2 straight_join t3，这样的join顺序。<br>1. 调用innodb接口，从t1中取一行数据，数据返回到server端。<br>2. 调用innodb接口，从t2中取满足条件的数据，数据返回到server端。<br>3. 调用innodb接口，从t3中取满足条件的数据，数据返回到server端。<br>上面三步之后，驱动表 t1的一条数据就处理完了，接下来重复上述过程。<br>（如果采用BKA进行优化，可以理解为不是一行行数据的提取，而是一个范围内数据的提取）。<br><br>按照我上面的描述，确实没有前两表先join得结果集，然后再join第三张表的过程。<br>不知道我上面的描述的流程对不对？（我个人觉得，将innodb的处理和server端的处理分隔清晰，对于sql语句的理解，会透彻很多） <br></div>
+                            <span class="time">2019-02-02 13:18</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐，分析得很好。<br><br>可以再补充一句，会更好理解你说的这个过程 ：<br>  如果采用BKA进行优化,每多一个join，就多一个join_buffer</p>
+                                <p class="reply-time">2019-02-02 16:59</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ee/23/bfcfad58.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">LY</span>
+                            </div>
+                            <div class="bd">刚刚凌乱了的那个问题，经explain验证，explain SELECT a.* FROM sys_xxtx a JOIN baq_ryxx r ON a.ryid = r.ID WHERE a.dwbh = &#39;7E0A13A14101D0A8E0430A0F23BCD0A8&#39; ORDER BY txsj DESC LIMIT 0,20;<br>使用的索引是txsj ；<br>explain SELECT a.* FROM sys_xxtx a JOIN baq_ryxx r ON a.ryid = r.ID WHERE a.dwbh = &#39;7E0A13A14101D0A8E0430A0F23BCD0A8&#39; ORDER BY txsj DESC LIMIT 5000,20;使用的索引是dwbh ；<br>然后回忆起了第10张：MySQL为什么有时候会选错索引？<br>但是从扫描行数、是否使用排序等来看在 LIMIT 5000,20时候也应该优选txsj ?可是这个时候选择的索引是dwbh, 查询时间也大大缩短 <br></div>
+                            <span class="time">2019-02-01 16:30</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，这个跟我们第十篇那个例子挺像的<br><br>我们把limit 1 改成limit 100的时候，MySQL认为，要扫描到“100行那么多”，<br>你这里是limit 5000，200， 这个5000会让优化器认为，选txsj会要扫“很多行，可能很久”<br><br>这个确实是优化器还不够完善的地方，有时候不得不用force index~</p>
+                                <p class="reply-time">2019-02-02 00:49</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ee/23/bfcfad58.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">LY</span>
+                            </div>
+                            <div class="bd">order by cjsj desc limit 0,20 explain  Extra只是显示 Using where ，执行时间 7秒钟<br>order by cjsj desc limit 5000,20 explain  Extra只是显示 Using index condition; Using where; Using filesort,  执行时间 0.1 秒<br>有些许的凌乱了@^^@ <br></div>
+                            <span class="time">2019-02-01 13:32</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这正常的，一种可能是这样的： <br>   Using where 就是顺序扫，但是这个上要扫很久才能扫到满足条件的20个记录；<br>   虽然有filesort，但是如果参与排序的行数少，可能速度就更快，而且limit 有堆排序优化哦</p>
+                                <p class="reply-time">2019-02-01 16:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/18/07/c0a73a52.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">憶海拾貝</span>
+                            </div>
+                            <div class="bd">节后开工宜补课.<br><br>按照文中说明的MRR设计思路, 是否可以反推出: 被驱动表使用非递增主键(比如UUID作为主键),就没有必要开启MRR? <br></div>
+                            <span class="time">2019-02-13 11:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">如果是非随机的主键，确实没必要了😅<br><br>优化第一步还是应该把主键处理一下<br></p>
+                                <p class="reply-time">2019-02-13 16:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/e9/29/629d9bb0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">天王</span>
+                            </div>
+                            <div class="bd">BNL算法优化，BNL算法，如果读取的是冷表，而且量比较大，循环读取，第一次数据会进入old区域，如果一秒之后没有访问，不会移到LRU头部，大表join对io影响查询完就结束了，但是buffer pool需要大量的查询把冷数据冲掉。BNL算法有3个问题，1 多次扫描被驱动表，占用磁盘io 2 判断join会耗费大量的cpu资源 3 会热数据淘汰，影响buffer pool的命中率 <br></div>
+                            <span class="time">2019-02-13 09:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍</p>
+                                <p class="reply-time">2019-02-13 17:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/e9/29/629d9bb0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">天王</span>
+                            </div>
+                            <div class="bd">join语句的优化，NLJ算法的优化，MRR优化器会在join_buffer进行主键的排序，然后去主键索引树上一个个的查找，因为按照主键顺序去主键索引树上查找，性能会比较高，MRR优化接近顺序读，性能会比较高。BKA算法是对NLJ算法的优化，一次取出一批数据的字段到join_buffer中，然后批量join，性能会比较好。BKA算法依赖于MRR，因为批量join找到被驱动表的非聚集索引字段通过MRR去查找行数据 <br></div>
+                            <span class="time">2019-02-13 08:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/e9/0b/53bf91d3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WL</span>
+                            </div>
+                            <div class="bd">请教老师两个问题:<br>1. 通过主键索引找到的数据会会不会先在内存中查询, 如果没有再去磁盘查询?<br>2. 为什么在通过主键索引查询数据时, 符合条件的数据以单条数据的方式读到内存中而不是以一整个数据页的方式读到内存中?  <br></div>
+                            <span class="time">2019-02-11 15:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 通过普通索引也会，InnoDB的访问模式都是先内存，不在内存中，才到磁盘找；<br>2. 是以数据页的方式读到内存的，然后在从内存的这个数据页（默认16k）里面找到数据。</p>
+                                <p class="reply-time">2019-02-11 16:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d1/7c/4639f22c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">郭健</span>
+                            </div>
+                            <div class="bd">老师，新年快乐！！看到您给我提问的回答，特别期待您之后的答疑，因为dba怕我们查询数据库时连接时间过长，影响线上实际运行。所以就开发出一个网页，让我们进行查询，但是超过几秒(具体不知道，查询一个200w的数据，条件没有加索引有时候都会)就会返回time out，所以当查询大表并join的时候，就会很吃力！想法设法的缩小单位，一般我们都不会为createTime建一个索引，所以在根据时间缩小范围的时候有时候也并不是很好的选择。我们线上做统计sql的时候，因为数据量比较大，筛选条件也比较多，一个sql可能在0.4s多，这已经是属于慢sql了。感谢老师对我提问的回答！！ <br></div>
+                            <span class="time">2019-02-09 21:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，首先DBA开发这个界面工具还是很有必要的，这样可以控制输入的语句，避免人工查询对库造成太大的影响。<br><br>如果这类查询比较多，并且人工查询的条件很复杂，经常容易用不上索引的话， 在createTime创建索引还是挺有必要的。。</p>
+                                <p class="reply-time">2019-02-11 16:34</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/56/8c/a8317e23.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">磊</span>
+                            </div>
+                            <div class="bd">一直对多表的join有些迷惑，希望老师后面专门把这块给讲的透彻些 <br></div>
+                            <span class="time">2019-02-03 10:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这一期45篇 join差不多就讲这些了😆<br><br>有问题在评论区提出来哈</p>
+                                <p class="reply-time">2019-02-03 12:06</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">bluefantasy3</span>
+                            </div>
+                            <div class="bd">请教老师一个问题：innodb的Buffer Pool的内存是innodb自己管理还是使用OS的page cache? 我理解应该是innodb自己管理。我在另一个课程里看到如果频繁地把OS的&#47;proc&#47;sys&#47;vm&#47;drop_caches 改成 1会影响MySQL的性能，如果buffer pool是MySQL自己管理，应该不受这个参数影响呀？请解答。 <br></div>
+                            <span class="time">2019-02-02 17:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 是MySQL 自己管理的<br>2. 一般只有数据文件是o_direct的，redo log 和 binlog 都是有用到文件系统的page cache, 因此多少有影响的<br><br>好问题👍🏿 </p>
+                                <p class="reply-time">2019-02-03 09:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e5/39/951f89c8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">信信</span>
+                            </div>
+                            <div class="bd">老师好，有两点疑问请老师解惑：<br>1、图8上面提到的关于临时表的第三句是不是还是使用straight_join好一些？不然有可能temp_t被选为驱动表？<br>2、图8下面提到join过程中做了1000次带索引的查询，这里的1000也是在打开mrr的情况下的吗？是进行了1000次树搜索，还是找到第一个后，依次挨着读呢？<br> <br></div>
+                            <span class="time">2019-02-02 15:12</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 写straight_join能确定顺序，也可以的，这里写join 也ok的<br><br>2. 是进行了1000次树搜索<br></p>
+                                <p class="reply-time">2019-02-02 16:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/11/18/8cee35f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">HuaMax</span>
+                            </div>
+                            <div class="bd">前提假设：t1.c&gt;=X可以让t1成为小表。同时打开BKA和MRR。<br>1、t1表加（c,a)索引。理由：A、t1.c&gt;=X可以使用索引；B、加上a的联合索引，join buffer里放入的是索引（c,a）而不是去主键表取整行，用于与表t2的t1.a = t2.a的join查询，不过返回SELECT * 最终还是需要回表。<br>2、t2表加(a,b,c)索引。理由：A、加上a避免与t1表join查询的BNL；B、理由同【1-B】；C、加上c不用回表判断t2.c&gt;=Y的筛选条件<br>3、t3表加（b,c）索引。理由：A、避免与t2表join查询的BNL;C、理由同【2-C】<br><br>问题：<br>1、【1-B】和【2-B】由于select *要返回所有列数据，不敢肯定join buffer里是回表的整行数据还是索引（c,a)的数据，需要老师解答一下；不过值得警惕的是，返回的数据列对sql的执行策略有非常大的影响。<br>2、在有join查询时，被驱动表是先做join连接查询，还是先筛选数据再从筛选后的临时表做join连接？这将影响上述的理由【2-C】和【3-C】<br><br>使用straight_join强制指定驱动表，我会改写成这样:select * from t2 STRAIGHT_JOIN t1 on(t1.a=t2.a) STRAIGHT_JOIN t3 on (t2.b=t3.b)  where t1.c&gt;=X and t2.c&gt;=Y and t3.c&gt;=Z;<br>考虑因素包括：<br>1、驱动表使用过滤条件筛选后的数据量，使其成为小表，上面的改写也是基于t2是小表<br>2、因为t2是跟t1,t3都有关联查询的，这样的话我猜测对t1,t3的查询是不是可以并行执行，而如果使用t1,t3作为主表的话，是否会先跟t2生成中间表，是个串行的过程？<br>3、需要给t1加（a,c)索引，给t2加（c,a,b）索引。 <br></div>
+                            <span class="time">2019-02-02 11:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍 很深入的思考哈<br>1. select * ，所以放整行；你说得对，select * 不是好习惯；<br>2. 第一次join后就筛选；第二次join再筛选；<br>新春快乐~</p>
+                                <p class="reply-time">2019-02-04 17:03</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">库淘淘</span>
+                            </div>
+                            <div class="bd">set optimizer_switch=&#39;mrr=on,mrr_cost_based=off,batched_key_access=on&#39;;<br>create index idx_c on t2(c);<br>create index idx_a_c on t1(a,c);<br>create index idx_b_c on t3(b,c);<br>mysql&gt; explain select * from t2 <br>    -&gt; straight_join t1 on(t1.a=t2.a)<br>    -&gt; straight_join t3 on(t2.b=t3.b)   <br>    -&gt; where t1.c&gt; 800 and t2.c&gt;=600 and t3.c&gt;=500;<br>+----+-------------+-------+------------+---------------------------------------<br>| id | select_type | table | partitions | type | possible_keys | key | key_len | ref | rows | filtered | Extra +----------------------------------------<br>| 1 | SIMPLE | t2 | NULL | range | idx_c | idx_c | 5 | NULL | 401 | 100.00 | Using index condition; Using where; Using MRR |<br>| 1 | SIMPLE | t1 | NULL | ref | idx_a_c | idx_a_c | 5 | test.t2.a | 1 | 33.33 | Using index condition; Using join buffer (Batched Key Access) |<br>| 1 | SIMPLE | t3 | NULL | ref | idx_b_c | idx_b_c | 5 | test.t2.b | 1 | 33.33 | Using index condition; Using join buffer (Batched Key Access) |<br>+----+-------------+-------+------------+-----+---------------------------------------<br>3 rows in set, 1 warning (0.00 sec)<br>以自己理解如下，有问题请老师能够指出<br>1.根据查询因是select * 肯定回表的，其中在表t2创建索引idx_c,为了能够使用ICP,MRR，如果c字段重复率高或取值行数多，可以考虑不建索引<br>2.已t2 作为驱动表，一方面考虑其他两表都有关联,t2表放入join buffer后关联t1后，再关联t2 得出结果 再各回t2,t3表取出 得到结果集（之前理解都是t1和t2join得结果集再与t3join，本次理解太确定）<br>3.t2、t3表建立联合查询目的能够使用ICP <br></div>
+                            <span class="time">2019-02-01 16:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍<br><br>BKA是从Index Nexted-Loop join 优化而来的，并不是“t1和t2join得结果集再与t3join”，而是直接嵌套循环执行下去。<br><br>这个效果相当不错了，MRR，BKA都用上</p>
+                                <p class="reply-time">2019-02-02 00:51</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/dd/ac/f40bbd15.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">dzkk</span>
+                            </div>
+                            <div class="bd">老师，对于关联查询（inner join），个人有几点理解，请帮助审核是否正确，谢了。<br>正确选择：<br>    结果集小的为驱动表，且被驱动表有索引<br>未知效果选择：<br>    1）结果集小的为驱动表，但是被驱动表没有索引<br>    2）结果集大的为驱动表，但是被驱动表有索引<br>最差选择：<br>    结果集大的为驱动表，且被驱动表没有索引<br> <br></div>
+                            <span class="time">2019-02-01 15:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">未知效果选择 是啥意思^_^</p>
+                                <p class="reply-time">2019-02-02 00:36</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">我准备给<br>t1增加索引c<br>t2增加组合索引b,c<br>t3增加组合索引b,c<br>select * from t1 straight_join t2 on(t1.a=t2.a)  straight_join  t3 on (t2.b=t3.b) where t1.c&gt;=X and t2.c&gt;=Y and t3.c&gt;=Z;<br><br>另外我还有个问题，开篇提到的这句sql select * from t1 where a&gt;=1 and a&lt;=100;<br>a是索引列，如果这句索引有order by a，不使用MRR 优化，查询出来就是按a排序的，使用了mrr优化，是不是要额外排序<br><br> <br></div>
+                            <span class="time">2019-02-01 15:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对，好问题，用了order by就不用MRR了</p>
+                                <p class="reply-time">2019-02-02 00:37</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/0c/48/ba59d28d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">poppy</span>
+                            </div>
+                            <div class="bd">select * from t1 join t2 on(t1.a=t2.a) join t3 on (t2.b=t3.b) where t1.c&gt;=X and t2.c&gt;=Y and t3.c&gt;=Z;<br>老师，我的理解是真正做join的三张表的大小实际上是t1.c&gt;=X、t2.c&gt;=Y、t3.c&gt;=Z对应满足条件的行数，为了方便快速定位到满足条件的数据，t1、t2和t3的c字段最好都建索引。对于join操作，按道理mysql应该会优先选择join之后数量比较少的两张表先来进行join操作，例如满足t1.a=t2.a的行数小于满足t2.b=t3.b的行数，那么就会优先将t1和t2进行join，选择t1.c&gt;=X、t2.c&gt;=Y中行数少的表作为驱动表，另外一张作为被驱动表，在被驱动表的a的字段上建立索引，这样就完成了t1和t2的join操作并把结果放入join_buffer准备与t3进行join操作，则在作为被驱动表的t3的b字段上建立索引。不知道举的这个例子分析得是否正确，主要是这里不知道t1、t2、t3三张表的数据量，以及满足t1.c&gt;=X ，t2.c&gt;=Y ，t3.c&gt;=Z的数据量，还有各个字段的区分度如何，是否适合建立索引等。 <br></div>
+                            <span class="time">2019-02-01 15:24</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯 这个问题就是留给大家自己设定条件然后分析的，分析得不错哦</p>
+                                <p class="reply-time">2019-02-02 00:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

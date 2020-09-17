@@ -1,0 +1,451 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                10讲MySQL为什么有时候会选错索引
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/ca/ca/cae4d2e76c91c7ed6a8aa2fd30ed40ca.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="10讲MySQL为什么有时候会选错索引.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="10讲MySQL为什么有时候会选错索引.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>前面我们介绍过索引，你已经知道了在MySQL中一张表其实是可以支持多个索引的。但是，你写SQL语句的时候，并没有主动指定使用哪个索引。也就是说，使用哪个索引是由MySQL来确定的。</p><p>不知道你有没有碰到过这种情况，一条本来可以执行得很快的语句，却由于MySQL选错了索引，而导致执行速度变得很慢？</p><p>我们一起来看一个例子吧。</p><p>我们先建一个简单的表，表里有a、b两个字段，并分别建上索引：</p><pre><code>CREATE TABLE `t` (
+  `id` int(11) NOT NULL,
+  `a` int(11) DEFAULT NULL,
+  `b` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `a` (`a`),
+  KEY `b` (`b`)
+) ENGINE=InnoDB；
+</code></pre><p>然后，我们往表t中插入10万行记录，取值按整数递增，即：(1,1,1)，(2,2,2)，(3,3,3) 直到(100000,100000,100000)。</p><p>我是用存储过程来插入数据的，这里我贴出来方便你复现：</p><pre><code>delimiter ;;
+create procedure idata()
+begin
+  declare i int;
+  set i=1;
+  while(i&lt;=100000)do
+    insert into t values(i, i, i);
+    set i=i+1;
+  end while;
+end;;
+delimiter ;
+call idata();
+</code></pre><p>接下来，我们分析一条SQL语句：</p><pre><code>mysql&gt; select * from t where a between 10000 and 20000;
+</code></pre><p>你一定会说，这个语句还用分析吗，很简单呀，a上有索引，肯定是要使用索引a的。</p><p>你说得没错，图1显示的就是使用explain命令看到的这条语句的执行情况。</p><p><img src="https://static001.geekbang.org/resource/image/2c/e3/2cfce769551c6eac9bfbee0563d48fe3.png" alt=""></p><center><span class="reference">图1 使用explain命令查看语句执行情况</span></center><p>从图1看上去，这条查询语句的执行也确实符合预期，key这个字段值是’a’，表示优化器选择了索引a。</p><p>不过别急，这个案例不会这么简单。在我们已经准备好的包含了10万行数据的表上，我们再做如下操作。</p><!-- [[[read_end]]] --><p><img src="https://static001.geekbang.org/resource/image/1e/1e/1e5ba1c2934d3b2c0d96b210a27e1a1e.png" alt=""></p><center><span class="reference">图2 session A和session B的执行流程</span></center><p>这里，session A的操作你已经很熟悉了，它就是开启了一个事务。随后，session B把数据都删除后，又调用了 idata这个存储过程，插入了10万行数据。</p><p>这时候，session B的查询语句select * from t where a between 10000 and 20000就不会再选择索引a了。我们可以通过慢查询日志（slow log）来查看一下具体的执行情况。</p><p>为了说明优化器选择的结果是否正确，我增加了一个对照，即：使用force index(a)来让优化器强制使用索引a（这部分内容，我还会在这篇文章的后半部分中提到）。</p><p>下面的三条SQL语句，就是这个实验过程。</p><pre><code>set long_query_time=0;
+select * from t where a between 10000 and 20000; /*Q1*/
+select * from t force index(a) where a between 10000 and 20000;/*Q2*/
+</code></pre><ul>
+<li>第一句，是将慢查询日志的阈值设置为0，表示这个线程接下来的语句都会被记录入慢查询日志中；</li>
+<li>第二句，Q1是session B原来的查询；</li>
+<li>第三句，Q2是加了force index(a)来和session B原来的查询语句执行情况对比。</li>
+</ul><p>如图3所示是这三条SQL语句执行完成后的慢查询日志。</p><p><img src="https://static001.geekbang.org/resource/image/7c/f6/7c58b9c71853b8bba1a8ad5e926de1f6.png" alt=""></p><center><span class="reference">图3 slow log结果</span></center><p>可以看到，Q1扫描了10万行，显然是走了全表扫描，执行时间是40毫秒。Q2扫描了10001行，执行了21毫秒。也就是说，我们在没有使用force index的时候，MySQL用错了索引，导致了更长的执行时间。</p><p>这个例子对应的是我们平常不断地删除历史数据和新增数据的场景。这时，MySQL竟然会选错索引，是不是有点奇怪呢？今天，我们就从这个奇怪的结果说起吧。</p><h1>优化器的逻辑</h1><p>在第一篇文章中，我们就提到过，选择索引是优化器的工作。</p><p>而优化器选择索引的目的，是找到一个最优的执行方案，并用最小的代价去执行语句。在数据库里面，扫描行数是影响执行代价的因素之一。扫描的行数越少，意味着访问磁盘数据的次数越少，消耗的CPU资源越少。</p><p>当然，扫描行数并不是唯一的判断标准，优化器还会结合是否使用临时表、是否排序等因素进行综合判断。</p><p>我们这个简单的查询语句并没有涉及到临时表和排序，所以MySQL选错索引肯定是在判断扫描行数的时候出问题了。</p><p>那么，问题就是：<strong>扫描行数是怎么判断的？</strong></p><p>MySQL在真正开始执行语句之前，并不能精确地知道满足这个条件的记录有多少条，而只能根据统计信息来估算记录数。</p><p>这个统计信息就是索引的“区分度”。显然，一个索引上不同的值越多，这个索引的区分度就越好。而一个索引上不同的值的个数，我们称之为“基数”（cardinality）。也就是说，这个基数越大，索引的区分度越好。</p><p>我们可以使用show index方法，看到一个索引的基数。如图4所示，就是表t的show index 的结果 。虽然这个表的每一行的三个字段值都是一样的，但是在统计信息中，这三个索引的基数值并不同，而且其实都不准确。</p><p><img src="https://static001.geekbang.org/resource/image/16/d4/16dbf8124ad529fec0066950446079d4.png" alt=""></p><center><span class="reference">图4 表t的show index 结果</span></center><p>那么，<strong>MySQL是怎样得到索引的基数的呢？</strong>这里，我给你简单介绍一下MySQL采样统计的方法。</p><p>为什么要采样统计呢？因为把整张表取出来一行行统计，虽然可以得到精确的结果，但是代价太高了，所以只能选择“采样统计”。</p><p>采样统计的时候，InnoDB默认会选择N个数据页，统计这些页面上的不同值，得到一个平均值，然后乘以这个索引的页面数，就得到了这个索引的基数。</p><p>而数据表是会持续更新的，索引统计信息也不会固定不变。所以，当变更的数据行数超过1/M的时候，会自动触发重新做一次索引统计。</p><p>在MySQL中，有两种存储索引统计的方式，可以通过设置参数innodb_stats_persistent的值来选择：</p><ul>
+<li>设置为on的时候，表示统计信息会持久化存储。这时，默认的N是20，M是10。</li>
+<li>设置为off的时候，表示统计信息只存储在内存中。这时，默认的N是8，M是16。</li>
+</ul><p>由于是采样统计，所以不管N是20还是8，这个基数都是很容易不准的。</p><p>但，这还不是全部。</p><p>你可以从图4中看到，这次的索引统计值（cardinality列）虽然不够精确，但大体上还是差不多的，选错索引一定还有别的原因。</p><p>其实索引统计只是一个输入，对于一个具体的语句来说，优化器还要判断，执行这个语句本身要扫描多少行。</p><p>接下来，我们再一起看看优化器预估的，这两个语句的扫描行数是多少。</p><p><img src="https://static001.geekbang.org/resource/image/e2/89/e2bc5f120858391d4accff05573e1289.png" alt=""></p><center><span class="reference">图5 意外的explain结果</span></center><p>rows这个字段表示的是预计扫描行数。</p><p>其中，Q1的结果还是符合预期的，rows的值是104620；但是Q2的rows值是37116，偏差就大了。而图1中我们用explain命令看到的rows是只有10001行，是这个偏差误导了优化器的判断。</p><p>到这里，可能你的第一个疑问不是为什么不准，而是优化器为什么放着扫描37000行的执行计划不用，却选择了扫描行数是100000的执行计划呢？</p><p>这是因为，如果使用索引a，每次从索引a上拿到一个值，都要回到主键索引上查出整行数据，这个代价优化器也要算进去的。</p><p>而如果选择扫描10万行，是直接在主键索引上扫描的，没有额外的代价。</p><p>优化器会估算这两个选择的代价，从结果看来，优化器认为直接扫描主键索引更快。当然，从执行时间看来，这个选择并不是最优的。</p><p>使用普通索引需要把回表的代价算进去，在图1执行explain的时候，也考虑了这个策略的代价 ，但图1的选择是对的。也就是说，这个策略并没有问题。</p><p>所以冤有头债有主，MySQL选错索引，这件事儿还得归咎到没能准确地判断出扫描行数。至于为什么会得到错误的扫描行数，这个原因就作为课后问题，留给你去分析了。</p><p>既然是统计信息不对，那就修正。analyze table t 命令，可以用来重新统计索引信息。我们来看一下执行效果。</p><p><img src="https://static001.geekbang.org/resource/image/20/9c/209e9d3514688a3bcabbb75e54e1e49c.png" alt=""></p><center><span class="reference">图6 执行analyze table t 命令恢复的explain结果</span></center><p>这回对了。</p><p>所以在实践中，如果你发现explain的结果预估的rows值跟实际情况差距比较大，可以采用这个方法来处理。</p><p>其实，如果只是索引统计不准确，通过analyze命令可以解决很多问题，但是前面我们说了，优化器可不止是看扫描行数。</p><p>依然是基于这个表t，我们看看另外一个语句：</p><pre><code>mysql&gt; select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by b limit 1;
+</code></pre><p>从条件上看，这个查询没有符合条件的记录，因此会返回空集合。</p><p>在开始执行这条语句之前，你可以先设想一下，如果你来选择索引，会选择哪一个呢？</p><p>为了便于分析，我们先来看一下a、b这两个索引的结构图。</p><p><img src="https://static001.geekbang.org/resource/image/1d/b9/1d037f92063e800c3bfff3f4dbf1a2b9.png" alt=""></p><center><span class="reference">图7 a、b索引的结构图</span></center><p>如果使用索引a进行查询，那么就是扫描索引a的前1000个值，然后取到对应的id，再到主键索引上去查出每一行，然后根据字段b来过滤。显然这样需要扫描1000行。</p><p>如果使用索引b进行查询，那么就是扫描索引b的最后50001个值，与上面的执行过程相同，也是需要回到主键索引上取值再判断，所以需要扫描50001行。</p><p>所以你一定会想，如果使用索引a的话，执行速度明显会快很多。那么，下面我们就来看看到底是不是这么一回事儿。</p><p>图8是执行explain的结果。</p><pre><code>mysql&gt; explain select * from t where (a between 1 and 1000) and (b between 50000 and 100000) order by b limit 1;
+</code></pre><p><img src="https://static001.geekbang.org/resource/image/48/b8/483bcb1ef3bb902844e80d9cbdd73ab8.png" alt=""></p><center><span class="reference">图8 使用explain方法查看执行计划 2</span></center><p>可以看到，返回结果中key字段显示，这次优化器选择了索引b，而rows字段显示需要扫描的行数是50198。</p><p>从这个结果中，你可以得到两个结论：</p><ol>
+<li>
+<p>扫描行数的估计值依然不准确；</p>
+</li>
+<li>
+<p>这个例子里MySQL又选错了索引。</p>
+</li>
+</ol><h1>索引选择异常和处理</h1><p>其实大多数时候优化器都能找到正确的索引，但偶尔你还是会碰到我们上面举例的这两种情况：原本可以执行得很快的SQL语句，执行速度却比你预期的慢很多，你应该怎么办呢？</p><p><strong>一种方法是，像我们第一个例子一样，采用force index强行选择一个索引。</strong>MySQL会根据词法解析的结果分析出可能可以使用的索引作为候选项，然后在候选列表中依次判断每个索引需要扫描多少行。如果force index指定的索引在候选索引列表中，就直接选择这个索引，不再评估其他索引的执行代价。</p><p>我们来看看第二个例子。刚开始分析时，我们认为选择索引a会更好。现在，我们就来看看执行效果：</p><p><img src="https://static001.geekbang.org/resource/image/95/54/9582401a6bed6cb8fd803c9555750b54.png" alt=""></p><center><span class="reference">图9 使用不同索引的语句执行耗时</span></center><p>可以看到，原本语句需要执行2.23秒，而当你使用force index(a)的时候，只用了0.05秒，比优化器的选择快了40多倍。</p><p>也就是说，优化器没有选择正确的索引，force index起到了“矫正”的作用。</p><p>不过很多程序员不喜欢使用force index，一来这么写不优美，二来如果索引改了名字，这个语句也得改，显得很麻烦。而且如果以后迁移到别的数据库的话，这个语法还可能会不兼容。</p><p>但其实使用force index最主要的问题还是变更的及时性。因为选错索引的情况还是比较少出现的，所以开发的时候通常不会先写上force index。而是等到线上出现问题的时候，你才会再去修改SQL语句、加上force index。但是修改之后还要测试和发布，对于生产系统来说，这个过程不够敏捷。</p><p>所以，数据库的问题最好还是在数据库内部来解决。那么，在数据库里面该怎样解决呢？</p><p>既然优化器放弃了使用索引a，说明a还不够合适，所以<strong>第二种方法就是，我们可以考虑修改语句，引导MySQL使用我们期望的索引。</strong>比如，在这个例子里，显然把“order by b limit 1” 改成 “order by b,a limit 1” ，语义的逻辑是相同的。</p><p>我们来看看改之后的效果：</p><p><img src="https://static001.geekbang.org/resource/image/14/94/14cd598e52a2b72dd334a42603e5b894.png" alt=""></p><center><span class="reference">图10 order by b,a limit 1 执行结果</span></center><p>之前优化器选择使用索引b，是因为它认为使用索引b可以避免排序（b本身是索引，已经是有序的了，如果选择索引b的话，不需要再做排序，只需要遍历），所以即使扫描行数多，也判定为代价更小。</p><p>现在order by b,a 这种写法，要求按照b,a排序，就意味着使用这两个索引都需要排序。因此，扫描行数成了影响决策的主要条件，于是此时优化器选了只需要扫描1000行的索引a。</p><p>当然，这种修改并不是通用的优化手段，只是刚好在这个语句里面有limit 1，因此如果有满足条件的记录， order by b limit 1和order by b,a limit 1 都会返回b是最小的那一行，逻辑上一致，才可以这么做。</p><p>如果你觉得修改语义这件事儿不太好，这里还有一种改法，图11是执行效果。</p><pre><code>mysql&gt; select * from  (select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by b limit 100)alias limit 1;
+</code></pre><p><img src="https://static001.geekbang.org/resource/image/b1/d7/b1a2ad43c78477d7f93dbc692cbaa0d7.png" alt=""></p><center><span class="reference">图11 改写SQL的explain</span></center><p>在这个例子里，我们用limit 100让优化器意识到，使用b索引代价是很高的。其实是我们根据数据特征诱导了一下优化器，也不具备通用性。</p><p><strong>第三种方法是，在有些场景下，我们可以新建一个更合适的索引，来提供给优化器做选择，或删掉误用的索引。</strong></p><p>不过，在这个例子中，我没有找到通过新增索引来改变优化器行为的方法。这种情况其实比较少，尤其是经过DBA索引优化过的库，再碰到这个bug，找到一个更合适的索引一般比较难。</p><p>如果我说还有一个方法是删掉索引b，你可能会觉得好笑。但实际上我碰到过两次这样的例子，最终是DBA跟业务开发沟通后，发现这个优化器错误选择的索引其实根本没有必要存在，于是就删掉了这个索引，优化器也就重新选择到了正确的索引。</p><h1>小结</h1><p>今天我们一起聊了聊索引统计的更新机制，并提到了优化器存在选错索引的可能性。</p><p>对于由于索引统计信息不准确导致的问题，你可以用analyze table来解决。</p><p>而对于其他优化器误判的情况，你可以在应用端用force index来强行指定索引，也可以通过修改语句来引导优化器，还可以通过增加或者删除索引来绕过这个问题。</p><p>你可能会说，今天这篇文章后面的几个例子，怎么都没有展开说明其原理。我要告诉你的是，今天的话题，我们面对的是MySQL的bug，每一个展开都必须深入到一行行代码去量化，实在不是我们在这里应该做的事情。</p><p>所以，我把我用过的解决方法跟你分享，希望你在碰到类似情况的时候，能够有一些思路。</p><p>你平时在处理MySQL优化器bug的时候有什么别的方法，也发到评论区分享一下吧。</p><p>最后，我给你留下一个思考题。前面我们在构造第一个例子的过程中，通过session A的配合，让session B删除数据后又重新插入了一遍数据，然后就发现explain结果中，rows字段从10001变成37000多。</p><p>而如果没有session A的配合，只是单独执行delete from t 、call idata()、explain这三句话，会看到rows字段其实还是10000左右。你可以自己验证一下这个结果。</p><p>这是什么原因呢？也请你分析一下吧。</p><p>你可以把你的分析结论写在留言区里，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>我在上一篇文章最后留给你的问题是，如果某次写入使用了change buffer机制，之后主机异常重启，是否会丢失change buffer和数据。</p><p>这个问题的答案是不会丢失，留言区的很多同学都回答对了。虽然是只更新内存，但是在事务提交的时候，我们把change buffer的操作也记录到redo log里了，所以崩溃恢复的时候，change buffer也能找回来。</p><p>在评论区有同学问到，merge的过程是否会把数据直接写回磁盘，这是个好问题。这里，我再为你分析一下。</p><p>merge的执行流程是这样的：</p><ol>
+<li>
+<p>从磁盘读入数据页到内存（老版本的数据页）；</p>
+</li>
+<li>
+<p>从change buffer里找出这个数据页的change buffer 记录(可能有多个），依次应用，得到新版数据页；</p>
+</li>
+<li>
+<p>写redo log。这个redo log包含了数据的变更和change buffer的变更。</p>
+</li>
+</ol><p>到这里merge过程就结束了。这时候，数据页和内存中change buffer对应的磁盘位置都还没有修改，属于脏页，之后各自刷回自己的物理数据，就是另外一个过程了。</p><p>评论区留言点赞板：</p><blockquote>
+<p>@某、人 把02篇的redo log更新细节和change buffer的更新串了起来；<br>
+@Ivan 回复了其他同学的问题，并联系到Checkpoint机制；<br>
+@约书亚 问到了merge和redolog的关系。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">今天这个问题不是特别明白为什么。session A开启了一致性读,session B delete或者insert,之前记录都已经放进了undo了。二级索引的记录也写进了redo和change buffer,应该说删除了索引页也不影响session A的重复读。估计是开启了一致性读之后,在这个事务执行期间,不能释放空间,导致统计信息变大。还是需要老师解释下具体的细节<br><br>今天有两个问题,想请教下老师<br>1.我的理解是由于B是查找(50000,100000),由于B+树有序,通过二分查找找到b=50000的值,从50000往右扫描,一条一条回表查数据,在执行器上做where a(1,1000)的筛选,然后做判断是否够不够limit的数,够就结束循环。由于这里b(50000,100000)必然不存在a(1,1000),所以需要扫描5W行左右.但是如果把a改为(50001,51000),扫描行数没有变。那么是因为优化器给的扫描行数有问题还是执行器没有结束循环？为什么不结束循环?<br>(好像rows能直观展示limit起作用,必须在执行器上过滤数据,不能在索引上过滤数据,不知道为什么这样设计)<br><br>2.假设b上数据是会有很多重复的数据,b的最大值也存在多行重复<br>select * from t where (a between 1 and 1000) and (b between 50000 and 100000) order by b desc limit 1;<br>这里倒序去扫描b索引树,选取的是b值最大,id值为一个固定值(既不最大也不最小)<br>select * from t force index(a) where (a between 1 and 1000) and (b between 50000 and 100000) order by b desc limit 1;<br>由于这里选取的是a索引,排序不能用到索引,只能用优化排序.选取的是b值最大,id值最小那一行<br>这就是典型的两条相同的sql,但是索引选择的不同,出现的数据不一致。<br>所以如果是order by b,a就可以避免这种情况的引起的不一致,也可以避免堆排序造成的不一致<br>但是如果是asc没有出现这种情况。这里出现不一致,应该还不是由于堆排序造成的。这是什么原因造成的？ <br></div>
+                            <span class="time">2018-12-05 20:54</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 好问题，而且你做了个不错的对照实验。是的，加了limit 1 能减少扫描多少行，其实优化器也不确定，【得执行才知道】，所以显示的时候还是按照“最多可能扫多少行”来显示。<br><br>2. 你这个例子里，如果确实是按照b扫描了，应该肯定是ID最大值呀，除非ID最大的那个记录，a条件不满足。但是一定是“满足a条件里面最大的那个ID的”，你再验证下。<br><br> 而如果是用了a, 那就有临时表排序，临时表排序有三种算法，还分内存还是磁盘临时表… 这里展开不了了，后面《order by是怎么工作的》这篇会讲。</p>
+                                <p class="reply-time">2018-12-05 22:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/34/a5/db01dc4f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">bowenz</span>
+                            </div>
+                            <div class="bd">在5.7.21 percona 版本实验，未出现案例1的情况 。 <br>dev02&gt; select @@global.tx_isolation,@@tx_isolation,version(),&quot;session A&quot;;<br>+-----------------------+-----------------+---------------+-----------+<br>| @@global.tx_isolation | @@tx_isolation  | version()     | session A |<br>+-----------------------+-----------------+---------------+-----------+<br>| REPEATABLE-READ       | REPEATABLE-READ | 5.7.21-20-log | session A |<br>+-----------------------+-----------------+---------------+-----------+<br>dev02&gt; start transaction with consistent snapshot;<br>Query OK, 0 rows affected (0.00 sec)<br>dev02&gt; commit;<br>Query OK, 0 rows affected (0.00 sec)<br>dev02&gt; select now() ;<br>+---------------------+<br>| now()               |<br>+---------------------+<br>| 2018-12-04 22:03:48 |<br>+---------------------+<br>1 row in set (0.00 sec)<br>dev02&gt; select @@global.tx_isolation,@@tx_isolation,version(),&quot;session B&quot;;<br>+-----------------------+-----------------+---------------+-----------+<br>| @@global.tx_isolation | @@tx_isolation  | version()     | session B |<br>+-----------------------+-----------------+---------------+-----------+<br>| REPEATABLE-READ       | REPEATABLE-READ | 5.7.21-20-log | session B |<br>+-----------------------+-----------------+---------------+-----------+<br>1 row in set, 2 warnings (0.00 sec)<br><br>dev02&gt; delete from t;<br>Query OK, 100000 rows affected (0.51 sec)<br><br>dev02&gt; call idata();<br>Query OK, 1 row affected (2 min 38.34 sec)<br><br>dev02&gt; select now();<br>+---------------------+<br>| now()               |<br>+---------------------+<br>| 2018-12-04 22:03:58 |<br>+---------------------+<br>1 row in set (0.00 sec)<br><br>dev02&gt; explain select * from t where a between 10000 and 20000;<br>| id | select_type | table | partitions | type  | possible_keys | key  | key_len | ref  | rows  | filtered | Extra                 |<br>|  1 | SIMPLE      | t     | NULL       | range | a             | a    | 5       | NULL | 10001 |   100.00 | Using index condition | <br></div>
+                            <span class="time">2018-12-05 14:12</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Session A提交早了… 从上到下按照时间顺序执行哈</p>
+                                <p class="reply-time">2018-12-05 20:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/16/31/ae8adf82.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">路过</span>
+                            </div>
+                            <div class="bd">老师，关于本章中的“基数”（cardinality）问题。既然已经为列a创建了索引，即有专门的数据页存放索引。遍历索引是很快的，从而得到“基数”的值应该很快呀。为何要到原始的数据页中，找N页，统计上面不同的值呢？有点多此一举啊。如果这样操作，会导致信息不准确，比如本来一个页中有50条数据，后来其中20条数据被删除了，空间没有被释放，这导致统计的信息就发生偏差。基数信息就更不准确了。<br>从原始页中计算“基数”，是不是考虑到索引页中的数据具有滞后性，即更新了表中数据，要过一会才更新索引页？<br>请老师指正，谢谢！<br><br> <br></div>
+                            <span class="time">2018-12-05 22:46</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">啊，误会了，确实是哪个索引的基数就是在哪个索引树上拿的。<br><br>你的理解是对的，我文中也是这个意思哦😓</p>
+                                <p class="reply-time">2018-12-06 00:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">趁着答案公布之前的最后时间,再来尝试性答一下这个题<br>1.为什么没有session A,session B扫描的行数是1W<br>由于mysql是使用标记删除来删除记录的,并不从索引和数据文件中真正的删除。<br>如果delete和insert中间的间隔相对较小,purge线程还没有来得及清理该记录。<br>如果主键相同的情况下,新插入的insert会沿用之前删除的delete的记录的空间。<br>由于相同的数据量以及表大小,所以导致了统计信息没有变化<br>2.为什么开启了session A,session B扫描行数变成3W<br>由于session A开启了一致性读,目的为了保证session A的可重复读,insert只能<br>另起炉灶,不能占用delete的空间。所以出现的情况就是delete虽然删除了,但是<br>未释放空间,insert又增加了空间。导致统计信息有误 <br></div>
+                            <span class="time">2018-12-06 23:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿</p>
+                                <p class="reply-time">2018-12-07 00:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ea/9a/02d589f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">斜面镜子 Bill</span>
+                            </div>
+                            <div class="bd">问题的思考：<br>我理解 session A 开启的事务对 session B的delete操作后的索引数据的统计时效产生了影响，因为需要保证事务A的重复读，在数据页没有实际删除，而索引的统计选择了N个数据页，这部分数据页不收到前台事务的影响，所以整体统计值会变大，直接影响了索引选择的准确性； <br></div>
+                            <span class="time">2018-12-05 10:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿</p>
+                                <p class="reply-time">2018-12-05 12:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e9/8f/0de9ca55.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Niko.</span>
+                            </div>
+                            <div class="bd">我试了几遍 也是没有复现选错索引<br>A会话<br>mysql&gt; select @@tx_isolation;<br>+-----------------+<br>| @@tx_isolation  |<br>+-----------------+<br>| REPEATABLE-READ |<br>+-----------------+<br>1 row in set, 1 warning (0.01 sec)<br><br>mysql&gt; select @@version<br>    -&gt; ;<br>+------------+<br>| @@version  |<br>+------------+<br>| 5.7.22-log |<br>+------------+<br>1 row in set (0.00 sec)<br>mysql&gt; start transaction with consistent snapshot;<br>Query OK, 0 rows affected (0.00 sec)<br><br>B会话<br>mysql&gt; delete from t;<br>Query OK, 100000 rows affected (2.58 sec)<br><br>mysql&gt; call idata();<br>Query OK, 1 row affected (24.32 sec)<br><br>mysql&gt; explain select * from t where a between 10000 and 20000;<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+<br>| id | select_type | table | partitions | type  | possible_keys | key  | key_len | ref  | rows  | filtered | Extra                 |<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+<br>|  1 | SIMPLE      | t     | NULL       | range | a             | a    | 5       | NULL | 10001 |   100.00 | Using index condition |<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+<br>1 row in set, 1 warning (0.00 sec)<br><br>为啥呢？  <br></div>
+                            <span class="time">2018-12-12 11:09</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">谢谢老师的回答.<br>1.确实有时候感觉虽然显示了扫描行数比较多,但是limit应该是起了作用的,从执行时间就能看出来。<br>2.失误,确实是应该满足a条件id最大的。<br>临时表排序之前了解过一点,1.常规排序。2.优化排序 3.优先队列排序(堆排序)<br>由于选取的字段没超过max_length_for_sort_data,所以选取的是优化排序,只需要进行一次I&#47;O。 <br></div>
+                            <span class="time">2018-12-05 23:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/fd/d5/0194ea41.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">沉浮</span>
+                            </div>
+                            <div class="bd">图十下面第二段<br>现在 limit b,a 这种写法，要求按照 b,a 排序，就意味着使用这两个索引都需要排序。<br>应该是order by b,a吧<br>另外有个问题请教林老师，根据经验大表增加索引的时候比较慢，这个是理解的，但是删除索引的时候能做到秒删，这个什么原理呢？ <br></div>
+                            <span class="time">2018-12-05 09:20</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是，已经修改了，谢谢。<br><br>删除的时候是标记删除，所以很快。<br>建索引是要扫描数据和真正生成索引树，是会慢些</p>
+                                <p class="reply-time">2018-12-05 12:43</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f3/4a/b6a46894.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ying</span>
+                            </div>
+                            <div class="bd">现学现用 今天有个500万的表 分页查询特别慢。<br>select * from table where create_time and create_time&gt;=时间戳 and  create_time&lt;=时间戳 <br>and subtype=&#39;xx&#39; and type=&#39;xx&#39; and company_id =x order by create_time limited 90,30 ;<br>已经建立了组合索引 union_index包括字段 create_time subtype  type company_id<br>但是 explain 发现竟然走了create_time 的索引<br>语句里加了一个use index(union_index) ，立马好了<br>真正的解决了客户的实际问题啊。 感谢老师 <br></div>
+                            <span class="time">2018-12-05 20:04</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿<br><br>而且发评论的时候还做了很细致地脱敏，赞</p>
+                                <p class="reply-time">2018-12-05 21:27</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/9b/a8/6a391c66.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Leon📷</span>
+                            </div>
+                            <div class="bd">公司测试机器IO性能太差，插十万条要27分钟，做这个文章的实验要1个小时以上 <br></div>
+                            <span class="time">2018-12-05 16:01</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">………<br><br>不会吧，插入10万条27分钟… 你把innodb_flush_log_at_trx_commit 和 sync_binlog都设置成0试试</p>
+                                <p class="reply-time">2018-12-05 23:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/47/e7/53416498.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">曹龙飞</span>
+                            </div>
+                            <div class="bd">丁老师，按照图2的流程,还参考了老师下一篇文章末尾的视频,还是没有重现选错索引的情况；操作循序是没有问题，隔离级别和表的存储引擎类型我都检查了，我想问的是:这个是必现的吗？如果是必现，不出现的可能原因又有哪些呢？ <br></div>
+                            <span class="time">2018-12-25 11:00</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/39/99/42929758.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">andy</span>
+                            </div>
+                            <div class="bd">create table #t<br>(<br>	a int,<br>	b int,<br>	c int<br>)<br><br>insert into #t values(1,1,1)<br><br>declare @count int<br>set @count=1<br><br>while @count&lt;=70000<br>begin<br>	insert into #t select a+@count,b+@count,c+@count from #t<br>	set @count= @count*2<br>end<br><br>插入测试数据，这种方法我试过很快，不过不能准确插入10万条，以上是SQL Server的语法 <br></div>
+                            <span class="time">2018-12-10 09:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e9/ab/37903736.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">J!</span>
+                            </div>
+                            <div class="bd">我想问下mysql dbname 的长度在源码中是在哪里定义的，为什么最大长度是64=? <br></div>
+                            <span class="time">2018-12-06 21:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e3/bc/064401c7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">EAGLE</span>
+                            </div>
+                            <div class="bd">老师，看了一篇文章说innodb如果不加order by默认是按照主键排序的。也就是说如果不加order by，查询结果也是有一定次序的。那么如果没有业务需求，纯粹只是为了分页显示数据，不加order by也是可以的吗？ <br></div>
+                            <span class="time">2018-12-06 16:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">文章说错了… 😓<br>默认按照“查询使用的索引”排序</p>
+                                <p class="reply-time">2018-12-06 17:49</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epGMibYc0m7cDHMsNRBUur2NPVnlBZFXoNjWomibfjnHeAO3XRt27VaH3WNtdUX11d3uIT1ZHWCxLeg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">york</span>
+                            </div>
+                            <div class="bd">老师：<br>1.  我的机器也没复现图2所指的问题，MySQL版本5.7.24<br>2. set sql_long_query=0命令，在我的MySQL执行报错<br>    Unknown system variable &#39;sql_long_query&#39;<br>3. 用虚拟机插入10万条数据耗时长的问题，可能是因为创建虚拟机时，磁盘选择的是动态增长容量的方式，其他同学可以试试。 <br></div>
+                            <span class="time">2018-12-06 15:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">set sql_long_query=0; 改成 set long_query_time=0; 😓</p>
+                                <p class="reply-time">2018-12-06 16:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/0d/0c/3dbffd56.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">做梦到天亮list</span>
+                            </div>
+                            <div class="bd">舒服了 <br></div>
+                            <span class="time">2018-12-05 23:52</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/5e/b8fada94.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ryoma</span>
+                            </div>
+                            <div class="bd">请问使用insert ... on duplicate key update对性能有什么影响呢 <br></div>
+                            <span class="time">2018-12-05 20:25</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">比分成两句快😄</p>
+                                <p class="reply-time">2018-12-05 22:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/80/d6/1f78bc57.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">萧若愚</span>
+                            </div>
+                            <div class="bd">请教个问题，如果一个表的字段名中包含表情符号比如 a😇，查询表的结果中字段名变为a？，该表的字符集已设为 utf8_mb4。查看 information_schema 表中字段名也是a？，发现 information_schema 表的默认字符集是 utf8。查询时若条件语句中用到该字段名时，用`a?`，`a😇`，以及 a😇 都可正确查询到结果，这是为什么？还有，如何查询出正确的字段名，即查询结果中为 a😇 而不是 a?。谢谢！ <br></div>
+                            <span class="time">2018-12-05 11:32</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个问题会在后面《乱码怎么办》中展开哈。<br><br>先简单回答一个，字段名的乱码是改不了了，返回结果的schema信息固定只能用utf8, utf8不认识表情符号…</p>
+                                <p class="reply-time">2018-12-05 12:10</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/fe/68/e0bebd9a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">高枕</span>
+                            </div>
+                            <div class="bd">老师，您文中提到：“从 change buffer 里找出这个数据页的 change buffer 记录 (可能有多个），依次应用，得到新版数据页；<br><br>写 redo log。这个 redo log 包含了数据的变更和 change buffer 的变更。”<br>您的意思是，这些新版的数据页后的数据 ，没有直接写回到磁盘（数据页），而是写进了redo log？<br>写回数据页和更新系统表空间对应的change buffer是另外的一个过程？<br>写进 <br></div>
+                            <span class="time">2018-12-05 10:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 是的</p>
+                                <p class="reply-time">2018-12-05 12:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/fe/68/e0bebd9a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">高枕</span>
+                            </div>
+                            <div class="bd">老师，您文中最后写道：“这时候，数据页和内存中 change buffer 对应的磁盘位置都还没有修改，属于脏页，之后各自刷回自己的物理数据，就是另外一个过程了。”<br>能再给解释下change buffer和数据页对应的磁盘位置是哪里吗？<br>我理解change buffer 对应的磁盘位置是系统表空间，数据页所在的磁盘位置是表空间的位置，marge并没有把数据直接写道这个表空间的位置吗？ <br></div>
+                            <span class="time">2018-12-05 10:07</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">前面两句理解对应位置是对的哈，<br>最后一句问题：没有马上写</p>
+                                <p class="reply-time">2018-12-05 11:08</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

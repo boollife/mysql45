@@ -1,0 +1,446 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                09讲普通索引和唯一索引，应该怎么选择
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/91/8c/91e44e4672ed4d966b2ea312b98b568c.jpg">
+
+                <div>
+                  <audio controls="controls" height="100" width="100">
+                    <source src="09讲普通索引和唯一索引，应该怎么选择.mp3" type="audio/mp3" />
+                    <embed height="100" width="100" src="09讲普通索引和唯一索引，应该怎么选择.mp3" />
+                  </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p><span class="reference">今天的正文开始前，我要特意感谢一下评论区几位留下高质量留言的同学。</span></p><p><span class="reference">用户名是 @某、人 的同学，对文章的知识点做了梳理，然后提了关于事务可见性的问题，就是先启动但是后提交的事务，对数据可见性的影响。@夏日雨同学也提到了这个问题，我在置顶评论中回复了，今天的文章末尾也会再展开说明。@Justin和@倪大人两位同学提了两个好问题。</span></p><p><span class="reference">对于能够引发更深一步思考的问题，我会在回复的内容中写上“好问题”三个字，方便你搜索，你也可以去看看他们的留言。</span></p><p><span class="reference">非常感谢大家很细致地看文章，并且留下了那么多和很高质量的留言。知道文章有给大家带来一些新理解，对我来说是一个很好的鼓励。同时，也让其他认真看评论区的同学，有机会发现一些自己还没有意识到的、但可能还不清晰的知识点，这也在总体上提高了整个专栏的质量。再次谢谢你们。</span></p><p><span class="reference">好了，现在就回到我们今天的正文内容。</span></p><p>在前面的基础篇文章中，我给你介绍过索引的基本概念，相信你已经了解了唯一索引和普通索引的区别。今天我们就继续来谈谈，在不同的业务场景下，应该选择普通索引，还是唯一索引？</p><p>假设你在维护一个市民系统，每个人都有一个唯一的身份证号，而且业务代码已经保证了不会写入两个重复的身份证号。如果市民系统需要按照身份证号查姓名，就会执行类似这样的SQL语句：</p><!-- [[[read_end]]] --><pre><code>select name from CUser where id_card = 'xxxxxxxyyyyyyzzzzz';
+</code></pre><p>所以，你一定会考虑在id_card字段上建索引。</p><p>由于身份证号字段比较大，我不建议你把身份证号当做主键，那么现在你有两个选择，要么给id_card字段创建唯一索引，要么创建一个普通索引。如果业务代码已经保证了不会写入重复的身份证号，那么这两个选择逻辑上都是正确的。</p><p>现在我要问你的是，从性能的角度考虑，你选择唯一索引还是普通索引呢？选择的依据是什么呢？</p><p>简单起见，我们还是用第4篇文章<a href="https://time.geekbang.org/column/article/69236">《深入浅出索引（上）》</a>中的例子来说明，假设字段 k 上的值都不重复。</p><p><img src="https://static001.geekbang.org/resource/image/1e/46/1ed9536031d6698570ea175a7b7f9a46.png" alt=""></p><center>图1 InnoDB的索引组织结构</center><p>接下来，我们就从这两种索引对查询语句和更新语句的性能影响来进行分析。</p><h1>查询过程</h1><p>假设，执行查询的语句是 select id from T where k=5。这个查询语句在索引树上查找的过程，先是通过B+树从树根开始，按层搜索到叶子节点，也就是图中右下角的这个数据页，然后可以认为数据页内部通过二分法来定位记录。</p><ul>
+<li>对于普通索引来说，查找到满足条件的第一个记录(5,500)后，需要查找下一个记录，直到碰到第一个不满足k=5条件的记录。</li>
+<li>对于唯一索引来说，由于索引定义了唯一性，查找到第一个满足条件的记录后，就会停止继续检索。</li>
+</ul><p>那么，这个不同带来的性能差距会有多少呢？答案是，微乎其微。</p><p>你知道的，InnoDB的数据是按数据页为单位来读写的。也就是说，当需要读一条记录的时候，并不是将这个记录本身从磁盘读出来，而是以页为单位，将其整体读入内存。在InnoDB中，每个数据页的大小默认是16KB。</p><p>因为引擎是按页读写的，所以说，当找到k=5的记录的时候，它所在的数据页就都在内存里了。那么，对于普通索引来说，要多做的那一次“查找和判断下一条记录”的操作，就只需要一次指针寻找和一次计算。</p><p>当然，如果k=5这个记录刚好是这个数据页的最后一个记录，那么要取下一个记录，必须读取下一个数据页，这个操作会稍微复杂一些。</p><p>但是，我们之前计算过，对于整型字段，一个数据页可以放近千个key，因此出现这种情况的概率会很低。所以，我们计算平均性能差异时，仍可以认为这个操作成本对于现在的CPU来说可以忽略不计。</p><h1>更新过程</h1><p>为了说明普通索引和唯一索引对更新语句性能的影响这个问题，我需要先跟你介绍一下change buffer。</p><p>当需要更新一个数据页时，如果数据页在内存中就直接更新，而如果这个数据页还没有在内存中的话，在不影响数据一致性的前提下，InooDB会将这些更新操作缓存在change buffer中，这样就不需要从磁盘中读入这个数据页了。在下次查询需要访问这个数据页的时候，将数据页读入内存，然后执行change buffer中与这个页有关的操作。通过这种方式就能保证这个数据逻辑的正确性。</p><p>需要说明的是，虽然名字叫作change buffer，实际上它是可以持久化的数据。也就是说，change buffer在内存中有拷贝，也会被写入到磁盘上。</p><p>将change buffer中的操作应用到原数据页，得到最新结果的过程称为merge。除了访问这个数据页会触发merge外，系统有后台线程会定期merge。在数据库正常关闭（shutdown）的过程中，也会执行merge操作。</p><p>显然，如果能够将更新操作先记录在change buffer，减少读磁盘，语句的执行速度会得到明显的提升。而且，数据读入内存是需要占用buffer pool的，所以这种方式还能够避免占用内存，提高内存利用率。</p><p>那么，<strong>什么条件下可以使用change buffer呢？</strong></p><p>对于唯一索引来说，所有的更新操作都要先判断这个操作是否违反唯一性约束。比如，要插入(4,400)这个记录，就要先判断现在表中是否已经存在k=4的记录，而这必须要将数据页读入内存才能判断。如果都已经读入到内存了，那直接更新内存会更快，就没必要使用change buffer了。</p><p>因此，唯一索引的更新就不能使用change buffer，实际上也只有普通索引可以使用。</p><p>change buffer用的是buffer pool里的内存，因此不能无限增大。change buffer的大小，可以通过参数innodb_change_buffer_max_size来动态设置。这个参数设置为50的时候，表示change buffer的大小最多只能占用buffer pool的50%。</p><p>现在，你已经理解了change buffer的机制，那么我们再一起来看看<strong>如果要在这张表中插入一个新记录(4,400)的话，InnoDB的处理流程是怎样的。</strong></p><p>第一种情况是，<strong>这个记录要更新的目标页在内存中</strong>。这时，InnoDB的处理流程如下：</p><ul>
+<li>对于唯一索引来说，找到3和5之间的位置，判断到没有冲突，插入这个值，语句执行结束；</li>
+<li>对于普通索引来说，找到3和5之间的位置，插入这个值，语句执行结束。</li>
+</ul><p>这样看来，普通索引和唯一索引对更新语句性能影响的差别，只是一个判断，只会耗费微小的CPU时间。</p><p>但，这不是我们关注的重点。</p><p>第二种情况是，<strong>这个记录要更新的目标页不在内存中</strong>。这时，InnoDB的处理流程如下：</p><ul>
+<li>对于唯一索引来说，需要将数据页读入内存，判断到没有冲突，插入这个值，语句执行结束；</li>
+<li>对于普通索引来说，则是将更新记录在change buffer，语句执行就结束了。</li>
+</ul><p>将数据从磁盘读入内存涉及随机IO的访问，是数据库里面成本最高的操作之一。change buffer因为减少了随机磁盘访问，所以对更新性能的提升是会很明显的。</p><p>之前我就碰到过一件事儿，有个DBA的同学跟我反馈说，他负责的某个业务的库内存命中率突然从99%降低到了75%，整个系统处于阻塞状态，更新语句全部堵住。而探究其原因后，我发现这个业务有大量插入数据的操作，而他在前一天把其中的某个普通索引改成了唯一索引。</p><h1>change buffer的使用场景</h1><p>通过上面的分析，你已经清楚了使用change buffer对更新过程的加速作用，也清楚了change buffer只限于用在普通索引的场景下，而不适用于唯一索引。那么，现在有一个问题就是：普通索引的所有场景，使用change buffer都可以起到加速作用吗？</p><p>因为merge的时候是真正进行数据更新的时刻，而change buffer的主要目的就是将记录的变更动作缓存下来，所以在一个数据页做merge之前，change buffer记录的变更越多（也就是这个页面上要更新的次数越多），收益就越大。</p><p>因此，对于写多读少的业务来说，页面在写完以后马上被访问到的概率比较小，此时change buffer的使用效果最好。这种业务模型常见的就是账单类、日志类的系统。</p><p>反过来，假设一个业务的更新模式是写入之后马上会做查询，那么即使满足了条件，将更新先记录在change buffer，但之后由于马上要访问这个数据页，会立即触发merge过程。这样随机访问IO的次数不会减少，反而增加了change buffer的维护代价。所以，对于这种业务模式来说，change buffer反而起到了副作用。</p><h1>索引选择和实践</h1><p>回到我们文章开头的问题，普通索引和唯一索引应该怎么选择。其实，这两类索引在查询能力上是没差别的，主要考虑的是对更新性能的影响。所以，我建议你尽量选择普通索引。</p><p>如果所有的更新后面，都马上伴随着对这个记录的查询，那么你应该关闭change buffer。而在其他情况下，change buffer都能提升更新性能。</p><p>在实际使用中，你会发现，普通索引和change buffer的配合使用，对于数据量大的表的更新优化还是很明显的。</p><p>特别地，在使用机械硬盘时，change buffer这个机制的收效是非常显著的。所以，当你有一个类似“历史数据”的库，并且出于成本考虑用的是机械硬盘时，那你应该特别关注这些表里的索引，尽量使用普通索引，然后把change buffer 尽量开大，以确保这个“历史数据”表的数据写入速度。</p><h1>change buffer 和 redo log</h1><p>理解了change buffer的原理，你可能会联想到我在前面文章中和你介绍过的redo log和WAL。</p><p>在前面文章的评论中，我发现有同学混淆了redo log和change buffer。WAL 提升性能的核心机制，也的确是尽量减少随机读写，这两个概念确实容易混淆。所以，这里我把它们放到了同一个流程里来说明，便于你区分这两个概念。</p><blockquote>
+<p>备注：这里，你可以再回顾下第2篇文章<a href="https://time.geekbang.org/column/article/68633">《日志系统：一条SQL更新语句是如何执行的？》</a>中的相关内容。</p>
+</blockquote><p>现在，我们要在表上执行这个插入语句：</p><pre><code>mysql&gt; insert into t(id,k) values(id1,k1),(id2,k2);
+</code></pre><p>这里，我们假设当前k索引树的状态，查找到位置后，k1所在的数据页在内存(InnoDB buffer pool)中，k2所在的数据页不在内存中。如图2所示是带change buffer的更新状态图。</p><p><img src="https://static001.geekbang.org/resource/image/98/a3/980a2b786f0ea7adabef2e64fb4c4ca3.png" alt=""></p><center>图2 带change buffer的更新过程</center><p>分析这条更新语句，你会发现它涉及了四个部分：内存、redo log（ib_log_fileX）、 数据表空间（t.ibd）、系统表空间（ibdata1）。</p><p>这条更新语句做了如下的操作（按照图中的数字顺序）：</p><ol>
+<li>
+<p>Page 1在内存中，直接更新内存；</p>
+</li>
+<li>
+<p>Page 2没有在内存中，就在内存的change buffer区域，记录下“我要往Page 2插入一行”这个信息</p>
+</li>
+<li>
+<p>将上述两个动作记入redo log中（图中3和4）。</p>
+</li>
+</ol><p>做完上面这些，事务就可以完成了。所以，你会看到，执行这条更新语句的成本很低，就是写了两处内存，然后写了一处磁盘（两次操作合在一起写了一次磁盘），而且还是顺序写的。</p><p>同时，图中的两个虚线箭头，是后台操作，不影响更新的响应时间。</p><p>那在这之后的读请求，要怎么处理呢？</p><p>比如，我们现在要执行 select * from t where k in (k1, k2)。这里，我画了这两个读请求的流程图。</p><p>如果读语句发生在更新语句后不久，内存中的数据都还在，那么此时的这两个读操作就与系统表空间（ibdata1）和 redo log（ib_log_fileX）无关了。所以，我在图中就没画出这两部分。</p><p><img src="https://static001.geekbang.org/resource/image/6d/8e/6dc743577af1dbcbb8550bddbfc5f98e.png" alt=""></p><center>图3 带change buffer的读过程</center><p>从图中可以看到：</p><ol>
+<li>
+<p>读Page 1的时候，直接从内存返回。有几位同学在前面文章的评论中问到，WAL之后如果读数据，是不是一定要读盘，是不是一定要从redo log里面把数据更新以后才可以返回？其实是不用的。你可以看一下图3的这个状态，虽然磁盘上还是之前的数据，但是这里直接从内存返回结果，结果是正确的。</p>
+</li>
+<li>
+<p>要读Page 2的时候，需要把Page 2从磁盘读入内存中，然后应用change buffer里面的操作日志，生成一个正确的版本并返回结果。</p>
+</li>
+</ol><p>可以看到，直到需要读Page 2的时候，这个数据页才会被读入内存。</p><p>所以，如果要简单地对比这两个机制在提升更新性能上的收益的话，<strong>redo log 主要节省的是随机写磁盘的IO消耗（转成顺序写），而change buffer主要节省的则是随机读磁盘的IO消耗。</strong></p><h1>小结</h1><p>今天，我从普通索引和唯一索引的选择开始，和你分享了数据的查询和更新过程，然后说明了change buffer的机制以及应用场景，最后讲到了索引选择的实践。</p><p>由于唯一索引用不上change buffer的优化机制，因此如果业务可以接受，从性能角度出发我建议你优先考虑非唯一索引。</p><p>最后，又到了思考题时间。</p><p>通过图2你可以看到，change buffer一开始是写内存的，那么如果这个时候机器掉电重启，会不会导致change buffer丢失呢？change buffer丢失可不是小事儿，再从磁盘读入数据可就没有了merge过程，就等于是数据丢失了。会不会出现这种情况呢？</p><p>你可以把你的思考和观点写在留言区里，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><p><strong>补充：</strong><br>
+评论区大家对“是否使用唯一索引”有比较多的讨论，主要是纠结在“业务可能无法确保”的情况。这里，我再说明一下：</p><ul>
+<li>首先，业务正确性优先。咱们这篇文章的前提是“业务代码已经保证不会写入重复数据”的情况下，讨论性能问题。如果业务不能保证，或者业务就是要求数据库来做约束，那么没得选，必须创建唯一索引。这种情况下，本篇文章的意义在于，如果碰上了大量插入数据慢、内存命中率低的时候，可以给你多提供一个排查思路。</li>
+<li>然后，在一些“归档库”的场景，你是可以考虑使用唯一索引的。比如，线上数据只需要保留半年，然后历史数据保存在归档库。这时候，归档数据已经是确保没有唯一键冲突了。要提高归档效率，可以考虑把表里面的唯一索引改成普通索引。</li>
+</ul><h1>上期问题时间</h1><p>上期的问题是：如何构造一个“数据无法修改”的场景。评论区里已经有不少同学给出了正确答案，这里我再描述一下。</p><p><img src="https://static001.geekbang.org/resource/image/be/ae/be7a4d8af04cdf93aaa11108933559ae.png" alt=""><br>
+这样，session A看到的就是我截图的效果了。</p><p>其实，还有另外一种场景，同学们在留言区都还没有提到。</p><p><img src="https://static001.geekbang.org/resource/image/e2/fa/e24a0689571337959138d787c408defa.png" alt=""></p><p>这个操作序列跑出来，session  A看的内容也是能够复现我截图的效果的。这个session B’启动的事务比A要早，其实是上期我们描述事务版本的可见性规则时留的彩蛋，因为规则里还有一个“活跃事务的判断”，我是准备留到这里再补充的。</p><p>当我试图在这里讲述完整规则的时候，发现第8篇文章<a href="https://time.geekbang.org/column/article/70562">《事务到底是隔离的还是不隔离的？》</a>中的解释引入了太多的概念，以致于分析起来非常复杂。</p><p>因此，我重写了第8篇，这样我们人工去判断可见性的时候，才会更方便。【看到这里，我建议你能够再重新打开第8篇文章并认真学习一次。如果学习的过程中，有任何问题，也欢迎你给我留言】</p><p>用新的方式来分析session B’的更新为什么对session A不可见就是：在session A视图数组创建的瞬间，session B’是活跃的，属于“版本未提交，不可见”这种情况。</p><p>业务中如果要绕过这类问题，@约书亚提供了一个“乐观锁”的解法，大家可以去上一篇的留言区看一下。</p><p>评论区留言点赞板：</p><blockquote>
+<p>@某、人、@夏日雨、@周巘、@李金刚 等同学提了一个很好的问题，就是我们今天答案的session B’ 的情况；<br>
+@justin 提到了提交和未提交版本的区别对待，@倪大人 提到了读提交和当前读的区别，都是经过了思考后提出的好问题，大家可以去留言区看看。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">先回答今天的问题,今天的答案应该在文章里就能找到<br>1.change buffer有一部分在内存有一部分在ibdata.<br>做purge操作,应该就会把change buffer里相应的数据持久化到ibdata<br>2.redo log里记录了数据页的修改以及change buffer新写入的信息<br>如果掉电,持久化的change buffer数据已经purge,不用恢复。主要分析没有持久化的数据<br>情况又分为以下几种:<br>(1)change buffer写入,redo log虽然做了fsync但未commit,binlog未fsync到磁盘,这部分数据丢失<br>(2)change buffer写入,redo log写入但没有commit,binlog以及fsync到磁盘,先从binlog恢复redo log,再从redo log恢复change buffer<br>(3)change buffer写入,redo log和binlog都已经fsync.那么直接从redo log里恢复。<br><br>老师,我有几个问题想请教下:<br>1.如果是针对非唯一索引和唯一索引的更新和delete而且条件是where 索引值=这种情况,<br>是否二级索引和唯一索引就没有区别呢<br>2.rr模式下,非唯一索引还会加gap,开销应该也不算小吧<br>3.还有老师你是怎么判断内存命中率的,是hit rate嘛？<br>4.ob好像就是这个思路来做的聚簇索引的insert优化,不知道是怎么判断的唯一性<br><br>特别感谢老师,以前的知识都是很碎片化,没有深入的去思考。<br>经过几期的学习以后,感觉思路越来越开阔,以前觉得很高深的知识点,现在也有点豁然开朗的感觉。 <br></div>
+                            <span class="time">2018-12-03 21:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">分析很赞，把02篇和这篇文章贯通了.<br><br>问题<br>1. 这时候要“先读后写”，读的时候数据会读入内存，更新的时候直接改内存，就不需要change buffer了<br><br>2. Gap锁取决于业务怎么用哈。我感觉主要是因为gap锁概念比较难说清，大家有点放大它的意思了哈哈<br><br>3. Hit rate <br><br>4. 我不够熟悉，不能乱回答误导你😄</p>
+                                <p class="reply-time">2018-12-03 22:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/4a/22/2681d602.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">林晓斌</span>
+                            </div>
+                            <div class="bd">抱歉做一个名词勘误，把change buffer应用到旧的数据页，得到新的数据页的过程，应该称为merge更合适。 <br></div>
+                            <span class="time">2018-12-04 10:29</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/AwEHMTGSmVsia3WZDyIicBQPAfS11lBZ0yUappicPzfmGDmMwkje1UoqKK3UJ6FCBdsZyiauuV1SEfcrFzWfx9n1RQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虚爱凯平</span>
+                            </div>
+                            <div class="bd">感觉今天这篇问题很严重啊, 首先说一下我是第一次接触 change buffer这个概念, 可能产生了什么误会..<br>我理解的文中讲述change buffer的作用体现在 针对普通索引(非主键的都是二级索引, 二级索引又包括了唯一索引和普通索引)在有数据update操作(不包括insert)的时候,能有减少io写操作的功能, 而且这个操作是提现在更新表数据上的. 为什么我在这里会理解成update操作呢.. (InnoDB中表就是按索引的方式存放的, 即使我们不主动创建主键 也会生成一个默认的row_id来当做主键, 意味着表一定是有一个主键, 即唯一索引. insert操作 一定会涉及主键索引的变动, 所以change buffer针对 insert 是完全没有用的吗??) <br><br>针对change buffer 我百度了一下, 有文章描述 change buffer 是针对表中包含普通索引的表在insert操作时, 优化 普通索引的更新(在insert时,不会立即更新普通索引 而是保存到change buffer延迟处理). 这么一个功能. 不知道 这个理解是否正确呢? <br></div>
+                            <span class="time">2018-12-03 13:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">第一段的理解不准确哈。<br>insert的时候，写主键是肯定不能用change buffer了，但是同时也会要写其它索引，而其它索引中的“非唯一索引”是可以用的这个机制的；<br><br>第二段，你搜出来的这个不太完整。是这样的，change buffer的前身是insert buffer,只能对insert 操作优化；后来升级了，增加了update&#47;delete的支持，名字也改叫change buffer.<br><br><br><br></p>
+                                <p class="reply-time">2018-12-03 14:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/e9/0b/53bf91d3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WL</span>
+                            </div>
+                            <div class="bd">想请教一下老师系统表空间跟数据表空间这两个概念各是什么意思. <br></div>
+                            <span class="time">2018-12-09 10:52</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">系统表空间就是用来放系统信息的，比如数据字典什么的，对应的磁盘文件是ibdata1, <br>数据表空间就是一个个的表数据文件，对应的磁盘文件就是 表名.ibd</p>
+                                <p class="reply-time">2018-12-09 19:17</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/f8/ba/14e05601.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">约书亚</span>
+                            </div>
+                            <div class="bd">早，请您看看我以下疑问：<br>1. 看完后感觉牵扯到之前的内容，又糊涂了。change buffer相当于推迟了更新操作，那对并发控制相关的是否有影响，比如加锁？我一直以为加锁需要把具体的数据页读到内存中来，才能加锁，然而并不是？<br>2. 在change buffer中有此行记录的情况下，再次更改，是增加一条还是原地修改？<br>3. purge行为之后应该不会再产生redo log了吧？<br><br>从应用开发的角度看，还是由数据库保证唯一好。 <br></div>
+                            <span class="time">2018-12-03 10:15</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1 3 好问题<br><br>1. 锁是一个单独的数据结构，如果数据页上有锁，change buffer 在判断“是否能用”的时候，就会认为否<br><br>2. 增加<br><br>3. 是这样的，这个问题你分成两步来考虑。<br>第一步，merge其实是从磁盘读数据页到内存，然后应用，这一步都是更新的内存，同时写redolog<br><br>现在内存变成脏页了，跟磁盘数据不一样。之后就走刷脏页的流程。刷脏页也不用写。<br><br><br>=====<br><br>是否使用唯一索引，这个要看业务有没有保证，和性能是否有问题。<br><br>有几位同学都提了，我加到文末说明一下。</p>
+                                <p class="reply-time">2018-12-05 02:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d3/6e/281b85aa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">永光</span>
+                            </div>
+                            <div class="bd">会导致change buffer丢失，会导致本次未完成的操作数据丢失，但不会导致已完成操作的数据丢失。<br>1.change buffer中分两部分，一部分是本次写入未写完的，一部分是已经写入完成的。<br>2.针对未写完的，此部分操作，还未写入redo log，因此事务还未提交，所以没影响。<br>2.针对，已经写完成的，可以通过redo log来进行恢复。<br><br>所以，不会对数据库造成影响。 <br></div>
+                            <span class="time">2018-12-03 07:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">优秀</p>
+                                <p class="reply-time">2018-12-03 09:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/AwEHMTGSmVsia3WZDyIicBQPAfS11lBZ0yUappicPzfmGDmMwkje1UoqKK3UJ6FCBdsZyiauuV1SEfcrFzWfx9n1RQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">虚爱凯平</span>
+                            </div>
+                            <div class="bd">有点疑惑: 主键id也是唯一索引吧? 那我们的新增操作如何利用 change buffer呢?  <br></div>
+                            <span class="time">2018-12-03 03:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">所以主键索引用不上，都是对于那些二级索引的才有效。 <br><br>一个insert语句要操作所有索引的嘛，收益在二级索引</p>
+                                <p class="reply-time">2018-12-03 09:17</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e9/8e/6dc15a91.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">晨思暮语</span>
+                            </div>
+                            <div class="bd">丁老师，有一个问题不是很明白！最后小结之前，而change buffer 主要节省的则是随机读磁盘的IO消耗。这句话怎么理解，因为看前面的讲解，change buffer对性能的主要提升，是在一个写多读少的系统中，使用普通索引的情况下，合并多次写为一次来更新磁盘！ <br></div>
+                            <span class="time">2018-12-04 13:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/df/6d/44cf0de4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ivan</span>
+                            </div>
+                            <div class="bd">回答一下melon的问题。<br>change Buffer和数据页一样，也是物理页的一个组成部分，数据结构也是一颗B+树，这棵B+树放在共享表空间中，默认ibdata1中。change buffer  写入系统表空间机制应该和普通表的脏页刷新到磁盘是相同的机制--Checkpoint机制；<br>之所以change buffer要写入系统表空间，是为了保证数据的一致性，change buffer做修改时需要写redo，在做恢复时需要根据redo来恢复change buffer，若是不进行change buffer写入系统表空间，也就是不进行持久化，那么在change buffer写入内存后掉电（也就是篇尾提出的问题），则无法进行数据恢复。这样也会导致索引中的数据和相应表的相应列中的数据不一致。<br>change buffer 写入到了系统表空间，purge 的时候会先查询change buffer里对应的记录，然后进行purge，因为change buffer B+树的key是表空间ID，所以查询根据表空间ID 查询change buffer会很快。 <br></div>
+                            <span class="time">2018-12-03 20:01</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿</p>
+                                <p class="reply-time">2018-12-03 22:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/df/6d/44cf0de4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ivan</span>
+                            </div>
+                            <div class="bd">不会导致change buffer丢失。因为在更改change buffer 时也会写redo log，也需要持久化。<br>change buffer 更新完成并且相应事务提交的情况下，首先要保证redo log落盘（二阶段提交），若此时掉电重启，则可以根据 redo 进行恢复;<br>若change buffer 更新完成但是相应事务未提交的情况下，则redo 有可能落盘了（redo 的组提交），也有可能未落盘，若落盘了，读取redo发现没有commit标志（还会进行lsn，binlog的对比），则回滚；若redo未落盘则也就不会出现前滚和回滚的情况，数据依旧一致。 <br></div>
+                            <span class="time">2018-12-03 17:18</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿<br><br>拆开了分析很好</p>
+                                <p class="reply-time">2018-12-03 18:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/ab/e1/f6b921fa.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">壹笙☞漂泊</span>
+                            </div>
+                            <div class="bd">前两次学了之后没时间总结。。今天继续<br>总结:<br>选择普通索引还是唯一索引？<br>对于查询过程来说：<br>a、普通索引，查到满足条件的第一个记录后，继续查找下一个记录，知道第一个不满足条件的记录<br>b、唯一索引，由于索引唯一性，查到第一个满足条件的记录后，停止检索<br>但是，两者的性能差距微乎其微。因为InnoDB根据数据页来读写的。<br>对于更新过程来说：<br>概念：change buffer<br>当需要更新一个数据页，如果数据页在内存中就直接更新，如果不在内存中，在不影响数据一致性的前提下，InnoDB会将这些更新操作缓存在change buffer中。下次查询需要访问这个数据页的时候，将数据页读入内存，然后执行change buffer中的与这个页有关的操作。<br><br>change buffer是可以持久化的数据。在内存中有拷贝，也会被写入到磁盘上<br><br>purge:将change buffer中的操作应用到原数据页上，得到最新结果的过程，成为purge<br>访问这个数据页会触发purge，系统有后台线程定期purge，在数据库正常关闭的过程中，也会执行purge<br><br>唯一索引的更新不能使用change buffer<br><br>change buffer用的是buffer pool里的内存，change buffer的大小，可以通过参数innodb_change_buffer_max_size来动态设置。这个参数设置为50的时候，表示change buffer的大小最多只能占用buffer pool的50%。<br><br>将数据从磁盘读入内存涉及随机IO的访问，是数据库里面成本最高的操作之一。 <br>change buffer 因为减少了随机磁盘访问，所以对更新性能的提升很明显。<br><br>change buffer使用场景<br>在一个数据页做purge之前，change buffer记录的变更越多，收益就越大。<br>对于写多读少的业务来说，页面在写完以后马上被访问到的概率比较小，此时change buffer的使用效果最好。这种业务模型常见的就是账单类、日志类的系统。<br><br>反过来，假设一个业务的更新模式是写入之后马上会做查询，那么即使满足了条件，将更新先记录在change buffer,但之后由于马上要访问这个数据页，会立即触发purge过程。<br>这样随机访问IO的次数不会减少，反而增加了change buffer的维护代价。所以，对于这种业务模式来说，change buffer反而起到了副作用。<br><br>索引的选择和实践：<br>尽可能使用普通索引。<br>redo log主要节省的是随机写磁盘的IO消耗(转成顺序写)，而change buffer主要节省的则是随机读磁盘的IO消耗。<br><br>思考题：<br>change buffer不会丢失，因为change buffer是可以持久化的数据，在磁盘上占据了系统表空间ibdata，对应的内部系统表名为SYS_IBUF_TABLE。因此在异常关机的时候，不会丢失。 <br></div>
+                            <span class="time">2018-12-03 09:46</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">赞👍🏿<br><br>不会丢失还有redolog的功劳哈</p>
+                                <p class="reply-time">2018-12-03 11:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/1f/c3/1ef2bccf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">包子木有馅</span>
+                            </div>
+                            <div class="bd">老师你好，我说下我的理解，不知道有没有问题<br>1、changebuffer跟普通数据页一样也是存在磁盘里，区别在于changebuffer是在共享表空间ibdata1里<br>2、redolog有两种，一种记录普通数据页的改动，一种记录changebuffer的改动<br>3、只要内存里脏页（innodb buffer pool）里的数据发生了变化，就一定会记录2中前一种redolog<br>（对数据的修改记录在changebuffer里的时候，内存里是没有这个物理页的，不存在脏页）<br>3、真正对磁盘数据页的修改是通过将内存里脏页的数据刷回磁盘来完成的，而不是根据redolog <br></div>
+                            <span class="time">2018-12-06 10:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">非常好，尤其括号里那句和最后一句</p>
+                                <p class="reply-time">2018-12-06 12:43</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/f1/bd/049a06b0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ziven</span>
+                            </div>
+                            <div class="bd">和 @晨思暮语 有同样的疑问。关于change buffer 主要节省的则是随机读磁盘的 IO消耗这个点，我的理解是如果没有change buffer机制，那么在执行更新后（写入redolog），读取数据的时候需要从次磁盘随机读取redolog合并到数据中，主要减少的是这部分消耗？ <br></div>
+                            <span class="time">2018-12-20 20:03</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不是，如果没有change buffer, 执行更新的“当时那一刻”，就要求从磁盘把数据页读出来（这个操作是随机读）。<br><br>Chsnge buffer省了这个。<br>好问题</p>
+                                <p class="reply-time">2018-12-20 22:18</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/13/72/434a40f1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">静以储势·Shuke</span>
+                            </div>
+                            <div class="bd">要理解change buffer还得先理解buffer pool是啥，顾名思义，硬盘在读写速度上相比内存有着数量级差距，如果每次读写都要从磁盘加载相应数据页，DB的效率就上不来，因而为了化解这个困局，几乎所有的DB都会把缓存池当做标配（在内存中开辟的一整块空间，由引擎利用一些命中算法和淘汰算法负责维护和管理），change buffer则更进一步，把在内存中更新就能可以立即返回执行结果并且满足一致性约束（显式或隐式定义的约束条件）的记录也暂时放在缓存池中，这样大大减少了磁盘IO操作的几率 <br></div>
+                            <span class="time">2018-12-05 08:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿</p>
+                                <p class="reply-time">2018-12-05 12:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/13/32/4cfd28df.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">高原</span>
+                            </div>
+                            <div class="bd">ChangeBuffer就是对《日志系统：一条 SQL 更新语句是如何执行的？》中 update 语句执行流程进一步优化。更新步骤：先更新内存，再通过redo log更新磁盘。<br>而Change Buffer的引入使得更新内存都是按需更新，只有在需要读的时候才更新。 如果这样理解对的话，就有一个问题，如果在purge之前，redo log执行了磁盘写，那change buffer里的操作是不是就有冲突怎么让失效呢？<br>2018-12-03<br> 作者回复<br>前面说的对，最后一句话问题没理解… 你再发重发一下问题😓<br>---------------------------------------------------------<br>问题：现在一个执行流程是，操作写入change buffer, 写入redo log commit. 但这个时候应该没有purge,也没有通过redo log写入磁盘。 Purge 是在有的查询操作的时候发生（不考虑系统自动purge），那过段时间应该会通过redo log更新到磁盘。<br>我的问题就是通过redo log更新到磁盘的时候，如果还没有发生purge操作，那如果再次读触发Purge从磁盘读（磁盘已经是redo log更新后的数据了), 所以这个地方是通过什么机制确保没有冲突的？ 谢谢，老师讲的很好，不知道我说明白没有？<br>2018-12-03<br> 作者回复<br>我大概理解你的意思了。<br><br>如果没有purge,磁盘上的page 2不会变的，redolog没帮他做更新。<br><br>只有purge 才会触发更新数据，得到新的page 2<br>-----------------------------------------------------<br>这个地方就不是特别理解，redo log不就是用来搜集操作，适时更新到磁盘吗，而🈶了change buffer后，redo log更新磁盘的机制就不生效了吗？ 不知道是哪个地方理解错了？ <br></div>
+                            <span class="time">2018-12-03 22:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对于page 2, redolog并不知道他要怎么更新，redolog里面记录的是change buffer上的更新，而change buffer上记录的是数据页的更新动作</p>
+                                <p class="reply-time">2018-12-04 09:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/18/07/c0a73a52.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">憶海拾貝</span>
+                            </div>
+                            <div class="bd">唯一字段不加唯一索引, 墨菲定律会出来搞事.  -- 记一次踩坑经验.. <br></div>
+                            <span class="time">2018-12-03 10:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯这里其实要说等是“业务要保证”<br>当要性能问题的时候，多一个check的点</p>
+                                <p class="reply-time">2018-12-03 11:01</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/bc/0d/00424e81.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">到道可道</span>
+                            </div>
+                            <div class="bd">有了 redo log，InnoDB 就可以保证即使数据库发生异常重启，之前提交的记录都不会丢失，这个能力称为crash-safe。<br>对于在change buffer中的数据，但已提交的部分，已经写了redo log，此时断电重启是没有影响的，但对于未写redo log的，即事务还未提交的，会正常丢失这部分数据。 <br></div>
+                            <span class="time">2018-12-03 08:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1d/13/31ea1b0b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">峰</span>
+                            </div>
+                            <div class="bd">偶回复下凯平的问题，主键id是主索引，在插入的时候，是根据它来寻找插入位置的，所以已经考虑了它的唯一性。<br>然后思考题的话，毕竟与 redo写入changebuffer的变化的操作组成了事务，所以不会发生丢失。 <br></div>
+                            <span class="time">2018-12-03 08:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/cb/50/66d0bd7f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">杰之7</span>
+                            </div>
+                            <div class="bd">基础篇学习完之后，进入实战的第一篇文章。普通索引和唯一索引，对于查询来说，使用这两种索引性能角度上是差不多的，因为InnoDB按数据页为单元进行读写。对于更新语句来说，对来内存中的数据直接在内存更新，对于不在内存中的数据，对于唯一索引，还是需要进行读内存，但对于普通索引就可以通过使用change buffer来减少对磁盘的访问。根据这一原理，老师在文章通过一个读入命中率由99%变成75%，原因就是因为普通所以索引改成了唯一索引。所以通过本节的学习，理解普通索引和Change buffer 配合使用的原理，对于数据量大的表更新优化效率很明显。通过这些章节的学习，在理解数据库的核心原理之后，现在我回过后继续实践数据库sql语句的的操作，肯定比之前更大的进步和自信。 <br></div>
+                            <span class="time">2018-12-10 21:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">手动点赞</p>
+                                <p class="reply-time">2018-12-10 22:10</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/07/8c/51401220.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小美</span>
+                            </div>
+                            <div class="bd">老师，正文里面说：需要说明的是，虽然名字叫作 change buffer，实际上它是可以持久化的数据。也就是说，change buffer 在内存中有拷贝，也会被写入到磁盘上。<br>我的问题是：change buffer多久写入一次磁盘？如果change buffer磁盘中的内容会完全在内存中吗？如果不是的话，那merge岂不是要读两次磁盘？ <br></div>
+                            <span class="time">2018-12-08 16:25</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 这个是“flush”策略，今晚会发的新的一篇就会说到<br><br>2. 不一定一样<br><br>3. 如果内存里有，内存里一定是对的</p>
+                                <p class="reply-time">2018-12-09 13:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                23讲MySQL是怎么保证数据不丢的
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/ea/86/eadffbfed6b55a60bd42347a579c4e86.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="23讲MySQL是怎么保证数据不丢的.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="23讲MySQL是怎么保证数据不丢的.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>今天这篇文章，我会继续和你介绍在业务高峰期临时提升性能的方法。从文章标题“MySQL是怎么保证数据不丢的？”，你就可以看出来，今天我和你介绍的方法，跟数据的可靠性有关。</p><p>在专栏前面文章和答疑篇中，我都着重介绍了WAL机制（你可以再回顾下<a href="https://time.geekbang.org/column/article/68633">第2篇</a>、<a href="https://time.geekbang.org/column/article/70848">第9篇</a>、<a href="https://time.geekbang.org/column/article/71806">第12篇</a>和<a href="https://time.geekbang.org/column/article/73161">第15篇</a>文章中的相关内容），得到的结论是：只要redo log和binlog保证持久化到磁盘，就能确保MySQL异常重启后，数据可以恢复。</p><p>评论区有同学又继续追问，redo log的写入流程是怎么样的，如何保证redo log真实地写入了磁盘。那么今天，我们就再一起看看MySQL写入binlog和redo log的流程。</p><h1>binlog的写入机制</h1><p>其实，binlog的写入逻辑比较简单：事务执行过程中，先把日志写到binlog cache，事务提交的时候，再把binlog cache写到binlog文件中。</p><p>一个事务的binlog是不能被拆开的，因此不论这个事务多大，也要确保一次性写入。这就涉及到了binlog cache的保存问题。</p><p>系统给binlog cache分配了一片内存，每个线程一个，参数 binlog_cache_size用于控制单个线程内binlog cache所占内存的大小。如果超过了这个参数规定的大小，就要暂存到磁盘。</p><!-- [[[read_end]]] --><p>事务提交的时候，执行器把binlog cache里的完整事务写入到binlog中，并清空binlog cache。状态如图1所示。</p><p><img src="https://static001.geekbang.org/resource/image/9e/3e/9ed86644d5f39efb0efec595abb92e3e.png" alt=""></p><center><span class="reference">图1 binlog写盘状态</span></center><p>可以看到，每个线程有自己binlog cache，但是共用同一份binlog文件。</p><ul>
+<li>图中的write，指的就是指把日志写入到文件系统的page cache，并没有把数据持久化到磁盘，所以速度比较快。</li>
+<li>图中的fsync，才是将数据持久化到磁盘的操作。一般情况下，我们认为fsync才占磁盘的IOPS。</li>
+</ul><p>write 和fsync的时机，是由参数sync_binlog控制的：</p><ol>
+<li>
+<p>sync_binlog=0的时候，表示每次提交事务都只write，不fsync；</p>
+</li>
+<li>
+<p>sync_binlog=1的时候，表示每次提交事务都会执行fsync；</p>
+</li>
+<li>
+<p>sync_binlog=N(N&gt;1)的时候，表示每次提交事务都write，但累积N个事务后才fsync。</p>
+</li>
+</ol><p>因此，在出现IO瓶颈的场景里，将sync_binlog设置成一个比较大的值，可以提升性能。在实际的业务场景中，考虑到丢失日志量的可控性，一般不建议将这个参数设成0，比较常见的是将其设置为100~1000中的某个数值。</p><p>但是，将sync_binlog设置为N，对应的风险是：如果主机发生异常重启，会丢失最近N个事务的binlog日志。</p><h1>redo log的写入机制</h1><p>接下来，我们再说说redo log的写入机制。</p><p>在专栏的<a href="https://time.geekbang.org/column/article/73161">第15篇答疑文章</a>中，我给你介绍了redo log buffer。事务在执行过程中，生成的redo log是要先写到redo log buffer的。</p><p>然后就有同学问了，redo log buffer里面的内容，是不是每次生成后都要直接持久化到磁盘呢？</p><p>答案是，不需要。</p><p>如果事务执行期间MySQL发生异常重启，那这部分日志就丢了。由于事务并没有提交，所以这时日志丢了也不会有损失。</p><p>那么，另外一个问题是，事务还没提交的时候，redo log buffer中的部分日志有没有可能被持久化到磁盘呢？</p><p>答案是，确实会有。</p><p>这个问题，要从redo log可能存在的三种状态说起。这三种状态，对应的就是图2 中的三个颜色块。</p><p><img src="https://static001.geekbang.org/resource/image/9d/d4/9d057f61d3962407f413deebc80526d4.png" alt=""></p><center><span class="reference">图2 MySQL redo log存储状态</span></center><p>这三种状态分别是：</p><ol>
+<li>
+<p>存在redo log buffer中，物理上是在MySQL进程内存中，就是图中的红色部分；</p>
+</li>
+<li>
+<p>写到磁盘(write)，但是没有持久化（fsync)，物理上是在文件系统的page cache里面，也就是图中的黄色部分；</p>
+</li>
+<li>
+<p>持久化到磁盘，对应的是hard disk，也就是图中的绿色部分。</p>
+</li>
+</ol><p>日志写到redo log buffer是很快的，wirte到page cache也差不多，但是持久化到磁盘的速度就慢多了。</p><p>为了控制redo log的写入策略，InnoDB提供了innodb_flush_log_at_trx_commit参数，它有三种可能取值：</p><ol>
+<li>
+<p>设置为0的时候，表示每次事务提交时都只是把redo log留在redo log buffer中;</p>
+</li>
+<li>
+<p>设置为1的时候，表示每次事务提交时都将redo log直接持久化到磁盘；</p>
+</li>
+<li>
+<p>设置为2的时候，表示每次事务提交时都只是把redo log写到page cache。</p>
+</li>
+</ol><p>InnoDB有一个后台线程，每隔1秒，就会把redo log buffer中的日志，调用write写到文件系统的page cache，然后调用fsync持久化到磁盘。</p><p>注意，事务执行中间过程的redo log也是直接写在redo log buffer中的，这些redo log也会被后台线程一起持久化到磁盘。也就是说，一个没有提交的事务的redo log，也是可能已经持久化到磁盘的。</p><p>实际上，除了后台线程每秒一次的轮询操作外，还有两种场景会让一个没有提交的事务的redo log写入到磁盘中。</p><ol>
+<li>
+<p><strong>一种是，redo log buffer占用的空间即将达到 innodb_log_buffer_size一半的时候，后台线程会主动写盘。</strong>注意，由于这个事务并没有提交，所以这个写盘动作只是write，而没有调用fsync，也就是只留在了文件系统的page cache。</p>
+</li>
+<li>
+<p><strong>另一种是，并行的事务提交的时候，顺带将这个事务的redo log buffer持久化到磁盘。</strong>假设一个事务A执行到一半，已经写了一些redo log到buffer中，这时候有另外一个线程的事务B提交，如果innodb_flush_log_at_trx_commit设置的是1，那么按照这个参数的逻辑，事务B要把redo log buffer里的日志全部持久化到磁盘。这时候，就会带上事务A在redo log buffer里的日志一起持久化到磁盘。</p>
+</li>
+</ol><p>这里需要说明的是，我们介绍两阶段提交的时候说过，时序上redo log先prepare， 再写binlog，最后再把redo log commit。</p><p>如果把innodb_flush_log_at_trx_commit设置成1，那么redo log在prepare阶段就要持久化一次，因为有一个崩溃恢复逻辑是要依赖于prepare 的redo log，再加上binlog来恢复的。（如果你印象有点儿模糊了，可以再回顾下<a href="https://time.geekbang.org/column/article/73161">第15篇文章</a>中的相关内容）。</p><p>每秒一次后台轮询刷盘，再加上崩溃恢复这个逻辑，InnoDB就认为redo log在commit的时候就不需要fsync了，只会write到文件系统的page cache中就够了。</p><p>通常我们说MySQL的“双1”配置，指的就是sync_binlog和innodb_flush_log_at_trx_commit都设置成 1。也就是说，一个事务完整提交前，需要等待两次刷盘，一次是redo log（prepare 阶段），一次是binlog。</p><p>这时候，你可能有一个疑问，这意味着我从MySQL看到的TPS是每秒两万的话，每秒就会写四万次磁盘。但是，我用工具测试出来，磁盘能力也就两万左右，怎么能实现两万的TPS？</p><p>解释这个问题，就要用到组提交（group commit）机制了。</p><p>这里，我需要先和你介绍日志逻辑序列号（log sequence number，LSN）的概念。LSN是单调递增的，用来对应redo log的一个个写入点。每次写入长度为length的redo log， LSN的值就会加上length。</p><p>LSN也会写到InnoDB的数据页中，来确保数据页不会被多次执行重复的redo log。关于LSN和redo log、checkpoint的关系，我会在后面的文章中详细展开。</p><p>如图3所示，是三个并发事务(trx1, trx2, trx3)在prepare 阶段，都写完redo log buffer，持久化到磁盘的过程，对应的LSN分别是50、120 和160。</p><p><img src="https://static001.geekbang.org/resource/image/93/cc/933fdc052c6339de2aa3bf3f65b188cc.png" alt=""></p><center><span class="reference">图3 redo log 组提交</span></center><p>从图中可以看到，</p><ol>
+<li>
+<p>trx1是第一个到达的，会被选为这组的 leader；</p>
+</li>
+<li>
+<p>等trx1要开始写盘的时候，这个组里面已经有了三个事务，这时候LSN也变成了160；</p>
+</li>
+<li>
+<p>trx1去写盘的时候，带的就是LSN=160，因此等trx1返回时，所有LSN小于等于160的redo log，都已经被持久化到磁盘；</p>
+</li>
+<li>
+<p>这时候trx2和trx3就可以直接返回了。</p>
+</li>
+</ol><p>所以，一次组提交里面，组员越多，节约磁盘IOPS的效果越好。但如果只有单线程压测，那就只能老老实实地一个事务对应一次持久化操作了。</p><p>在并发更新场景下，第一个事务写完redo log buffer以后，接下来这个fsync越晚调用，组员可能越多，节约IOPS的效果就越好。</p><p>为了让一次fsync带的组员更多，MySQL有一个很有趣的优化：拖时间。在介绍两阶段提交的时候，我曾经给你画了一个图，现在我把它截过来。</p><p><img src="https://static001.geekbang.org/resource/image/98/51/98b3b4ff7b36d6d72e38029b86870551.png" alt=""></p><center><span class="reference">图4 两阶段提交</span></center><p>图中，我把“写binlog”当成一个动作。但实际上，写binlog是分成两步的：</p><ol>
+<li>
+<p>先把binlog从binlog cache中写到磁盘上的binlog文件；</p>
+</li>
+<li>
+<p>调用fsync持久化。</p>
+</li>
+</ol><p>MySQL为了让组提交的效果更好，把redo log做fsync的时间拖到了步骤1之后。也就是说，上面的图变成了这样：</p><p><img src="https://static001.geekbang.org/resource/image/5a/28/5ae7d074c34bc5bd55c82781de670c28.png" alt=""></p><center><span class="reference">图5 两阶段提交细化</span></center><p>这么一来，binlog也可以组提交了。在执行图5中第4步把binlog fsync到磁盘时，如果有多个事务的binlog已经写完了，也是一起持久化的，这样也可以减少IOPS的消耗。</p><p>不过通常情况下第3步执行得会很快，所以binlog的write和fsync间的间隔时间短，导致能集合到一起持久化的binlog比较少，因此binlog的组提交的效果通常不如redo log的效果那么好。</p><p>如果你想提升binlog组提交的效果，可以通过设置 binlog_group_commit_sync_delay 和 binlog_group_commit_sync_no_delay_count来实现。</p><ol>
+<li>
+<p>binlog_group_commit_sync_delay参数，表示延迟多少微秒后才调用fsync;</p>
+</li>
+<li>
+<p>binlog_group_commit_sync_no_delay_count参数，表示累积多少次以后才调用fsync。</p>
+</li>
+</ol><p>这两个条件是或的关系，也就是说只要有一个满足条件就会调用fsync。</p><p>所以，当binlog_group_commit_sync_delay设置为0的时候，binlog_group_commit_sync_no_delay_count也无效了。</p><p>之前有同学在评论区问到，WAL机制是减少磁盘写，可是每次提交事务都要写redo log和binlog，这磁盘读写次数也没变少呀？</p><p>现在你就能理解了，WAL机制主要得益于两个方面：</p><ol>
+<li>
+<p>redo log 和 binlog都是顺序写，磁盘的顺序写比随机写速度要快；</p>
+</li>
+<li>
+<p>组提交机制，可以大幅度降低磁盘的IOPS消耗。</p>
+</li>
+</ol><p>分析到这里，我们再来回答这个问题：<strong>如果你的MySQL现在出现了性能瓶颈，而且瓶颈在IO上，可以通过哪些方法来提升性能呢？</strong></p><p>针对这个问题，可以考虑以下三种方法：</p><ol>
+<li>
+<p>设置 binlog_group_commit_sync_delay 和 binlog_group_commit_sync_no_delay_count参数，减少binlog的写盘次数。这个方法是基于“额外的故意等待”来实现的，因此可能会增加语句的响应时间，但没有丢失数据的风险。</p>
+</li>
+<li>
+<p>将sync_binlog 设置为大于1的值（比较常见是100~1000）。这样做的风险是，主机掉电时会丢binlog日志。</p>
+</li>
+<li>
+<p>将innodb_flush_log_at_trx_commit设置为2。这样做的风险是，主机掉电的时候会丢数据。</p>
+</li>
+</ol><p>我不建议你把innodb_flush_log_at_trx_commit 设置成0。因为把这个参数设置成0，表示redo log只保存在内存中，这样的话MySQL本身异常重启也会丢数据，风险太大。而redo log写到文件系统的page cache的速度也是很快的，所以将这个参数设置成2跟设置成0其实性能差不多，但这样做MySQL异常重启时就不会丢数据了，相比之下风险会更小。</p><h1>小结</h1><p>在专栏的<a href="https://time.geekbang.org/column/article/68633">第2篇</a>和<a href="https://time.geekbang.org/column/article/73161">第15篇</a>文章中，我和你分析了，如果redo log和binlog是完整的，MySQL是如何保证crash-safe的。今天这篇文章，我着重和你介绍的是MySQL是“怎么保证redo log和binlog是完整的”。</p><p>希望这三篇文章串起来的内容，能够让你对crash-safe这个概念有更清晰的理解。</p><p>之前的第15篇答疑文章发布之后，有同学继续留言问到了一些跟日志相关的问题，这里为了方便你回顾、学习，我再集中回答一次这些问题。</p><p><strong>问题1：</strong>执行一个update语句以后，我再去执行hexdump命令直接查看ibd文件内容，为什么没有看到数据有改变呢？</p><p>回答：这可能是因为WAL机制的原因。update语句执行完成后，InnoDB只保证写完了redo log、内存，可能还没来得及将数据写到磁盘。</p><p><strong>问题2：</strong>为什么binlog cache是每个线程自己维护的，而redo log buffer是全局共用的？</p><p>回答：MySQL这么设计的主要原因是，binlog是不能“被打断的”。一个事务的binlog必须连续写，因此要整个事务完成后，再一起写到文件里。</p><p>而redo log并没有这个要求，中间有生成的日志可以写到redo log buffer中。redo log buffer中的内容还能“搭便车”，其他事务提交的时候可以被一起写到磁盘中。</p><p><strong>问题3：</strong>事务执行期间，还没到提交阶段，如果发生crash的话，redo log肯定丢了，这会不会导致主备不一致呢？</p><p>回答：不会。因为这时候binlog 也还在binlog cache里，没发给备库。crash以后redo log和binlog都没有了，从业务角度看这个事务也没有提交，所以数据是一致的。</p><p><strong>问题4：</strong>如果binlog写完盘以后发生crash，这时候还没给客户端答复就重启了。等客户端再重连进来，发现事务已经提交成功了，这是不是bug？</p><p>回答：不是。</p><p>你可以设想一下更极端的情况，整个事务都提交成功了，redo log commit完成了，备库也收到binlog并执行了。但是主库和客户端网络断开了，导致事务成功的包返回不回去，这时候客户端也会收到“网络断开”的异常。这种也只能算是事务成功的，不能认为是bug。</p><p>实际上数据库的crash-safe保证的是：</p><ol>
+<li>
+<p>如果客户端收到事务成功的消息，事务就一定持久化了；</p>
+</li>
+<li>
+<p>如果客户端收到事务失败（比如主键冲突、回滚等）的消息，事务就一定失败了；</p>
+</li>
+<li>
+<p>如果客户端收到“执行异常”的消息，应用需要重连后通过查询当前状态来继续后续的逻辑。此时数据库只需要保证内部（数据和日志之间，主库和备库之间）一致就可以了。</p>
+</li>
+</ol><p>最后，又到了课后问题时间。</p><p>今天我留给你的思考题是：你的生产库设置的是“双1”吗？ 如果平时是的话，你有在什么场景下改成过“非双1”吗？你的这个操作又是基于什么决定的？</p><p>另外，我们都知道这些设置可能有损，如果发生了异常，你的止损方案是什么？</p><p>你可以把你的理解或者经验写在留言区，我会在下一篇文章的末尾选取有趣的评论和你一起分享和分析。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>我在上篇文章最后，想要你分享的是线上“救火”的经验。</p><p>@Long 同学，在留言中提到了几个很好的场景。</p><ul>
+<li>
+<p>其中第3个问题，“如果一个数据库是被客户端的压力打满导致无法响应的，重启数据库是没用的。”，说明他很好地思考了。<br>
+这个问题是因为重启之后，业务请求还会再发。而且由于是重启，buffer pool被清空，可能会导致语句执行得更慢。</p>
+</li>
+<li>
+<p>他提到的第4个问题也很典型。有时候一个表上会出现多个单字段索引（而且往往这是因为运维工程师对索引原理不够清晰做的设计），这样就可能出现优化器选择索引合并算法的现象。但实际上，索引合并算法的效率并不好。而通过将其中的一个索引改成联合索引的方法，是一个很好的应对方案。</p>
+</li>
+</ul><p>还有其他几个同学提到的问题场景，也很好，很值得你一看。</p><blockquote>
+<p>@Max 同学提到一个很好的例子：客户端程序的连接器，连接完成后会做一些诸如show columns的操作，在短连接模式下这个影响就非常大了。<br>
+这个提醒我们，在review项目的时候，不止要review我们自己业务的代码，也要review连接器的行为。一般做法就是在测试环境，把general_log打开，用业务行为触发连接，然后通过general log分析连接器的行为。</p>
+</blockquote><blockquote>
+<p>@Manjusaka 同学的留言中，第二点提得非常好：如果你的数据库请求模式直接对应于客户请求，这往往是一个危险的设计。因为客户行为不可控，可能突然因为你们公司的一个运营推广，压力暴增，这样很容易把数据库打挂。<br>
+在设计模型里面设计一层，专门负责管理请求和数据库服务资源，对于比较重要和大流量的业务，是一个好的设计方向。</p>
+</blockquote><blockquote>
+<p>@Vincent 同学提了一个好问题，用文中提到的DDL方案，会导致binlog里面少了这个DDL语句，后续影响备份恢复的功能。由于需要另一个知识点（主备同步协议），我放在后面的文章中说明。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/30/28/6e019a7a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">锅子</span>
+                            </div>
+                            <div class="bd">老师好，有一个疑问：当设置sync_binlog=0时，每次commit都只时write到page cache，并不会fsync。但是做实验时binlog文件中还是会有记录，这是什么原因呢？是不是后台线程每秒一次的轮询也会将binlog cache持久化到磁盘？还是有其他的参数控制呢？ <br></div>
+                            <span class="time">2019-01-04 11:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你看到的“binlog的记录”，也是从page cache读的哦。<br>Page cache是操作系统文件系统上的😄<br><br>好问题</p>
+                                <p class="reply-time">2019-01-04 11:41</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/00/f0/08409e78.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一大只😴</span>
+                            </div>
+                            <div class="bd">你是怎么验证的？等于0的时候虽然有走这个逻辑，但是最后调用fsync之前判断是0，就啥也没做就走了<br>回复老师:<br>       老师，我说的sync_binlog=0或=1效果一样，就是看语句实际执行的效果，参数binlog_group_commit_sync_delay我设置成了500000微秒，在=1或=0时，对表进行Insert，然后都会有0.5秒的等待，也就是执行时间都是0.51 sec，关闭binlog_group_commit_sync_delay，insert执行会飞快，所以我认为=1或=0都是受组提交参数的影响的。 <br></div>
+                            <span class="time">2019-01-05 17:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿<br>非常好<br><br>然后再补上我回答的这个逻辑，就完备了<br><br></p>
+                                <p class="reply-time">2019-01-05 18:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/34/5c/6b4757a0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">倪大人</span>
+                            </div>
+                            <div class="bd">老师求解sync_binlog和binlog_group_commit_sync_no_delay_count这两个参数区别<br><br>如果<br>       sync_binlog = N<br>       binlog_group_commit_sync_no_delay_count = M<br>       binlog_group_commit_sync_delay = 很大值<br>这种情况fsync什么时候发生呀，min(N,M)吗？<br>感觉sync_binlog搭配binlog_group_commit_sync_delay也可以实现组提交？<br><br>如果<br>        sync_binlog = 0<br>         binlog_group_commit_sync_no_delay_count = 10<br>这种情况下是累计10个事务fsync一次？ <br></div>
+                            <span class="time">2019-01-04 11:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">好问题，我写这篇文章的时候也为了这个问题去翻了代码，是这样的：<br>达到N次以后，可以刷盘了，然后再进入(sync_delay和no_delay_count)这个逻辑；<br><br>Sync_delay如果很大，就达到no_delay_count才刷；<br><br>只要sync_binlog=0,也会有前面的等待逻辑，但是等完后还是不调fsync😄</p>
+                                <p class="reply-time">2019-01-06 16:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJA7cBw5Kr6VCpOGILF50XWRGjubkKzrnia34W9Dv07Ma0JfT02ZlZqzINKhMScLaP8MxwQlVRpTXA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WilliamX</span>
+                            </div>
+                            <div class="bd">为什么 binlog cache 是每个线程自己维护的，而 redo log buffer 是全局共用的？<br>这个问题，感觉还有一点，binlog存储是以statement或者row格式存储的，而redo log是以page页格式存储的。page格式，天生就是共有的，而row格式，只跟当前事务相关 <br></div>
+                            <span class="time">2019-01-04 10:50</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，这个解释也很好。👍🏿</p>
+                                <p class="reply-time">2019-01-04 11:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/20/08/bc06bc69.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">永恒记忆</span>
+                            </div>
+                            <div class="bd">主从模式下，内网从库如果设置双1，刚还原的数据发现根本追不上主库，所以从库设置了0，老师后面章节会讲关于mysql包括主从监控这块的内容吗。 <br></div>
+                            <span class="time">2019-01-04 09:31</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">会讲到</p>
+                                <p class="reply-time">2019-01-04 10:26</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/da/ec/779c1a78.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">往事随风，顺其自然</span>
+                            </div>
+                            <div class="bd">redolog 里面有已经提交事物日志，还有未提交事物日志都持久化到磁盘，此时异常重启，binlog 里面不是多余记录的未提交事物，干嘛不设计不添加未提交事物不更好 <br></div>
+                            <span class="time">2019-01-04 09:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLkhgYnYZBdhdwKnXQibey04cy9N9ria3DadH7iagoKukaWK1FJwjfCoh0He4p7b2icSYVzHH71l8ZXiaQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">猪哥哥</span>
+                            </div>
+                            <div class="bd">老师好, 能说下innodb_log_buffer_size参数的作用吗 <br></div>
+                            <span class="time">2019-01-10 17:14</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/db/80/6b7629d7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">roaming</span>
+                            </div>
+                            <div class="bd">看了几遍，终于看明白了 <br></div>
+                            <span class="time">2019-01-10 17:03</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍</p>
+                                <p class="reply-time">2019-01-10 23:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLkhgYnYZBdhdwKnXQibey04cy9N9ria3DadH7iagoKukaWK1FJwjfCoh0He4p7b2icSYVzHH71l8ZXiaQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">猪哥哥</span>
+                            </div>
+                            <div class="bd">老师 我想问下文件系统的page cache还是不是内存, 是不是文件系统向内核申请的一块的内存? <br></div>
+                            <span class="time">2019-01-10 16:20</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你理解的是对的</p>
+                                <p class="reply-time">2019-01-10 23:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e0/3c/ae0f6f57.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">xiaoyou</span>
+                            </div>
+                            <div class="bd">老师，请教一个问题，文章说innodb的 redo log 在commit的时候不进行fsync，只会write 到page cache中。当sync_binlog&gt;1,如果redo log 完成了prepare持久化落盘，binlog只是write page cache，此时commit标识完成write 但没有落盘，而client收到commit成功，这个时候主机掉电，启动的时候做崩溃恢复，没有commit标识和binglog，事务会回滚。我看文章说sync_binlog设置为大于1的值，会丢binlog日志,此时数据也会丢失吧？ <br></div>
+                            <span class="time">2019-01-09 17:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你说的对，分析得很好</p>
+                                <p class="reply-time">2019-01-09 22:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/16/77/73bd9d18.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">匿名的朋友</span>
+                            </div>
+                            <div class="bd">丁奇老师你好，对于undo和redo日志，有个疑问，mysql服务层调用引擎层去获取数据，比方说是innodb引擎，innodb引擎是不是可以获取到这个实例里边所有以innodb作为引擎的表，<br>  还有就是事务处理时会涉及到undo和redo日志文件，是不是所有以innodb为引擎的数据表共用undo和redo日志文件呢？ <br></div>
+                            <span class="time">2019-01-09 12:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 不用去找“所有innodb表”，用到再打开<br><br>2. 大家共用的<br></p>
+                                <p class="reply-time">2019-01-09 14:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/bd/be/53350286.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_527020</span>
+                            </div>
+                            <div class="bd">事务还未结束，binlog和redo log就写到磁盘中了，如果出现了事务回滚，写到磁盘的数据要删除吗，如果不删除，MYSQL奔溃重启，岂不是多了操作，请老师解答下疑惑 <br></div>
+                            <span class="time">2019-01-08 17:21</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">没事，这些操作没提交，崩溃恢复的时候就回滚了</p>
+                                <p class="reply-time">2019-01-08 20:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/36/542c96bf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mr.Strive.Z.H.L</span>
+                            </div>
+                            <div class="bd">老师你好：<br>这一节的疑惑比较多，嘻嘻<br>还想在确认一个问题：<br>我认为redolog的组提交 是从write开始的组提交。个人认为write到pagecache的时候是不需要加锁的。<br>而binlog的组提交，在write阶段，都是单线程对自己的binlog cache write到pagecache。这个时候必须加锁。虽然sync阶段，两者都是批量进行的。但是从write阶段来看，binlog并没有实现真正意义上实现组提交，没法解决上锁问题。（在网上看到，binlog真正的组提交，分为三个阶段，每个阶段一个队列，这种实现好像是比较新的mysql版本才使用的）<br><br>我这么理解对吗？ <br></div>
+                            <span class="time">2019-01-08 12:16</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">写binlog可以并发写的，大家约好磁盘自己写自己的就行^_^</p>
+                                <p class="reply-time">2019-01-10 19:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/36/542c96bf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mr.Strive.Z.H.L</span>
+                            </div>
+                            <div class="bd">老师你好，看了@倪大人的问题，个人认为：<br>sync_binlog和binlog_group_commit_sync_no_delay_count的最大区别主要在于，数据的丢失与否吧？<br><br>sync_binlog = N：每个事务write后就响应客户端了。刷盘是N次事务后刷盘。N次事务之间宕机，数据丢失。<br><br>binlog_group_commit_sync_no_delay_count=N： 必须等到N个后才能提交。换言之，会增加响应客户端的时间。但是一旦响应了，那么数据就一定持久化了。宕机的话，数据是不会丢失的。<br><br>不知道我这么理解对不对？<br> <br></div>
+                            <span class="time">2019-01-08 12:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你的理解很到位</p>
+                                <p class="reply-time">2019-01-10 19:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/b8/36/542c96bf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Mr.Strive.Z.H.L</span>
+                            </div>
+                            <div class="bd">老师好，关于组提交还是有几个疑惑：<br>我理解的，组提交分为binlog和redolog。<br>binlog如果没有组提交的话，是不是涉及到 写binlog的顺序与写redolog的顺序不一致的问题？这个顺序问题需要加锁来解决，事务之间串行执行prepare到commit的过程。<br>而binlog有了组提交，内部实际上通过队列的机制，既保证了组提交减少IOPS消耗，同时队列的机制保证了binlog和redolog写入的顺序性。<br><br>上述这么理解正确吗？<br><br>还有一个问题就是图5两阶段提交细化的过程：<br>binlog的write 到 sync之间插入了 redolog的 sync。图上的顺序表示binlog的sync必须等到redolog的sync执行后才能执行？ redolog在引擎内部，binlog在server端，这个串行是如何保证的？？（因为我认为server与innodb只会交互两次呀，第一次是prepare请求，第二次是最后的commit请求，binlog怎么做到等待redolog sync完后再sync？） <br></div>
+                            <span class="time">2019-01-08 10:25</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 默认行为是opt_binlog_order_commits=ON，是保证顺序的；<br><br>2. 就是一个线程按顺序一个阶段一个阶段地调用下来，这么保证顺序的</p>
+                                <p class="reply-time">2019-01-10 19:03</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0bvalmQic0PAVeoA8GEfoefV4xfmWY4UErdhxxxxNicibOK12icb7iaS07J3WoJGY1oMAKKDvT4w31nQ7buLdeoP8w/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">月缺</span>
+                            </div>
+                            <div class="bd">事务还没提交的时候，redo log buffer 中的部分日志有可能被持久化到磁盘，这块是8.0重构redolog后的无锁化才有的新特性嘛，看源码之前是有个prepare commit mutex锁的 <br></div>
+                            <span class="time">2019-01-08 09:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不是，这个应该是最早的策略之一了</p>
+                                <p class="reply-time">2019-01-08 11:16</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLE4LYb3jrH63ZV98Zpc8DompwDgb1O3nffMoZCmiaibauRyEFv6NDNsST9RWxZExvMLMWb50zaanoQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">慧鑫coming</span>
+                            </div>
+                            <div class="bd">老师，请问binlog_group_commit_sync_no_delay_count和sync_binlog参数有什么区别，前者设置为10后者设置为5，那是几次write page_cache才写盘一次？ <br></div>
+                            <span class="time">2019-01-07 09:26</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这样就是每10次fsync一下(sync_no_delay_count &gt;sync_binlog)</p>
+                                <p class="reply-time">2019-01-07 10:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/a6/60/ebda8d95.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">52rock</span>
+                            </div>
+                            <div class="bd">老师好，windows系统下MySQL偶尔有坏库的情况，恢复数据比较麻烦，有什么配置可以优化<br>1.某个表提示打不开，也无法重建表<br>2.mysql无法启动 1067<br>3.binlog日志文件无法写入，删了log文件后正常。<br><br>my.ini配置如下<br>[mysqld]<br># use 5.6.20<br>[mysqld]<br>bind-address = 0.0.0.0<br>character-set-server=utf8<br>log-bin=my.bin<br>binlog_format=statement<br>server-id=1<br><br>#不需要同步的库<br>binlog-ignore-db=information_schema<br>binlog-ignore-db=performance_schema<br>binlog-ignore-db=mysql<br><br>max_connect_errors = 3000<br>wait_timeout=2880000<br>interactive_timeout=2880000<br><br>query_cache_size = 0<br>query_cache_type = 0<br><br>sql-mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION<br><br>max_allowed_packet =256MB<br>read_buffer_size = 8M<br>read_rnd_buffer_size = 16M<br>lower_case_table_names = 1<br>key_buffer_size = 15M<br><br>table_open_cache = 400<br>table_definition_cache = 400<br>table_open_cache_instances = 64<br>metadata_locks_hash_instances=64<br><br>sort_buffer_size = 16M<br>join_buffer_size = 16M<br>thread_cache_size = 768<br>query_cache_size = 0<br>query_cache_type = 0<br>tmp_table_size = 96M<br>performance_schema=OFF<br>open_files_limit = 65535<br>back_log = 1024<br><br>innodb_buffer_pool_size=800MB<br># 4MB-8MB ok<br>innodb_file_per_table = 1                                               <br>external-locking = FALSE<br>#skip-external-locking<br>expire_logs_days=45<br>max_binlog_size=200M<br>skip-name-resolve=OFF<br>transaction-isolation=repeatable-read<br>log_warnings=0 <br></div>
+                            <span class="time">2019-01-06 21:54</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">删除了什么log后正常的？<br></p>
+                                <p class="reply-time">2019-01-07 02:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e3/2e/77ad18f4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">滔滔</span>
+                            </div>
+                            <div class="bd">老师，想请教一个问题，想从一个有自增主键(id)的表中取出主键值最大的n条记录，怎样操作效率最高呢？使用order by id limit n是最快的方式吗？🤔 <br></div>
+                            <span class="time">2019-01-06 21:39</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，这样很快的</p>
+                                <p class="reply-time">2019-01-07 02:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">有调到非双1的时候,在大促时非核心库和从库延迟较多的情况。<br>设置的是sync_binlog=0和innodb_flush_log_at_trx_commit=2<br>针对0和2,在mysql crash时不会出现异常,在主机挂了时，会有几种风险:<br>1.如果事务的binlog和redo log都还未fsync,则该事务数据丢失<br>2.如果事务binlog fsync成功,redo log未fsync,则该事务数据丢失。<br>虽然binlog落盘成功,但是binlog没有恢复redo log的能力,所以redo log不能恢复.<br>不过后续可以解析binlog来恢复这部分数据<br>3.如果事务binlog fsync未成功,redo log成功。<br>由于redo log恢复数据是在引擎层,所以重新启动数据库,redo log能恢复数据,但是不能恢复server层的binlog,则binlog丢失。<br>如果该事务还未从FS page cache里发送给从库,那么主从就会出现不一致的情况<br>4.如果binlog和redo log都成功fsync,那么皆大欢喜。<br><br>老师我有几个问题:<br>1.因为binlog不能被打断,那么binlog做fsync是单线程吧?<br>如果是的话,那么binlog的write到fsync的时间,就应该是redo log fsync+上一个事务的binlog fsync时间。<br>但是测试到的现象,一个超大事务做fsync时,对其它事务的提交影响也不大。<br>如果是多线程做fsync,怎么保证的一个事务binlog在磁盘上的连续性？<br>2.  5.7的并行复制是基于binlog组成员并行的,为什么很多文章说是表级别的并行复制？ <br></div>
+                            <span class="time">2019-01-06 20:09</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. Write的时候只要写进去了，fsync其实很快的。连续性是write的时候做的（写的时候保证了连续）<br><br>2. 你的理解应该是对的。不是表级</p>
+                                <p class="reply-time">2019-01-06 21:27</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

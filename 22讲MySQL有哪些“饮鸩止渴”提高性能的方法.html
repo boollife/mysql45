@@ -1,0 +1,510 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                22讲MySQL有哪些“饮鸩止渴”提高性能的方法
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/78/6f/78c6369b041dbce14645fa428780306f.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="22讲MySQL有哪些“饮鸩止渴”提高性能的方法.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="22讲MySQL有哪些“饮鸩止渴”提高性能的方法.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>不知道你在实际运维过程中有没有碰到这样的情景：业务高峰期，生产环境的MySQL压力太大，没法正常响应，需要短期内、临时性地提升一些性能。</p><p>我以前做业务护航的时候，就偶尔会碰上这种场景。用户的开发负责人说，不管你用什么方案，让业务先跑起来再说。</p><p>但，如果是无损方案的话，肯定不需要等到这个时候才上场。今天我们就来聊聊这些临时方案，并着重说一说它们可能存在的风险。</p><h1>短连接风暴</h1><p>正常的短连接模式就是连接到数据库后，执行很少的SQL语句就断开，下次需要的时候再重连。如果使用的是短连接，在业务高峰期的时候，就可能出现连接数突然暴涨的情况。</p><p>我在第1篇文章<a href="https://time.geekbang.org/column/article/68319">《基础架构：一条SQL查询语句是如何执行的？》</a>中说过，MySQL建立连接的过程，成本是很高的。除了正常的网络连接三次握手外，还需要做登录权限判断和获得这个连接的数据读写权限。</p><p>在数据库压力比较小的时候，这些额外的成本并不明显。</p><p>但是，短连接模型存在一个风险，就是一旦数据库处理得慢一些，连接数就会暴涨。max_connections参数，用来控制一个MySQL实例同时存在的连接数的上限，超过这个值，系统就会拒绝接下来的连接请求，并报错提示“Too many connections”。对于被拒绝连接的请求来说，从业务角度看就是数据库不可用。</p><!-- [[[read_end]]] --><p>在机器负载比较高的时候，处理现有请求的时间变长，每个连接保持的时间也更长。这时，再有新建连接的话，就可能会超过max_connections的限制。</p><p>碰到这种情况时，一个比较自然的想法，就是调高max_connections的值。但这样做是有风险的。因为设计max_connections这个参数的目的是想保护MySQL，如果我们把它改得太大，让更多的连接都可以进来，那么系统的负载可能会进一步加大，大量的资源耗费在权限验证等逻辑上，结果可能是适得其反，已经连接的线程拿不到CPU资源去执行业务的SQL请求。</p><p>那么这种情况下，你还有没有别的建议呢？我这里还有两种方法，但要注意，这些方法都是有损的。</p><p><strong>第一种方法：先处理掉那些占着连接但是不工作的线程。</strong></p><p>max_connections的计算，不是看谁在running，是只要连着就占用一个计数位置。对于那些不需要保持的连接，我们可以通过kill connection主动踢掉。这个行为跟事先设置wait_timeout的效果是一样的。设置wait_timeout参数表示的是，一个线程空闲wait_timeout这么多秒之后，就会被MySQL直接断开连接。</p><p>但是需要注意，在show processlist的结果里，踢掉显示为sleep的线程，可能是有损的。我们来看下面这个例子。</p><p><img src="https://static001.geekbang.org/resource/image/90/2a/9091ff280592c8c68665771b1516c62a.png" alt=""></p><center><span class="reference">图1 sleep线程的两种状态</span></center><p>在上面这个例子里，如果断开session A的连接，因为这时候session A还没有提交，所以MySQL只能按照回滚事务来处理；而断开session B的连接，就没什么大影响。所以，如果按照优先级来说，你应该优先断开像session B这样的事务外空闲的连接。</p><p>但是，怎么判断哪些是事务外空闲的呢？session C在T时刻之后的30秒执行show processlist，看到的结果是这样的。</p><p><img src="https://static001.geekbang.org/resource/image/ae/25/ae6a9ceecf8517e47f9ebfc565f0f925.png" alt=""></p><center><span class="reference">图2 sleep线程的两种状态，show processlist结果</span></center><p>图中id=4和id=5的两个会话都是Sleep 状态。而要看事务具体状态的话，你可以查information_schema库的innodb_trx表。</p><p><img src="https://static001.geekbang.org/resource/image/ca/e8/ca4b455c8eacbf32b98d1fe9ed9876e8.png" alt=""></p><center><span class="reference">图3 从information_schema.innodb_trx查询事务状态</span></center><p>这个结果里，trx_mysql_thread_id=4，表示id=4的线程还处在事务中。</p><p>因此，如果是连接数过多，你可以优先断开事务外空闲太久的连接；如果这样还不够，再考虑断开事务内空闲太久的连接。</p><p>从服务端断开连接使用的是kill connection + id的命令， 一个客户端处于sleep状态时，它的连接被服务端主动断开后，这个客户端并不会马上知道。直到客户端在发起下一个请求的时候，才会收到这样的报错“ERROR 2013 (HY000): Lost connection to MySQL server during query”。</p><p>从数据库端主动断开连接可能是有损的，尤其是有的应用端收到这个错误后，不重新连接，而是直接用这个已经不能用的句柄重试查询。这会导致从应用端看上去，“MySQL一直没恢复”。</p><p>你可能觉得这是一个冷笑话，但实际上我碰到过不下10次。</p><p>所以，如果你是一个支持业务的DBA，不要假设所有的应用代码都会被正确地处理。即使只是一个断开连接的操作，也要确保通知到业务开发团队。</p><p><strong>第二种方法：减少连接过程的消耗。</strong></p><p>有的业务代码会在短时间内先大量申请数据库连接做备用，如果现在数据库确认是被连接行为打挂了，那么一种可能的做法，是让数据库跳过权限验证阶段。</p><p>跳过权限验证的方法是：重启数据库，并使用–skip-grant-tables参数启动。这样，整个MySQL会跳过所有的权限验证阶段，包括连接过程和语句执行过程在内。</p><p>但是，这种方法特别符合我们标题里说的“饮鸩止渴”，风险极高，是我特别不建议使用的方案。尤其你的库外网可访问的话，就更不能这么做了。</p><p>在MySQL 8.0版本里，如果你启用–skip-grant-tables参数，MySQL会默认把 --skip-networking参数打开，表示这时候数据库只能被本地的客户端连接。可见，MySQL官方对skip-grant-tables这个参数的安全问题也很重视。</p><p>除了短连接数暴增可能会带来性能问题外，实际上，我们在线上碰到更多的是查询或者更新语句导致的性能问题。其中，查询问题比较典型的有两类，一类是由新出现的慢查询导致的，一类是由QPS（每秒查询数）突增导致的。而关于更新语句导致的性能问题，我会在下一篇文章和你展开说明。</p><h1>慢查询性能问题</h1><p>在MySQL中，会引发性能问题的慢查询，大体有以下三种可能：</p><ol>
+<li>
+<p>索引没有设计好；</p>
+</li>
+<li>
+<p>SQL语句没写好；</p>
+</li>
+<li>
+<p>MySQL选错了索引。</p>
+</li>
+</ol><p>接下来，我们就具体分析一下这三种可能，以及对应的解决方案。</p><p><strong>导致慢查询的第一种可能是，索引没有设计好。</strong></p><p>这种场景一般就是通过紧急创建索引来解决。MySQL 5.6版本以后，创建索引都支持Online DDL了，对于那种高峰期数据库已经被这个语句打挂了的情况，最高效的做法就是直接执行alter table 语句。</p><p>比较理想的是能够在备库先执行。假设你现在的服务是一主一备，主库A、备库B，这个方案的大致流程是这样的：</p><ol>
+<li>
+<p>在备库B上执行 set sql_log_bin=off，也就是不写binlog，然后执行alter table 语句加上索引；</p>
+</li>
+<li>
+<p>执行主备切换；</p>
+</li>
+<li>
+<p>这时候主库是B，备库是A。在A上执行 set sql_log_bin=off，然后执行alter table 语句加上索引。</p>
+</li>
+</ol><p>这是一个“古老”的DDL方案。平时在做变更的时候，你应该考虑类似gh-ost这样的方案，更加稳妥。但是在需要紧急处理时，上面这个方案的效率是最高的。</p><p><strong>导致慢查询的第二种可能是，语句没写好。</strong></p><p>比如，我们犯了在第18篇文章<a href="https://time.geekbang.org/column/article/74059">《为什么这些SQL语句逻辑相同，性能却差异巨大？》</a>中提到的那些错误，导致语句没有使用上索引。</p><p>这时，我们可以通过改写SQL语句来处理。MySQL 5.7提供了query_rewrite功能，可以把输入的一种语句改写成另外一种模式。</p><p>比如，语句被错误地写成了 select * from t where id + 1 = 10000，你可以通过下面的方式，增加一个语句改写规则。</p><pre><code>mysql&gt; insert into query_rewrite.rewrite_rules(pattern, replacement, pattern_database) values (&quot;select * from t where id + 1 = ?&quot;, &quot;select * from t where id = ? - 1&quot;, &quot;db1&quot;);
+
+call query_rewrite.flush_rewrite_rules();
+</code></pre><p>这里，call query_rewrite.flush_rewrite_rules()这个存储过程，是让插入的新规则生效，也就是我们说的“查询重写”。你可以用图4中的方法来确认改写规则是否生效。</p><p><img src="https://static001.geekbang.org/resource/image/47/8a/47a1002cbc4c05c74841591d20f7388a.png" alt=""></p><center><span class="reference">图4 查询重写效果</span></center><p><strong>导致慢查询的第三种可能，就是碰上了我们在第10篇文章</strong><a href="https://time.geekbang.org/column/article/71173"><strong>《MySQL为什么有时候会选错索引？》</strong></a><strong>中提到的情况，MySQL选错了索引。</strong></p><p>这时候，应急方案就是给这个语句加上force index。</p><p>同样地，使用查询重写功能，给原来的语句加上force index，也可以解决这个问题。</p><p>上面我和你讨论的由慢查询导致性能问题的三种可能情况，实际上出现最多的是前两种，即：索引没设计好和语句没写好。而这两种情况，恰恰是完全可以避免的。比如，通过下面这个过程，我们就可以预先发现问题。</p><ol>
+<li>
+<p>上线前，在测试环境，把慢查询日志（slow log）打开，并且把long_query_time设置成0，确保每个语句都会被记录入慢查询日志；</p>
+</li>
+<li>
+<p>在测试表里插入模拟线上的数据，做一遍回归测试；</p>
+</li>
+<li>
+<p>观察慢查询日志里每类语句的输出，特别留意Rows_examined字段是否与预期一致。（我们在前面文章中已经多次用到过Rows_examined方法了，相信你已经动手尝试过了。如果还有不明白的，欢迎给我留言，我们一起讨论）。</p>
+</li>
+</ol><p>不要吝啬这段花在上线前的“额外”时间，因为这会帮你省下很多故障复盘的时间。</p><p>如果新增的SQL语句不多，手动跑一下就可以。而如果是新项目的话，或者是修改了原有项目的 表结构设计，全量回归测试都是必要的。这时候，你需要工具帮你检查所有的SQL语句的返回结果。比如，你可以使用开源工具pt-query-digest(<a href="https://www.percona.com/doc/percona-toolkit/3.0/pt-query-digest.html">https://www.percona.com/doc/percona-toolkit/3.0/pt-query-digest.html</a>)。</p><h1>QPS突增问题</h1><p>有时候由于业务突然出现高峰，或者应用程序bug，导致某个语句的QPS突然暴涨，也可能导致MySQL压力过大，影响服务。</p><p>我之前碰到过一类情况，是由一个新功能的bug导致的。当然，最理想的情况是让业务把这个功能下掉，服务自然就会恢复。</p><p>而下掉一个功能，如果从数据库端处理的话，对应于不同的背景，有不同的方法可用。我这里再和你展开说明一下。</p><ol>
+<li>
+<p>一种是由全新业务的bug导致的。假设你的DB运维是比较规范的，也就是说白名单是一个个加的。这种情况下，如果你能够确定业务方会下掉这个功能，只是时间上没那么快，那么就可以从数据库端直接把白名单去掉。</p>
+</li>
+<li>
+<p>如果这个新功能使用的是单独的数据库用户，可以用管理员账号把这个用户删掉，然后断开现有连接。这样，这个新功能的连接不成功，由它引发的QPS就会变成0。</p>
+</li>
+<li>
+<p>如果这个新增的功能跟主体功能是部署在一起的，那么我们只能通过处理语句来限制。这时，我们可以使用上面提到的查询重写功能，把压力最大的SQL语句直接重写成"select 1"返回。</p>
+</li>
+</ol><p>当然，这个操作的风险很高，需要你特别细致。它可能存在两个副作用：</p><ol>
+<li>
+<p>如果别的功能里面也用到了这个SQL语句模板，会有误伤；</p>
+</li>
+<li>
+<p>很多业务并不是靠这一个语句就能完成逻辑的，所以如果单独把这一个语句以select 1的结果返回的话，可能会导致后面的业务逻辑一起失败。</p>
+</li>
+</ol><p>所以，方案3是用于止血的，跟前面提到的去掉权限验证一样，应该是你所有选项里优先级最低的一个方案。</p><p>同时你会发现，其实方案1和2都要依赖于规范的运维体系：虚拟化、白名单机制、业务账号分离。由此可见，更多的准备，往往意味着更稳定的系统。</p><h1>小结</h1><p>今天这篇文章，我以业务高峰期的性能问题为背景，和你介绍了一些紧急处理的手段。</p><p>这些处理手段中，既包括了粗暴地拒绝连接和断开连接，也有通过重写语句来绕过一些坑的方法；既有临时的高危方案，也有未雨绸缪的、相对安全的预案。</p><p>在实际开发中，我们也要尽量避免一些低效的方法，比如避免大量地使用短连接。同时，如果你做业务开发的话，要知道，连接异常断开是常有的事，你的代码里要有正确地重连并重试的机制。</p><p>DBA虽然可以通过语句重写来暂时处理问题，但是这本身是一个风险高的操作，做好SQL审计可以减少需要这类操作的机会。</p><p>其实，你可以看得出来，在这篇文章中我提到的解决方法主要集中在server层。在下一篇文章中，我会继续和你讨论一些跟InnoDB有关的处理方法。</p><p>最后，又到了我们的思考题时间了。</p><p>今天，我留给你的课后问题是，你是否碰到过，在业务高峰期需要临时救火的场景？你又是怎么处理的呢？</p><p>你可以把你的经历和经验写在留言区，我会在下一篇文章的末尾选取有趣的评论跟大家一起分享和分析。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>前两期我给你留的问题是，下面这个图的执行序列中，为什么session B的insert语句会被堵住。</p><p><img src="https://static001.geekbang.org/resource/image/3a/1e/3a7578e104612a188a2d574eaa3bd81e.png" alt=""><br>
+我们用上一篇的加锁规则来分析一下，看看session A的select语句加了哪些锁：</p><ol>
+<li>
+<p>由于是order by c desc，第一个要定位的是索引c上“最右边的”c=20的行，所以会加上间隙锁(20,25)和next-key lock (15,20]。</p>
+</li>
+<li>
+<p>在索引c上向左遍历，要扫描到c=10才停下来，所以next-key lock会加到(5,10]，这正是阻塞session B的insert语句的原因。</p>
+</li>
+<li>
+<p>在扫描过程中，c=20、c=15、c=10这三行都存在值，由于是select *，所以会在主键id上加三个行锁。</p>
+</li>
+</ol><p>因此，session A 的select语句锁的范围就是：</p><ol>
+<li>
+<p>索引c上 (5, 25)；</p>
+</li>
+<li>
+<p>主键索引上id=10、15、20三个行锁。</p>
+</li>
+</ol><p>这里，我再啰嗦下，你会发现我在文章中，每次加锁都会说明是加在“哪个索引上”的。因为，锁就是加在索引上的，这是InnoDB的一个基础设定，需要你在分析问题的时候要一直记得。</p><p>评论区留言点赞板：</p><blockquote>
+<p>@HuaMax 给出了正确的解释。</p>
+</blockquote><blockquote>
+<p>@Justin 同学提了个好问题，&lt;=到底是间隙锁还是行锁？其实，这个问题，你要跟“执行过程”配合起来分析。在InnoDB要去找“第一个值”的时候，是按照等值去找的，用的是等值判断的规则；找到第一个值以后，要在索引内找“下一个值”，对应于我们规则中说的范围查找。</p>
+</blockquote><blockquote>
+<p>@信信 提了一个不错的问题，要知道最终的加锁是根据实际执行情况来的。所以，如果一个select * from ... for update 语句，优化器决定使用全表扫描，那么就会把主键索引上next-key lock全加上。</p>
+</blockquote><blockquote>
+<p>@nero 同学的问题，提示我需要提醒大家注意，“有行”才会加行锁。如果查询条件没有命中行，那就加next-key lock。当然，等值判断的时候，需要加上优化2（即：索引上的等值查询，向右遍历时且最后一个值不满足等值条件的时候，next-key lock退化为间隙锁。）。</p>
+</blockquote><blockquote>
+<p>@小李子、@发条橙子同学，都提了很好的问题，这期高质量评论很多，你也都可以去看看。</p>
+</blockquote><p>最后，我要为元旦期间还坚持学习的同学们，点个赞 ^_^</p><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">最近才发生了个案列:<br>由于一个delete大事务导致磁盘空间满了,数据库hang住,连接不上,所以无法kill掉该大事务<br>当时的观察到的现象是:<br>binlog有一个文件已经达到50多G<br>lsof | grep delete 该tmp文件100多G<br>redo log还是只有4个组,每个文件1G<br>undo log大概有100来G<br>由于数据库连不上,只有把连接切到从库,kill掉主库的进程。过了几分钟,binlog文件才缩小为原来的大小。把主库启起来,但是recovery非常慢。后面kill掉,又以innodb_force_recovery=3恢复,recovery也是半天没反应。由于这个库也不是重要的库,就把新的主库的备份文件重做了之前的主库,以从库启起来<br><br>通过最近的学习+测试分析了下,为什么binlog达到了50多G。tmp文件100多G.<br>由于binlog_cache不够用,把binlog写进了tmp文件中,binlog文件50多G,说明事务已经执行完成,是binlog在fsync阶段,把空间占满了。fsync并不是一个move而是相当于copy。要等binlog完全落盘以后,才会删除之前的tmp文件。redo log由于是循环写,而且在事务执行过程中,就会把redo log分为mtx落地到磁盘上。所以没有一次性暴增,还是以1G的大小持续写.<br>我也是后续做测试,观察在事务进行中,redo log文件一直都有变化。binlog没有变化<br>binlog是在事务执行完以后,才一次性fsync到磁盘<br>但是为什么recovery=3的情况下,还比较耗时。我估计是之前脏页较多,而redo log又全部被覆盖掉,<br>需要先通过binlog来恢复redo log,然后再通过redo log来恢复数据页。<br><br>请问老师有没有更好的办法来处理这种hang住的情况?<br>如果在操作系统层面kill掉执行的线程,就好了。<br>昨天提到的问题3,我也没有测试出来Sending to client这个状态.是之前别人问到的,我也挺懵 <br></div>
+                            <span class="time">2019-01-03 19:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">先说明下，binlog是没有“恢复redolog”的能力的哈。其它部分分析得很好👍🏿<br><br>Binlog 这么大，说明是大事务，崩溃恢复的时候要处理的redolog 很多，估计耗时间耗在这。<br><br>这种磁盘空间满的情况，以前我的处理方法是把最老的binlog移动到别的盘（如果确定日志已经备份到备份系统了就删掉），目的是腾出空间让这个事务执行完成。<br>后面可以考虑这种方案，强制重启还是有点伤的，不过核心还是做好监控，不让出现磁盘100%写满的情况</p>
+                                <p class="reply-time">2019-01-03 22:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/20/3a/90db6a24.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Long</span>
+                            </div>
+                            <div class="bd">不是专业DBA，遇到过几次数据库问题，有的能解决，有的好像除了重启或者干等着没啥好办法。<br>MySQL5.6版本遇到的部分问题：<br><br>1. 几个线程处于killed状态一直kill不掉（1天），然后备份的时候MySQL backup flush all tables with read lock的时候被阻塞，后面的线程只能等待flush table, kill backup以后也没有办法kill那几个killed状态的语句（processlist显示的killed状态的语句的就是show columns, show create table这样的），后面没办法，重启了server。（看到老师后面第25讲有关于kill的解释，非常期待新知识）<br><br>2. 一个非常大（大几百万行）的表truncate，结果后面所有的线程都阻塞了，类似于下面这个MySQL bug的场景，结果就是等这个truncate结束。没有继续干预。<br>https:&#47;&#47;bugs.mysql.com&#47;bug.php?id=80060<br><br>3.  某个新功能上线以后，一个记录操作人员操作页面操作时间KPI的功能，由于sql性能不好，在业务上线跑了3天后数据量增多到临界值，突然影响了整个系统性能。数据库发现是大量的sql执行状态是converting heap to MyISAM，sql写法类似 select (select * from table) where id(有索引)= xxxx order by yyyy<br>DBA以及他们团队要求重启。但是分析了几分钟后提供了几个意见给&quot;DBA&quot;，并解释重启解决不了问题：首先这个问题重启是解决不了，因为每次这个sql查询全表，查询分配的临时表空间不足了，需要把结果集转到磁盘上，重启了sql动作没变，参数没变所以重启解决不了问题。<br>页面查询也没法屏蔽，页面查询也无法过滤条件，<br>（1）和研发确认后，表数据删除不影响功能，只影响客户的KPI报表，先备份表，然后删除，后面等功能修复了再补回去。<br>（2）调整max_heap_table_size，tmp_table_size，扩大几倍<br>（3）给这个sql的唯一的一个order by字段加个索引。<br>同时催促研发提供hotfix。最终选择了最简单有效的（1）问题解决，研发迅速后面也发了hotfix解决了。<br><br>4. 某个消费高峰时间段，高频查询被触发，一天几十万次执行，由于存量数据越来越多，查询性能越来越慢，主要是索引没有很好规划，导致CPU资源使用飙升，后面的sql执行越来越慢。 最后尝试了给2个字段添加单独的索引，解决了50%的问题，看到执行计划，extra里面，索引合并使用了intersect，性能还是慢，然后立马drop原先的2个单独索引，创建两个字段的联合索引，问题解决了。<br><br>5. 死锁回滚，导致的MySQL hang住了，当时刚入门，只能简单复现死锁，没有保留所有的日志，现在想查也查不了了。。。<br>感觉大部分都是慢sql和高频事务导致的。<br><br>（当然后面的慢sql监控分析，项目上就很重视了。。）<br><br><br>今天看了这期专栏，发现5.7的这个功能，query_rewrite，受教了。等我们升到5.7以后，可以实际操练下。上面的问题3，也可以用这个功能了（因为是新业务，新表，特殊sql，完全可以起到hotfix的作用）。<br><br><br>请老师帮忙看下上面几次故障是否有更好，更专业的解决方案。多谢 <br></div>
+                            <span class="time">2019-01-02 03:08</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. Kill 掉备份线程在当时是最好的办法了。不过我之前确实也没碰到过show create table 不能kill的情况，我看下代码，如果能复现出来加入那篇文章中<br>2. 嗯，80060这个问题是因为要truncate，所以要回收脏页导致慢，不过这个问题在5.5.23就优化掉了哦，看你使用的是5.6，可能是别的原因。truncate如果不是被锁，而是已经在执行了，确实还是别做别的事情，等结束最好；<br>3. 这个语句是因为子查询要用临时表，跟order by 无关的（你看到的阶段还没开始order by 操作）。这个语句的临时表都能多到把磁盘打满，增加tmp_table_size是没用的。<br>就是说这三个方法里面2和3其实都无效。你们当时的选择很精准呀。<br>而且前面提出“重启无效”的这个人值得团队内大力表扬（是不是就是你😄）<br>另外这个语句，看着像有机会优化的样子，核心方向是去掉临时表<br>4.可以只删掉其中一个独立索引，再加一个联合索引，就是变成(a,b)和(b)这两种索引，也就是把(a)改成(a,b)，这样是加法，相对比较安全。删除索引是一个要很小心的操作，少删一个多一份安全，之后再通过观察索引b的使用情况，确定没必要再删。interset确实一般都比较慢。<br>5. 正常回滚很快的，是不是大事务回滚？这种还是得从消除大事务入手<br><br></p>
+                                <p class="reply-time">2019-01-02 09:35</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师,我有几个问题:<br>1.如果把order by去掉或者order by c asc,往右扫描,为什么没有加[25,30)next-key lock?<br>2.执行session A,为什么slow log里的Rows_examined为2?按照答案来讲不应该是为3嘛<br>3.thread states里sending data包括sending data to the client,<br>另外还有一种state是Sending to client(5.7.8之前叫Writing to net)是writing a packet to the client.<br>请问针对发送数据给客户端,这两种状态有什么区别？ <br></div>
+                            <span class="time">2019-01-02 16:50</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. Next-key lock是前开后闭区间呀，有扫描到25，所以(20,25]<br><br>2. Rows_examined 是server层统计的，这个不满足的值没返回给server<br><br>3. 你show processlist 结果发我看下，代码中没搜到😓</p>
+                                <p class="reply-time">2019-01-02 23:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/bd/6c7d4230.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tony Du</span>
+                            </div>
+                            <div class="bd">对于上期问题的解答，有一点不是特别理解，<br>因为order by desc，在索引c上向左遍历，对于（15， 25）这段区间没有问题，<br>然后，扫描到c=10才停下来，理论上把（10，15]这个区间锁上就应该是完备的了呀。（5，10]这段区间是否锁上对结果应该没有影响呀，为什么会需要（5，10] 这段的next-key lock ?<br> <br></div>
+                            <span class="time">2019-01-02 16:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">就是这么实现的😓<br><br>C=10还是要锁的，如果不锁可能被删除</p>
+                                <p class="reply-time">2019-01-02 17:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/bd/6c7d4230.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tony Du</span>
+                            </div>
+                            <div class="bd">对于上期问题的解答，有一点不是特别理解，<br>因为order by desc，在索引c上向左遍历，对于（15， 25）这段区间没有问题，<br>然后，扫描到c=10才停下来，理论上把（10，15]这个区间锁上就应该是完备的了呀。（5，10]这段区间是否锁上对结果应该没有影响呀，为什么会需要（5，10] 这段的next-key lock ?<br>2019-01-02<br> 作者回复<br>就是这么实现的😓<br><br>C=10还是要锁的，如果不锁可能被删除<br><br>我的回复：<br>所以，如果把sql改成<br>select * from t where c&gt;=15 and c&lt;=20 order by c asc lock in share mode;<br>那锁的范围就应该是索引c上（10，25）了吧。<br>同样查询条件，不同的order顺序，锁的范围不一样，稍微感觉有一点奇怪...<br> <br></div>
+                            <span class="time">2019-01-03 09:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，因为执行索引遍历的顺序不一样，其实锁范围不一样也算合理啦😄</p>
+                                <p class="reply-time">2019-01-03 10:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/20/3a/90db6a24.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Long</span>
+                            </div>
+                            <div class="bd">老师好，看到有的同学在讨论锁的释放问题。<br><br>之前分析过一个锁表异常，很多用workbench或者类似客户端的同学可能会遇到，<br>复现方式：<br>Step 1：显示的打开一个事务，或者把autocommit=0，或者mysql workbench中把自动提交的置灰按钮打开以后<br>Step 2: 执行一个sql（比如，update或者delete之类的），然后sql还没有返回执行结果的中途点击workbench 自带的那个stop的红色的按钮。<br>这个时候很多人可能就不再做其他操作，大多会认为执行已经结束了。但是实际上，锁还在继续锁着的并不会释放。<br><br>系统日志记录：<br>（1）processlist的状态是sleep，info为null<br>（2）innodb_trx的状态是running，trx_query为null<br>（3）performance_schema.events_statements_current表中的，<br>sql_text，digest_text：是有正确的sql的。---这个5.6以后就有了，如果ps打开的话，应该是可以看到的。<br>message_text ：Query execution was interrupted<br>（4）inoodb_locks，lock_waits，以及show engine innodb status，只有出现锁等待的时候才会记录，如果只有一个事务的记录行锁，或者表锁，是不会记录的。（不知道是否有参考控制，还是默认的）<br>（5）关于行锁记录数的问题，从测试的结果看，inoodb_trx的locked rows，当我点停止的时候，锁定行数保持不变了，当我继续点击执行的时候，锁定记录行数会在之前的记录上向上累加，并不是从0开始。<br><br>然后查了audit log以后发现，客户端（mysqlworkbench）送给server端的是KILL QUERY thread_id，而不是Kill thread_id，<br>所以MySQL只是终止了事务中的statement执行，但是并不会释放锁，因为目前的琐的获取和释放都是基于事务结束的（提交或者回滚）。<br>这里面关于kill query&#47; thread_id的区别解释<br>https:&#47;&#47;dev.mysql.com&#47;doc&#47;refman&#47;5.6&#47;en&#47;kill.html<br><br>解决方法：<br>自己解决：kill 对应的thread_id，或者关闭执行窗口（这个时候会送个quit给server端）。<br>别人解决：有super权限的人kill thread_id。<br><br>关于kill的那个文章，其实对所有DDL，DML的操作释放过程，还没有全部搞清楚，期待老师的第25讲。 <br></div>
+                            <span class="time">2019-01-02 22:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">总结的非常好，而且现象很全面。<br>核心的一个点是：kill query 只是终止当前执行语句，并不会让事务回滚👍🏿</p>
+                                <p class="reply-time">2019-01-03 10:16</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e9/5a/a6f2ec4b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">曾剑</span>
+                            </div>
+                            <div class="bd">老师，关于上期遗留问题的解答，我有一点疑惑：<br>解答中的1中，第一个要定位的是索引 c 上“最右边的”c=20 的行，为啥只会加上间隙锁（20,25）和next-key lock(15,20]呢，为啥不是两个next-key lock(15,20]和(20,25]呢？25上的行锁难道是退化的？老师上一篇文章中说到加锁的基本原则中第一点是加锁的基本单位是next-key lock，而退化都是基于索引上的等值查询才会发生呀？盼老师指点迷津。<br> <br></div>
+                            <span class="time">2019-01-02 14:13</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">就是优化2，找第一个值的时候是等值查询</p>
+                                <p class="reply-time">2019-01-02 14:50</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/da/ec/779c1a78.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">往事随风，顺其自然</span>
+                            </div>
+                            <div class="bd">为什么我的电脑上没有慢查询的日志文件，mysql5.7<br>ysql&gt; show VARIABLES like &#39;%slow%&#39;;<br>+---------------------------+--------------------------+<br>| Variable_name             | Value                    |<br>+---------------------------+--------------------------+<br>| log_slow_admin_statements | OFF                      |<br>| log_slow_slave_statements | OFF                      |<br>| slow_launch_time          | 2                        |<br>| slow_query_log            | ON                       |<br>| slow_query_log_file       | DESKTOP-76FNKS3-slow.log |<br>+---------------------------+--------------------------+<br><br>DESKTOP-76FNKS3-slow.log 这个文件再本地磁盘找不到 <br></div>
+                            <span class="time">2019-01-04 20:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Show variables like “output”</p>
+                                <p class="reply-time">2019-01-04 21:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/da/ec/779c1a78.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">往事随风，顺其自然</span>
+                            </div>
+                            <div class="bd">mysql5.7为什么不存在下面的数据库和表 <br>mysql&gt; use query_rewrite;<br>ERROR 1049 (42000): Unknown database &#39;query_rewrite&#39;<br>mysql&gt;<br> <br></div>
+                            <span class="time">2019-01-04 20:20</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">搜一下用法吧😄</p>
+                                <p class="reply-time">2019-01-04 21:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">堕落天使</span>
+                            </div>
+                            <div class="bd">老师，您好：<br>我引用一下 Ryoma 的留言，如下：<br>Ryoma<br>我之前的描述有点问题，其实想问的是：为什么加了 order by c desc，第一个定位c=20 的行，会加上间隙锁 (20,25) 和 next-key lock (15,20]？<br>如果没有order by c desc，第一次命中c=15时，只会加上next-key lock(10.15]；<br>而有了order by c desc，我的理解是第一次命中c=20只需要加上next-key lock (15,20]<br>当然最后(20,25)还是加上了锁，老师的结论是对的，我也测试过了，但是我不知道如何解释。<br>唯一能想到的解释是order by c desc 并不会改变优化2这个原则：即等值查询时，会向右遍历且最后一个值不满足等值条件；同时order by c desc 带来一个类似于优化2的向左遍历原则。<br>进而导致最后的锁范围是(5,25)；而没有order by c desc的范围是(10,25]。<br>2019-01-03<br> 作者回复<br>因为执行c=20的时候，由于要order by c desc, 就要先找到“最右边第一个c=20的行”，<br>这个怎么找呢，只能向右找到25，才能知道它左边那个20是“最右的20”<br><br>我的问题是：<br>1. 按照老师您说的，先找c=20，由于是order by c desc，所以要找最右边的20，即找到25。那如果c是唯一索引呢？是不是就不会找到25了（是否会加 (20,25) 的gap lock）？我把语句改造了一下，“select * from t_20 where id &gt;= 15 and id&lt;=20 ORDER BY id desc lock in share mode;”。发现当 session A 执行完这行语句不提交的时候，session B 执行 “insert into t_20 values(24,24,24);” 是阻塞的。也就是说也加了(20,25)的间隙锁。这又是为什么呢？<br>2. 间隙锁本身不冲突，但和插入语句冲突。那么delete语句呢?<br>我做了个如下实验（以下语句按时间顺序排序）：<br>session A<br>begin;<br>select * from t_20 where c=10 lock in share mode;<br><br>session B<br>delete from t_20 where c=15;<br>insert into t_20 values(16,16,16); <br>(blocked)<br><br>session B 中第一条delete语句执行正常，第二条insert语句被阻塞。<br>我的分析是：session A在索引c上的锁是：(5,10]  (10,15)；当session B把(15,15,15)这条记录删了之后，(10,15)的间隙就不存在了，所以此时session A在索引c上的锁变为：(5,10]  (10,20)。这时再在session B中插入(16,16,16)就被阻塞了。这个分析正确吗？ <br></div>
+                            <span class="time">2019-01-04 19:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对，我在第30篇会说到这个问题哈</p>
+                                <p class="reply-time">2019-01-10 16:10</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/68/d7/714c3d89.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">不二</span>
+                            </div>
+                            <div class="bd">老师，曾剑同学的问题<br>关于上期遗留问题的解答，我有一点疑惑：<br>解答中的1中，第一个要定位的是索引 c 上“最右边的”c=20 的行，为啥只会加上间隙锁（20,25）和next-key lock(15,20]呢，为啥不是两个next-key lock(15,20]和(20,25]呢？25上的行锁难道是退化的？老师上一篇文章中说到加锁的基本原则中第一点是加锁的基本单位是next-key lock，而退化都是基于索引上的等值查询才会发生呀？盼老师指点迷津。<br>您给回答是定位到c=20的时候，是等值查询，所以加的是(20,25)的间隙锁，25的行锁退化了，那么在上一期中的案例五：唯一索引范围锁 bug，那id&lt;=15,不也是先定位到id=15，然后向右扫描，那应该也是等值查询，那么应该加的是（15，20）间隙锁，那为啥你说的加的是（15，20],为啥这个id=20的行锁也加上了呢，为啥同样是范围查询，一个行锁退化了，一个没有退化呢，求老师指点迷津<br><br> <br></div>
+                            <span class="time">2019-01-04 11:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 第一次就是找c=20,这个就是一次等值查找<br>2. 案例5那个，等值查的是id=10,然后向右遍历。这两个，一个是有order by desc,索引的扫描方向不一样，“找第一个”的值也是不一样的</p>
+                                <p class="reply-time">2019-01-04 12:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/71/97/09bc55dc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张永志</span>
+                            </div>
+                            <div class="bd">说一个锁全库(schema)的案例，数据库晚间定时任务执行CTAS操作，由于需要执行十几分钟，导致严重会话阻塞，全库所有表上的增删改查全被阻塞。<br>后改为先建表再插数解决。 <br></div>
+                            <span class="time">2019-01-04 08:28</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯嗯。看来你也是趟过好多坑啦，<br>CTAS不是好用法😄<br></p>
+                                <p class="reply-time">2019-01-04 09:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/71/97/09bc55dc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张永志</span>
+                            </div>
+                            <div class="bd">我是从Oracle转到MySQL来的，先接触的Oracle再看MySQL就经常喜欢拿两者对比，包括表数据存储结构，二级索引的异同，redo，binlog，锁机制，以及默认隔离级别。<br>研究锁后，根据自己的理解得出一个结论，MySQL默认隔离级别选为RR也是无奈之举！<br>因为当时binlog还是语句格式，为了保证binlog事务顺序正确就得有gap和next key锁。<br>而对开发人员来说，他们未必清楚事务隔离级别，且大多数开发都是从Oracle转向MySQL的，故果断将隔离级别全部调整为RC。<br><br> <br></div>
+                            <span class="time">2019-01-04 08:14</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，以前有很多oracle专家，然后大家就觉得RC够用。<br><br>不过他们不是“以为够用”，他们是真的分析过业务场景，分析业务的用法，确认够用。这种是很好的实践</p>
+                                <p class="reply-time">2019-01-04 09:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/71/97/09bc55dc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张永志</span>
+                            </div>
+                            <div class="bd">分享一个主从切换时遇到的问题，主从切换前主库要改为只读，设置只读后，show master status发现binlog一直在变化，当时应用没断开。<br>主库并不是其他库的从库，怎么搞的呢？<br>检查业务用户权限发现拥有super权限，查看授权语句原来是grant all on *.* to user，这里要说的是*.* 权限就太大了，而且这个也很容易被误解，需要特别注意。 <br></div>
+                            <span class="time">2019-01-04 08:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对的，readonly对super无效；<br>一方面是尽量不要给业务super<br>一方面你做完readonly还会去确认binlog有没有变，这个意识很好哦</p>
+                                <p class="reply-time">2019-01-04 09:15</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/71/97/09bc55dc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张永志</span>
+                            </div>
+                            <div class="bd">小系统，昨天一直报CPU使用率高，报警阈值设定为CPU平均使用率0.8。<br>登录看进程都在执行同一条SQL，活动会话有40个，主机逻辑CPU只有4个，这负载能不高吗？<br>检查SQL，表很小不到两万行，创建一个复合索引后，负载立刻就消失不见啦😄 <br></div>
+                            <span class="time">2019-01-04 07:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿 立竿见影</p>
+                                <p class="reply-time">2019-01-04 08:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">经过老师这么一提醒,又想起了之前讲的redo log文件在切换的时候,是要把脏页持久化的,所以redo log被大事务占用了也没关系.脏页持久化只需要用最后更新的那个redo log文件,因为checkpoint随着redo log切换已经往前推了。所以也没有要恢复redo log这么一说了。而且redo log比binlog还要先落盘,确实binlog不应该有能力恢复redo log。<br>这个实例本来也就是存监控数据的,所以没有做好监控。(灯下黑) <br></div>
+                            <span class="time">2019-01-03 23:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿 知识点后来就是互相交织的😄</p>
+                                <p class="reply-time">2019-01-04 00:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ea/9a/02d589f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">斜面镜子 Bill</span>
+                            </div>
+                            <div class="bd">业务侧查询特地表A的SQL均通过显式地开启事务控制，存在部分的慢SQL，高并发的查询影响了表A查询的commit效率，没有及时释放DML锁，此时业务发起DDL操作，获取MDL写锁被阻塞，导致后续需要获取MDL读锁的SQL被阻塞，快速导致这个库的连接池被用完，阻塞了整个实例的查询！<br> <br></div>
+                            <span class="time">2019-01-03 20:44</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是的，我见过太多这种悲剧了😓<br>还是得让做DDL的同学细心看着，拿不到MDL锁就暂时放弃，<br>这种有客户端重试的时候系统很快就连接耗尽了</p>
+                                <p class="reply-time">2019-01-03 22:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ea/9a/02d589f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">斜面镜子 Bill</span>
+                            </div>
+                            <div class="bd">业务侧查询特地表A的SQL均通过显式地开启事务控制，存在部分的慢SQL，高并发的查询影响了表A查询的commit效率，没有及时释放DML锁，此时业务发起DDL操作，获取MDL写锁被阻塞，导致后续需要获取MDL读锁的SQL被阻塞，快速导致这个库的连接池被用完，阻塞了整个实例的查询！ <br></div>
+                            <span class="time">2019-01-03 20:44</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是，这个很可怕的（看来还挺常见😓</p>
+                                <p class="reply-time">2019-01-10 14:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/5e/b8fada94.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ryoma</span>
+                            </div>
+                            <div class="bd">我之前的描述有点问题，其实想问的是：为什么加了 order by c desc，第一个定位c=20 的行，会加上间隙锁 (20,25) 和 next-key lock (15,20]？<br><br>如果没有order by c desc，第一次命中c=15时，只会加上next-key lock(10.15]；<br>而有了order by c desc，我的理解是第一次命中c=20只需要加上next-key lock (15,20]<br><br>当然最后(20,25)还是加上了锁，老师的结论是对的，我也测试过了，但是我不知道如何解释。<br>唯一能想到的解释是order by c desc 并不会改变优化2这个原则：即等值查询时，会向右遍历且最后一个值不满足等值条件；同时order by c desc 带来一个类似于优化2的向左遍历原则。<br>进而导致最后的锁范围是(5,25)；而没有order by c desc的范围是(10,25]。<br> <br></div>
+                            <span class="time">2019-01-03 20:06</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">因为执行c=20的时候，由于要order by c desc, 就要先找到“最右边第一个c=20的行”，<br>这个怎么找呢，只能向右找到25，才能知道它左边那个20是“最右的20”<br><br></p>
+                                <p class="reply-time">2019-01-03 22:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/00/f0/08409e78.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">一大只😴</span>
+                            </div>
+                            <div class="bd">老师，我找到我上次说RR隔离级别下，session 1:begin;select * from t where d=5 for update;  session 2:update t set d=5 where id=0;可以执行的原因了，我配置文件中禁用了间隙锁，innodb_locks_unsafe_for_binlog=on,改成off默认值就正常了。 <br></div>
+                            <span class="time">2019-01-03 15:20</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">😓居然开了这个，生产不建议开哦</p>
+                                <p class="reply-time">2019-01-03 22:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                11讲怎么给字符串字段加索引
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/4d/ec/4d642c8e43980c1e35afc78440436cec.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="11讲怎么给字符串字段加索引.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="11讲怎么给字符串字段加索引.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>现在，几乎所有的系统都支持邮箱登录，如何在邮箱这样的字段上建立合理的索引，是我们今天要讨论的问题。</p><p>假设，你现在维护一个支持邮箱登录的系统，用户表是这么定义的：</p><pre><code>mysql&gt; create table SUser(
+ID bigint unsigned primary key,
+email varchar(64), 
+... 
+)engine=innodb; 
+</code></pre><p>由于要使用邮箱登录，所以业务代码中一定会出现类似于这样的语句：</p><pre><code>mysql&gt; select f1, f2 from SUser where email='xxx';
+</code></pre><p>从第4和第5篇讲解索引的文章中，我们可以知道，如果email这个字段上没有索引，那么这个语句就只能做全表扫描。</p><p>同时，MySQL是支持前缀索引的，也就是说，你可以定义字符串的一部分作为索引。默认地，如果你创建索引的语句不指定前缀长度，那么索引就会包含整个字符串。</p><p>比如，这两个在email字段上创建索引的语句：</p><pre><code>mysql&gt; alter table SUser add index index1(email);
+或
+mysql&gt; alter table SUser add index index2(email(6));
+</code></pre><p>第一个语句创建的index1索引里面，包含了每个记录的整个字符串；而第二个语句创建的index2索引里面，对于每个记录都是只取前6个字节。</p><p>那么，这两种不同的定义在数据结构和存储上有什么区别呢？如图2和3所示，就是这两个索引的示意图。</p><p><img src="https://static001.geekbang.org/resource/image/d3/b7/d31da662bee595991862c439a5567eb7.jpg" alt=""></p><center><span class="reference">图1 email 索引结构</span></center><p><img src="https://static001.geekbang.org/resource/image/13/42/134583875561de914991fc2e192cf842.jpg" alt=""></p><center><span class="reference">图2 email(6) 索引结构</span></center><p>从图中你可以看到，由于email(6)这个索引结构中每个邮箱字段都只取前6个字节（即：zhangs），所以占用的空间会更小，这就是使用前缀索引的优势。</p><!-- [[[read_end]]] --><p>但，这同时带来的损失是，可能会增加额外的记录扫描次数。</p><p>接下来，我们再看看下面这个语句，在这两个索引定义下分别是怎么执行的。</p><pre><code>select id,name,email from SUser where email='zhangssxyz@xxx.com';
+</code></pre><p><strong>如果使用的是index1</strong>（即email整个字符串的索引结构），执行顺序是这样的：</p><ol>
+<li>
+<p>从index1索引树找到满足索引值是’zhangssxyz@xxx.com’的这条记录，取得ID2的值；</p>
+</li>
+<li>
+<p>到主键上查到主键值是ID2的行，判断email的值是正确的，将这行记录加入结果集；</p>
+</li>
+<li>
+<p>取index1索引树上刚刚查到的位置的下一条记录，发现已经不满足email='zhangssxyz@xxx.com’的条件了，循环结束。</p>
+</li>
+</ol><p>这个过程中，只需要回主键索引取一次数据，所以系统认为只扫描了一行。</p><p><strong>如果使用的是index2</strong>（即email(6)索引结构），执行顺序是这样的：</p><ol>
+<li>
+<p>从index2索引树找到满足索引值是’zhangs’的记录，找到的第一个是ID1；</p>
+</li>
+<li>
+<p>到主键上查到主键值是ID1的行，判断出email的值不是’zhangssxyz@xxx.com’，这行记录丢弃；</p>
+</li>
+<li>
+<p>取index2上刚刚查到的位置的下一条记录，发现仍然是’zhangs’，取出ID2，再到ID索引上取整行然后判断，这次值对了，将这行记录加入结果集；</p>
+</li>
+<li>
+<p>重复上一步，直到在idxe2上取到的值不是’zhangs’时，循环结束。</p>
+</li>
+</ol><p>在这个过程中，要回主键索引取4次数据，也就是扫描了4行。</p><p>通过这个对比，你很容易就可以发现，使用前缀索引后，可能会导致查询语句读数据的次数变多。</p><p>但是，对于这个查询语句来说，如果你定义的index2不是email(6)而是email(7），也就是说取email字段的前7个字节来构建索引的话，即满足前缀’zhangss’的记录只有一个，也能够直接查到ID2，只扫描一行就结束了。</p><p>也就是说<strong>使用前缀索引，定义好长度，就可以做到既节省空间，又不用额外增加太多的查询成本。</strong></p><p>于是，你就有个问题：当要给字符串创建前缀索引时，有什么方法能够确定我应该使用多长的前缀呢？</p><p>实际上，我们在建立索引时关注的是区分度，区分度越高越好。因为区分度越高，意味着重复的键值越少。因此，我们可以通过统计索引上有多少个不同的值来判断要使用多长的前缀。</p><p>首先，你可以使用下面这个语句，算出这个列上有多少个不同的值：</p><pre><code>mysql&gt; select count(distinct email) as L from SUser;
+</code></pre><p>然后，依次选取不同长度的前缀来看这个值，比如我们要看一下4~7个字节的前缀索引，可以用这个语句：</p><pre><code>mysql&gt; select 
+  count(distinct left(email,4)）as L4,
+  count(distinct left(email,5)）as L5,
+  count(distinct left(email,6)）as L6,
+  count(distinct left(email,7)）as L7,
+from SUser;
+</code></pre><p>当然，使用前缀索引很可能会损失区分度，所以你需要预先设定一个可以接受的损失比例，比如5%。然后，在返回的L4~L7中，找出不小于 L * 95%的值，假设这里L6、L7都满足，你就可以选择前缀长度为6。</p><h1>前缀索引对覆盖索引的影响</h1><p>前面我们说了使用前缀索引可能会增加扫描行数，这会影响到性能。其实，前缀索引的影响不止如此，我们再看一下另外一个场景。</p><p>你先来看看这个SQL语句：</p><pre><code>select id,email from SUser where email='zhangssxyz@xxx.com';
+</code></pre><p>与前面例子中的SQL语句</p><pre><code>select id,name,email from SUser where email='zhangssxyz@xxx.com';
+</code></pre><p>相比，这个语句只要求返回id和email字段。</p><p>所以，如果使用index1（即email整个字符串的索引结构）的话，可以利用覆盖索引，从index1查到结果后直接就返回了，不需要回到ID索引再去查一次。而如果使用index2（即email(6)索引结构）的话，就不得不回到ID索引再去判断email字段的值。</p><p>即使你将index2的定义修改为email(18)的前缀索引，这时候虽然index2已经包含了所有的信息，但InnoDB还是要回到id索引再查一下，因为系统并不确定前缀索引的定义是否截断了完整信息。</p><p>也就是说，使用前缀索引就用不上覆盖索引对查询性能的优化了，这也是你在选择是否使用前缀索引时需要考虑的一个因素。</p><h1>其他方式</h1><p>对于类似于邮箱这样的字段来说，使用前缀索引的效果可能还不错。但是，遇到前缀的区分度不够好的情况时，我们要怎么办呢？</p><p>比如，我们国家的身份证号，一共18位，其中前6位是地址码，所以同一个县的人的身份证号前6位一般会是相同的。</p><p>假设你维护的数据库是一个市的公民信息系统，这时候如果对身份证号做长度为6的前缀索引的话，这个索引的区分度就非常低了。</p><p>按照我们前面说的方法，可能你需要创建长度为12以上的前缀索引，才能够满足区分度要求。</p><p>但是，索引选取的越长，占用的磁盘空间就越大，相同的数据页能放下的索引值就越少，搜索的效率也就会越低。</p><p>那么，如果我们能够确定业务需求里面只有按照身份证进行等值查询的需求，还有没有别的处理方法呢？这种方法，既可以占用更小的空间，也能达到相同的查询效率。</p><p>答案是，有的。</p><p><strong>第一种方式是使用倒序存储。</strong>如果你存储身份证号的时候把它倒过来存，每次查询的时候，你可以这么写：</p><pre><code>mysql&gt; select field_list from t where id_card = reverse('input_id_card_string');
+</code></pre><p>由于身份证号的最后6位没有地址码这样的重复逻辑，所以最后这6位很可能就提供了足够的区分度。当然了，实践中你不要忘记使用count(distinct)方法去做个验证。</p><p><strong>第二种方式是使用hash字段。</strong>你可以在表上再创建一个整数字段，来保存身份证的校验码，同时在这个字段上创建索引。</p><pre><code>mysql&gt; alter table t add id_card_crc int unsigned, add index(id_card_crc);
+</code></pre><p>然后每次插入新记录的时候，都同时用crc32()这个函数得到校验码填到这个新字段。由于校验码可能存在冲突，也就是说两个不同的身份证号通过crc32()函数得到的结果可能是相同的，所以你的查询语句where部分要判断id_card的值是否精确相同。</p><pre><code>mysql&gt; select field_list from t where id_card_crc=crc32('input_id_card_string') and id_card='input_id_card_string'
+</code></pre><p>这样，索引的长度变成了4个字节，比原来小了很多。</p><p>接下来，我们再一起看看<strong>使用倒序存储和使用hash字段这两种方法的异同点。</strong></p><p>首先，它们的相同点是，都不支持范围查询。倒序存储的字段上创建的索引是按照倒序字符串的方式排序的，已经没有办法利用索引方式查出身份证号码在[ID_X, ID_Y]的所有市民了。同样地，hash字段的方式也只能支持等值查询。</p><p>它们的区别，主要体现在以下三个方面：</p><ol>
+<li>
+<p>从占用的额外空间来看，倒序存储方式在主键索引上，不会消耗额外的存储空间，而hash字段方法需要增加一个字段。当然，倒序存储方式使用4个字节的前缀长度应该是不够的，如果再长一点，这个消耗跟额外这个hash字段也差不多抵消了。</p>
+</li>
+<li>
+<p>在CPU消耗方面，倒序方式每次写和读的时候，都需要额外调用一次reverse函数，而hash字段的方式需要额外调用一次crc32()函数。如果只从这两个函数的计算复杂度来看的话，reverse函数额外消耗的CPU资源会更小些。</p>
+</li>
+<li>
+<p>从查询效率上看，使用hash字段方式的查询性能相对更稳定一些。因为crc32算出来的值虽然有冲突的概率，但是概率非常小，可以认为每次查询的平均扫描行数接近1。而倒序存储方式毕竟还是用的前缀索引的方式，也就是说还是会增加扫描行数。</p>
+</li>
+</ol><h1>小结</h1><p>在今天这篇文章中，我跟你聊了聊字符串字段创建索引的场景。我们来回顾一下，你可以使用的方式有：</p><ol>
+<li>
+<p>直接创建完整索引，这样可能比较占用空间；</p>
+</li>
+<li>
+<p>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使用覆盖索引；</p>
+</li>
+<li>
+<p>倒序存储，再创建前缀索引，用于绕过字符串本身前缀的区分度不够的问题；</p>
+</li>
+<li>
+<p>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种方式一样，都不支持范围扫描。</p>
+</li>
+</ol><p>在实际应用中，你要根据业务字段的特点选择使用哪种方式。</p><p>好了，又到了最后的问题时间。</p><p>如果你在维护一个学校的学生信息数据库，学生登录名的统一格式是”学号@gmail.com", 而学号的规则是：十五位的数字，其中前三位是所在城市编号、第四到第六位是学校编号、第七位到第十位是入学年份、最后五位是顺序编号。</p><p>系统登录的时候都需要学生输入登录名和密码，验证正确后才能继续使用系统。就只考虑登录验证这个行为的话，你会怎么设计这个登录名的索引呢？</p><p>你可以把你的分析思路和设计结果写在留言区里，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>上篇文章中的第一个例子，评论区有几位同学说没有复现，大家要检查一下隔离级别是不是RR（Repeatable Read，可重复读），创建的表t是不是InnoDB引擎。我把复现过程做成了一个视频，供你参考。</p><p><video preload="none" controls=""><source src="https://static001.geekbang.org/resource/video/2a/76/2a3ac914a325cdff1ca6ba999d1b8c76.mp4" type="video/mp4"><source src="https://res001.geekbang.org/media/video/2a/76/2a3ac914a325cdff1ca6ba999d1b8c76/sd/sd.m3u8" type="application/x-mpegURL"><source src="https://res001.geekbang.org/media/video/2a/76/2a3ac914a325cdff1ca6ba999d1b8c76/hd/hd.m3u8" type="application/x-mpegURL"></video></p><p>在上一篇文章最后，我给你留的问题是，为什么经过这个操作序列，explain的结果就不对了？这里，我来为你分析一下原因。</p><p>delete 语句删掉了所有的数据，然后再通过call idata()插入了10万行数据，看上去是覆盖了原来的10万行。</p><p>但是，session A开启了事务并没有提交，所以之前插入的10万行数据是不能删除的。这样，之前的数据每一行数据都有两个版本，旧版本是delete之前的数据，新版本是标记为deleted的数据。</p><p>这样，索引a上的数据其实就有两份。</p><p>然后你会说，不对啊，主键上的数据也不能删，那没有使用force index的语句，使用explain命令看到的扫描行数为什么还是100000左右？（潜台词，如果这个也翻倍，也许优化器还会认为选字段a作为索引更合适）</p><p>是的，不过这个是主键，主键是直接按照表的行数来估计的。而表的行数，优化器直接用的是show table status的值。</p><p>这个值的计算方法，我会在后面有文章为你详细讲解。</p><p><img src="https://static001.geekbang.org/resource/image/e0/67/e0e4c8381f3feae4d87958470760d367.png" alt=""><br>
+评论区留言点赞板：</p><blockquote>
+<p>@斜面镜子 Bill 的评论最接近答案；<br>
+@某、人 做了两个很不错的对照试验；<br>
+@ye7zi 等几位同学很认真的验证，赞态度。大家的机器如果IO能力比较差的话，做这个验证的时候，可以把innodb_flush_log_at_trx_commit 和 sync_binlog 都设置成0。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/ce/d9/ce7f4e35916ed1aa49206a53a0547bd9.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e0/48/3d72e81c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">封建的风</span>
+                            </div>
+                            <div class="bd">原谅我偷懒的想法，一个学校每年预估2万新生，50年才100万记录，能节省多少空间，直接全字段索引。省去了开发转换及局限性风险，碰到超大量迫不得已再用后两种办法 <br></div>
+                            <span class="time">2018-12-08 23:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">从业务量预估优化和收益，这个意识很好呢👍🏿</p>
+                                <p class="reply-time">2018-12-09 12:56</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/48/b2/cca85581.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小文</span>
+                            </div>
+                            <div class="bd">首先排除全部索引，占空间，其次排除前缀索引，区分度不高，再排除倒序索引，区分度还没前缀索引高。<br>最后hash索引适合，而且只是登录检验，不需要范围查询。 <br></div>
+                            <span class="time">2018-12-07 08:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师针对上一期的答案有两个问题:<br>1.为什么事务A未提交,之前插入的10W数据不能删除啊？不是应该都进undo和change buffer了嘛,<br>根据mvcc查之前的版本就可以了啊。<br>2.不明白为什么第二次调用插入的存储过程,id就变为100000-200000,id是固定插入的,又不是自增的 <br></div>
+                            <span class="time">2018-12-07 00:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 这里说的“不能删”，其实就是说的，undo log不能删，逻辑上还在<br><br>2. 你说的对… 😓我最开始的例子是用自增主键，改完自己晕了，堪误了哈</p>
+                                <p class="reply-time">2018-12-07 15:31</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">老师整篇都讲的是字符串索引，但是思考题的学号比较特殊，15位数字+固定后缀“@gmail.com”<br>这种特殊的情况，可以把学号使用bigint存储,占4个字节，比前缀索引空间占用要小。跟hash索引比，<br>也有区间查询的优势 <br></div>
+                            <span class="time">2018-12-07 11:26</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Bigint 8 个字节哦，赞思路。<br><br>嗯问题不是唯一答案，大家集思广益哈</p>
+                                <p class="reply-time">2018-12-07 13:17</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/87/dd/4f53f95d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">进阶的码农</span>
+                            </div>
+                            <div class="bd">老师按照你视频里的例子又做了一下还是不行<br>mysql版本8.0.12<br>+-----------+<br>| version() |<br>+-----------+<br>| 8.0.12    |<br>+-----------+<br>是innodb 隔离级别是RR<br>1.先打开一个客户端A 执行start transaction with  consistent snapshot;没有commit<br>2.然后在重新打开一个mysql客户端B 执行 <br>delete from t;call idata(); explain select * from t between 10000 and 20000;<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+<br>| id | select_type | table | partitions | type  | possible_keys | key  | key_len | ref  | rows  | filtered | Extra                 |<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+<br>|  1 | SIMPLE      | t     | NULL       | range | a             | a    | 5       | NULL | 10001 |   100.00 | Using index condition |<br>+----+-------------+-------+------------+-------+---------------+------+---------+------+-------+----------+-----------------------+ <br></div>
+                            <span class="time">2018-12-07 19:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/73/d2/f5cb4e9c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Hunter</span>
+                            </div>
+                            <div class="bd">是不是还是之前的思路，把邮件的地址里面@的前一段做倒排存储，然后就可以使用前缀索引了。<br>或者也可以用年份和顺序号单独存一列，这样就有点类似哈希了，优点是还可以支持范围查询。 <br></div>
+                            <span class="time">2018-12-07 08:49</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/81/47/3c284e4a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Livis</span>
+                            </div>
+                            <div class="bd">课后题思考：可以使用学号拼接密码构建一个hash值，每次登录校验时重新计算hash值匹配； <br></div>
+                            <span class="time">2018-12-07 08:05</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">回答下今天老师的问题:<br>1.在user建立索引,由于学号的最后7位才能确定到某个学生.不满足最左前缀,那么select from where &#39;%1234567%&#39;无法使用索引,是全表扫描。但是这种情况也有优化的办法,如果该表上的字段比较多,可以这样改写select password from t join (select id from where user like &#39;%1234567%&#39;) as a on a.id=t.id<br>通过全扫描二级索引得到唯一id值.再用id值与t表关联的时候,就能迅速的定位到某一行了,避免全表扫描<br>不过在本次问题里,这种方式效果不好<br>  <br>2.hash索引,建立(hashuser,user,password)索引,不用回表,覆盖索引,但是索引占用长度长。<br>或者建立(hashuser)索引,因为hashuser基本上能确定到唯一值,虽然回表但是扫描的行数也就两行,效率也挺高。但是hash索引对于insert和update操作要多做一些额外的操作。要嘛通过程序计算出hash值,插入表里,要嘛就通过触发器来做。<br><br>3.建立前缀索引,由于后面是固定email,可以考虑只存学号.由于学号后面7位就能确定到某一个学生,可以用倒序存储+前缀索引。不过由于前缀索引不能在int类型上建立,只能用varchar类型。虽然前缀索引无法用到覆盖索引,不过回表扫描的行数也就一行,效率也挺高。这种方式来说,对insert和update相对还好。还有前缀索引还有个影响是不能用于排序。<br> <br></div>
+                            <span class="time">2018-12-08 20:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/bd/6c7d4230.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tony Du</span>
+                            </div>
+                            <div class="bd">对于上一期的问题的回答，“索引 a 上的数据其实就有两份”，是不是这样理解，<br>其中一份是已经被标记为deleted的数据，另一份是新插入的数据，对索引数据的预估把已经被标记为deleted的数据也算上去了？MySQL对索引数据的预估为什么不去check 被标记为deleted的数据？<br>这种场景一旦发生，就会导致预估索引数据不准确，有什么好的方法去避免和解决？<br><br> <br></div>
+                            <span class="time">2018-12-07 10:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">理解对的，<br><br>方法就是避免长事务（session A 就是模拟一个长事务）</p>
+                                <p class="reply-time">2018-12-07 11:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/f7/7a/5a4843ed.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">剃刀吗啡</span>
+                            </div>
+                            <div class="bd">通常我们都是在创建表的时候根据业务创建索引，这时候分析前缀没意义，因为没数。等表大了上千万行后再执行前缀分析也不合适啊。<br>另外，不是不推荐在where中使用函数吗？使用reverse不影响性能？ <br></div>
+                            <span class="time">2018-12-12 09:31</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/dd/eb/80f9d212.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">lttzzlll</span>
+                            </div>
+                            <div class="bd">只取 四位年份+五位编号 并转化为int类型作为唯一主键 <br></div>
+                            <span class="time">2018-12-07 22:11</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/82/07/5940b400.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">SaimSaim</span>
+                            </div>
+                            <div class="bd">没看懂答案,上期题目说rows其实还是1W,现在这里又说是10W <br></div>
+                            <span class="time">2018-12-28 15:01</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/1d/b5/971261fd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alias cd=rm -rf</span>
+                            </div>
+                            <div class="bd">我会考虑用hash字段方式，因为这个场景下用hash字段方式查询效率更稳定。<br><br>另外，我能平时做业务的时候出于更通用的考虑，好像很少在业务上用函数， <br></div>
+                            <span class="time">2018-12-20 23:16</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/18/f6/2ff7bc7a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">轻歌赋</span>
+                            </div>
+                            <div class="bd">从第9位开始截取到末尾，额外增加一个字段存储该值，然后在上面建立索引。因为是一个学校的同一年入学的学生的顺序号不可能一样，因此可以直接这样做。空间增加了一个字段和相应的索引长度。时间上根据建立的索引来，如果支持查找一个范围内，那么推荐b树。否则推荐hash。 <br></div>
+                            <span class="time">2018-12-19 12:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/ba/59/7589c6cc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">欧阳成</span>
+                            </div>
+                            <div class="bd">数据量有多大才考虑用后两种索引，怎样去平衡这个（业务量与收益）？ <br></div>
+                            <span class="time">2018-12-18 11:51</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/9f/b2/ca764e25.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">假装有网名</span>
+                            </div>
+                            <div class="bd">邮箱后缀是一样的了，然后去掉后缀倒序索引 <br></div>
+                            <span class="time">2018-12-17 21:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/8a/a7/674c1864.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">William</span>
+                            </div>
+                            <div class="bd">针对本章问题想法如下：<br>1、将按照规则生成的名称 ，存入单独字段，做全列索引。<br><br>2、按规则生成的名称做倒序索引。<br>优先级 1 &gt; 2<br>请老师指教。 <br></div>
+                            <span class="time">2018-12-17 16:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">倒序索引的话建议把邮箱部分去掉哈。<br>可以看一下其它同学评论，和下期末尾</p>
+                                <p class="reply-time">2018-12-17 18:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/97/36/6addd2b6.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">萧箫萧</span>
+                            </div>
+                            <div class="bd">问个问题<br>a.xxx=100 int类型<br>a.mmm=-1<br>执行<br>select  * from a where a.xxx=&quot;01e2g5hg3afasf4t4j65&quot; and a.mmm =&quot;-1&quot;<br>为什么这样搜索也可以获取到a.xxx是100的这条信息 <br></div>
+                            <span class="time">2018-12-14 19:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/2f/76/6e0f8e06.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">吴先森V</span>
+                            </div>
+                            <div class="bd">请教一个问题, 下面这条SQL order_id 和 user_id 都是 int 类型，都加了索引，在看 EXPLAIN  的时候 执行只使用了 order_id 索引， 为什么 user_id 索引没有采用呢？如果WHERE 条件后面都有索引是否都会执行、还是优化器会选择最有效率都一个索引执行？ 将两个调整成组合索引也没有效果, 如果 force index(user_id) 则全表扫描。 能帮忙解答下吗？谢谢<br>SELECT<br>	count(1)<br>FROM<br>	A a<br>WHERE<br>	  EXISTS(<br>	SELECT<br>		1<br>	FROM<br>		B b<br>	WHERE<br>		b.order_id = a.order_id<br>	AND b.user_id = a.user_id <br>); <br></div>
+                            <span class="time">2018-12-13 14:03</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">只能用一个索引，如果两个都用就是merge-index算法，一般优化器很少采用</p>
+                                <p class="reply-time">2018-12-13 21:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI6VXLO35tTZ0H2rKj97CH53lUC9icgkUTAuGjpqEicJecDoDpMvwKGrsV6ZNicVOJStocM16zZicpYiaA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">树下品茶</span>
+                            </div>
+                            <div class="bd">如果是维护“一个学校”的学生信息数据库，那数据量会非常小，但感觉老师指的是维护一个“学校的学生信息数据库”，应该是多个学校，可能是市级或者省级或者国家级的一个学校登录系统，那么数据量会大不少。因为学生不是一般app的用户或者政府机关里记录的公民，学生是会离校的，如果定期把已经离校的学生从表中转移到历史表，那么数据量是可控的。<br>在定期清理离校学生信息的情况下，如果总数据量预估不太大，不如直接把登录编号作为索引，那么回表取一次密码就行了。如果再追求速度且空间也允许，那么把索引和密码做个联合索引，连回表都不用回。如果总数据量预估还是有点大的话就通过hash索引走比较好。不了解现在学生数量没法估计，只是一个思路 <br></div>
+                            <span class="time">2018-12-13 10:48</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯你说的对，数据量和压力预估，是先于语句具体设计的</p>
+                                <p class="reply-time">2018-12-13 12:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

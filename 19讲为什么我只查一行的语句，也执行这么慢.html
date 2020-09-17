@@ -1,0 +1,444 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                19讲为什么我只查一行的语句，也执行这么慢
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/62/cf/62d00cf20593a79e72c24be710723dcf.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="19讲为什么我只查一行的语句，也执行这么慢.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="19讲为什么我只查一行的语句，也执行这么慢.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>一般情况下，如果我跟你说查询性能优化，你首先会想到一些复杂的语句，想到查询需要返回大量的数据。但有些情况下，“查一行”，也会执行得特别慢。今天，我就跟你聊聊这个有趣的话题，看看什么情况下，会出现这个现象。</p><p>需要说明的是，如果MySQL数据库本身就有很大的压力，导致数据库服务器CPU占用率很高或ioutil（IO利用率）很高，这种情况下所有语句的执行都有可能变慢，不属于我们今天的讨论范围。</p><p>为了便于描述，我还是构造一个表，基于这个表来说明今天的问题。这个表有两个字段id和c，并且我在里面插入了10万行记录。</p><pre><code>mysql&gt; CREATE TABLE `t` (
+  `id` int(11) NOT NULL,
+  `c` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+delimiter ;;
+create procedure idata()
+begin
+  declare i int;
+  set i=1;
+  while(i&lt;=100000)do
+    insert into t values(i,i);
+    set i=i+1;
+  end while;
+end;;
+delimiter ;
+
+call idata();
+</code></pre><p>接下来，我会用几个不同的场景来举例，有些是前面的文章中我们已经介绍过的知识点，你看看能不能一眼看穿，来检验一下吧。</p><h1>第一类：查询长时间不返回</h1><p>如图1所示，在表t执行下面的SQL语句：</p><pre><code>mysql&gt; select * from t where id=1;
+</code></pre><p>查询结果长时间不返回。</p><p><img src="https://static001.geekbang.org/resource/image/87/2a/8707b79d5ed906950749f5266014f22a.png" alt=""></p><center><span class="reference">图1 查询长时间不返回</span></center><p>一般碰到这种情况的话，大概率是表t被锁住了。接下来分析原因的时候，一般都是首先执行一下show processlist命令，看看当前语句处于什么状态。</p><p>然后我们再针对每种状态，去分析它们产生的原因、如何复现，以及如何处理。</p><h2>等MDL锁</h2><!-- [[[read_end]]] --><p>如图2所示，就是使用show processlist命令查看Waiting for table metadata lock的示意图。</p><p><img src="https://static001.geekbang.org/resource/image/50/28/5008d7e9e22be88a9c80916df4f4b328.png" alt=""></p><center><span class="reference">图2 Waiting for table metadata lock状态示意图</span></center><p>出现<strong>这个状态表示的是，现在有一个线程正在表t上请求或者持有MDL写锁，把select语句堵住了。</strong></p><p>在第6篇文章<a href="https://time.geekbang.org/column/article/69862">《全局锁和表锁 ：给表加个字段怎么有这么多阻碍？》</a>中，我给你介绍过一种复现方法。但需要说明的是，那个复现过程是基于MySQL 5.6版本的。而MySQL 5.7版本修改了MDL的加锁策略，所以就不能复现这个场景了。</p><p>不过，在MySQL 5.7版本下复现这个场景，也很容易。如图3所示，我给出了简单的复现步骤。<br>
+<img src="https://static001.geekbang.org/resource/image/74/ca/742249a31b83f4858c51bfe106a5daca.png" alt=""></p><center><span class="reference">图3 MySQL 5.7中Waiting for table metadata lock的复现步骤</span></center><p>session A 通过lock table命令持有表t的MDL写锁，而session B的查询需要获取MDL读锁。所以，session B进入等待状态。</p><p>这类问题的处理方式，就是找到谁持有MDL写锁，然后把它kill掉。</p><p>但是，由于在show processlist的结果里面，session A的Command列是“Sleep”，导致查找起来很不方便。不过有了performance_schema和sys系统库以后，就方便多了。（MySQL启动时需要设置performance_schema=on，相比于设置为off会有10%左右的性能损失)</p><p>通过查询sys.schema_table_lock_waits这张表，我们就可以直接找出造成阻塞的process id，把这个连接用kill 命令断开即可。</p><p><img src="https://static001.geekbang.org/resource/image/74/01/74fb24ba3826e3831eeeff1670990c01.png" alt=""></p><center><span class="reference">图4 查获加表锁的线程id</span></center><h2>等flush</h2><p>接下来，我给你举另外一种查询被堵住的情况。</p><p>我在表t上，执行下面的SQL语句：</p><pre><code>mysql&gt; select * from information_schema.processlist where id=1;
+</code></pre><p>这里，我先卖个关子。</p><p>你可以看一下图5。我查出来这个线程的状态是Waiting for table flush，你可以设想一下这是什么原因。<br>
+<img src="https://static001.geekbang.org/resource/image/2d/24/2d8250398bc7f8f7dce8b6b1923c3724.png" alt=""></p><center><span class="reference">图5 Waiting for table flush状态示意图</span></center><p>这个状态表示的是，现在有一个线程正要对表t做flush操作。MySQL里面对表做flush操作的用法，一般有以下两个：</p><pre><code>flush tables t with read lock;
+
+flush tables with read lock;
+</code></pre><p>这两个flush语句，如果指定表t的话，代表的是只关闭表t；如果没有指定具体的表名，则表示关闭MySQL里所有打开的表。</p><p>但是正常这两个语句执行起来都很快，除非它们也被别的线程堵住了。</p><p>所以，出现Waiting for table flush状态的可能情况是：有一个flush tables命令被别的语句堵住了，然后它又堵住了我们的select语句。</p><p>现在，我们一起来复现一下这种情况，<strong>复现步骤</strong>如图6所示：</p><p><img src="https://static001.geekbang.org/resource/image/2b/9c/2bbc77cfdb118b0d9ef3fdd679d0a69c.png" alt=""></p><center><span class="reference">图6 Waiting for table flush的复现步骤</span></center><p>在session A中，我故意每行都调用一次sleep(1)，这样这个语句默认要执行10万秒，在这期间表t一直是被session A“打开”着。然后，session B的flush tables t命令再要去关闭表t，就需要等session A的查询结束。这样，session C要再次查询的话，就会被flush 命令堵住了。</p><p>图7是这个复现步骤的show processlist结果。这个例子的排查也很简单，你看到这个show processlist的结果，肯定就知道应该怎么做了。</p><p><img src="https://static001.geekbang.org/resource/image/39/7e/398407014180be4146c2d088fc07357e.png" alt=""></p><center><span class="reference">图 7 Waiting for table flush的show processlist 结果</span></center><h2>等行锁</h2><p>现在，经过了表级锁的考验，我们的select 语句终于来到引擎里了。</p><pre><code>mysql&gt; select * from t where id=1 lock in share mode; 
+</code></pre><p>上面这条语句的用法你也很熟悉了，我们在第8篇<a href="https://time.geekbang.org/column/article/70562">《事务到底是隔离的还是不隔离的？》</a>文章介绍当前读时提到过。</p><p>由于访问id=1这个记录时要加读锁，如果这时候已经有一个事务在这行记录上持有一个写锁，我们的select语句就会被堵住。</p><p>复现步骤和现场如下：</p><p><img src="https://static001.geekbang.org/resource/image/3e/75/3e68326b967701c59770612183277475.png" alt=""></p><center><span class="reference">图 8 行锁复现</span></center><p><img src="https://static001.geekbang.org/resource/image/3c/8f/3c266e23fc307283aa94923ecbbc738f.png" alt=""></p><center><span class="reference">图 9 行锁show processlist 现场</span></center><p>显然，session A启动了事务，占有写锁，还不提交，是导致session B被堵住的原因。</p><p>这个问题并不难分析，但问题是怎么查出是谁占着这个写锁。如果你用的是MySQL 5.7版本，可以通过sys.innodb_lock_waits 表查到。</p><p>查询方法是：</p><pre><code>mysql&gt; select * from t sys.innodb_lock_waits where locked_table=`'test'.'t'`\G
+</code></pre><p><img src="https://static001.geekbang.org/resource/image/d8/18/d8603aeb4eaad3326699c13c46379118.png" alt=""></p><center><span class="reference">图10 通过sys.innodb_lock_waits 查行锁</span></center><p>可以看到，这个信息很全，4号线程是造成堵塞的罪魁祸首。而干掉这个罪魁祸首的方式，就是KILL QUERY 4或KILL 4。</p><p>不过，这里不应该显示“KILL QUERY 4”。这个命令表示停止4号线程当前正在执行的语句，而这个方法其实是没有用的。因为占有行锁的是update语句，这个语句已经是之前执行完成了的，现在执行KILL QUERY，无法让这个事务去掉id=1上的行锁。</p><p>实际上，KILL 4才有效，也就是说直接断开这个连接。这里隐含的一个逻辑就是，连接被断开的时候，会自动回滚这个连接里面正在执行的线程，也就释放了id=1上的行锁。</p><h1>第二类：查询慢</h1><p>经过了重重封“锁”，我们再来看看一些查询慢的例子。</p><p>先来看一条你一定知道原因的SQL语句：</p><pre><code>mysql&gt; select * from t where c=50000 limit 1;
+</code></pre><p>由于字段c上没有索引，这个语句只能走id主键顺序扫描，因此需要扫描5万行。</p><p>作为确认，你可以看一下慢查询日志。注意，这里为了把所有语句记录到slow log里，我在连接后先执行了 set long_query_time=0，将慢查询日志的时间阈值设置为0。</p><p><img src="https://static001.geekbang.org/resource/image/d8/3c/d8b2b5f97c60ae4fc4a03c616847503c.png" alt=""></p><center><span class="reference">图11 全表扫描5万行的slow log</span></center><p>Rows_examined显示扫描了50000行。你可能会说，不是很慢呀，11.5毫秒就返回了，我们线上一般都配置超过1秒才算慢查询。但你要记住：<strong>坏查询不一定是慢查询</strong>。我们这个例子里面只有10万行记录，数据量大起来的话，执行时间就线性涨上去了。</p><p>扫描行数多，所以执行慢，这个很好理解。</p><p>但是接下来，我们再看一个只扫描一行，但是执行很慢的语句。</p><p>如图12所示，是这个例子的slow log。可以看到，执行的语句是</p><pre><code>mysql&gt; select * from t where id=1；
+</code></pre><p>虽然扫描行数是1，但执行时间却长达800毫秒。</p><p><img src="https://static001.geekbang.org/resource/image/66/46/66f26bb885401e8e460451ff6b0c0746.png" alt=""></p><center><span class="reference">图12 扫描一行却执行得很慢</span></center><p>是不是有点奇怪呢，这些时间都花在哪里了？</p><p>如果我把这个slow log的截图再往下拉一点，你可以看到下一个语句，select * from t where id=1 lock in share mode，执行时扫描行数也是1行，执行时间是0.2毫秒。</p><p><img src="https://static001.geekbang.org/resource/image/bd/d2/bde83e269d9fa185b27900c8aa8137d2.png" alt=""></p><center><span class="reference">图 13 加上lock in share mode的slow log</span></center><p>看上去是不是更奇怪了？按理说lock in share mode还要加锁，时间应该更长才对啊。</p><p>可能有的同学已经有答案了。如果你还没有答案的话，我再给你一个提示信息，图14是这两个语句的执行输出结果。</p><p><img src="https://static001.geekbang.org/resource/image/1f/1c/1fbb84bb392b6bfa93786fe032690b1c.png" alt=""></p><center><span class="reference">图14 两个语句的输出结果</span></center><p>第一个语句的查询结果里c=1，带lock in share mode的语句返回的是c=1000001。看到这里应该有更多的同学知道原因了。如果你还是没有头绪的话，也别着急。我先跟你说明一下复现步骤，再分析原因。</p><p><img src="https://static001.geekbang.org/resource/image/84/ff/84667a3449dc846e393142600ee7a2ff.png" alt=""></p><center><span class="reference">图15 复现步骤</span></center><p>你看到了，session A先用start transaction with consistent snapshot命令启动了一个事务，之后session B才开始执行update 语句。</p><p>session B执行完100万次update语句后，id=1这一行处于什么状态呢？你可以从图16中找到答案。</p><p><img src="https://static001.geekbang.org/resource/image/46/8c/46bb9f5e27854678bfcaeaf0c3b8a98c.png" alt=""></p><center><span class="reference">图16 id=1的数据状态</span></center><p>session B更新完100万次，生成了100万个回滚日志(undo log)。</p><p>带lock in share mode的SQL语句，是当前读，因此会直接读到1000001这个结果，所以速度很快；而select * from t where id=1这个语句，是一致性读，因此需要从1000001开始，依次执行undo log，执行了100万次以后，才将1这个结果返回。</p><p>注意，undo log里记录的其实是“把2改成1”，“把3改成2”这样的操作逻辑，画成减1的目的是方便你看图。</p><h1>小结</h1><p>今天我给你举了在一个简单的表上，执行“查一行”，可能会出现的被锁住和执行慢的例子。这其中涉及到了表锁、行锁和一致性读的概念。</p><p>在实际使用中，碰到的场景会更复杂。但大同小异，你可以按照我在文章中介绍的定位方法，来定位并解决问题。</p><p>最后，我给你留一个问题吧。</p><p>我们在举例加锁读的时候，用的是这个语句，select * from t where id=1 lock in share mode。由于id上有索引，所以可以直接定位到id=1这一行，因此读锁也是只加在了这一行上。</p><p>但如果是下面的SQL语句，</p><pre><code>begin;
+select * from t where c=5 for update;
+commit;
+</code></pre><p>这个语句序列是怎么加锁的呢？加的锁又是什么时候释放呢？</p><p>你可以把你的观点和验证方法写在留言区里，我会在下一篇文章的末尾给出我的参考答案。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>在上一篇文章最后，我留给你的问题是，希望你可以分享一下之前碰到过的、与文章中类似的场景。</p><p>@封建的风 提到一个有趣的场景，值得一说。我把他的问题重写一下，表结构如下：</p><pre><code>mysql&gt; CREATE TABLE `table_a` (
+  `id` int(11) NOT NULL,
+  `b` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `b` (`b`)
+) ENGINE=InnoDB;
+</code></pre><p>假设现在表里面，有100万行数据，其中有10万行数据的b的值是’1234567890’， 假设现在执行语句是这么写的:</p><pre><code>mysql&gt; select * from table_a where b='1234567890abcd';
+</code></pre><p>这时候，MySQL会怎么执行呢？</p><p>最理想的情况是，MySQL看到字段b定义的是varchar(10)，那肯定返回空呀。可惜，MySQL并没有这么做。</p><p>那要不，就是把’1234567890abcd’拿到索引里面去做匹配，肯定也没能够快速判断出索引树b上并没有这个值，也很快就能返回空结果。</p><p>但实际上，MySQL也不是这么做的。</p><p>这条SQL语句的执行很慢，流程是这样的：</p><ol>
+<li>
+<p>在传给引擎执行的时候，做了字符截断。因为引擎里面这个行只定义了长度是10，所以只截了前10个字节，就是’1234567890’进去做匹配；</p>
+</li>
+<li>
+<p>这样满足条件的数据有10万行；</p>
+</li>
+<li>
+<p>因为是select *， 所以要做10万次回表；</p>
+</li>
+<li>
+<p>但是每次回表以后查出整行，到server层一判断，b的值都不是’1234567890abcd’;</p>
+</li>
+<li>
+<p>返回结果是空。</p>
+</li>
+</ol><p>这个例子，是我们文章内容的一个很好的补充。虽然执行过程中可能经过函数操作，但是最终在拿到结果后，server层还是要做一轮判断的。</p><p>评论区留言点赞板：</p><blockquote>
+<p>@赖阿甘 提到了等号顺序问题，时间上MySQL优化器执行过程中，where 条件部分， a=b和 b=a的写法是一样的。<br>
+@沙漠里的骆驼 提到了一个常见的问题。相同的模板语句，但是匹配行数不同，语句执行时间相差很大。这种情况，在语句里面有order by这样的操作时会更明显。<br>
+@Justin 回答了我们正文中的问题，如果id 的类型是整数，传入的参数类型是字符串的时候，可以用上索引。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">最近几张干货越来越多了,很实用,收获不少.先回答今天的问题<br>版本5.7.13<br>rc模式下:<br>session 1:<br>begin;<br>select * from t where c=5 for update; <br>session 2:<br>delete from t where c=10 --等待<br>session 3:<br>insert into t values(100001,8) --成功<br>session 1:<br>commit<br>session 2:事务执行成功<br>rr模式下:<br>begin;<br>select * from t where c=5 for update; <br>session 2:<br>delete from t where c=10 --等待<br>session 3:<br>insert into t values(100001,8) --等待<br>session 1:<br>commit<br>session 2:事务执行成功<br>session 3：事务执行成功<br>从上面这两个简单的例子,可以大概看出上锁的流程.<br>不管是rr模式还是rc模式,这条语句都会先在server层对表加上MDL S锁,然后进入到引擎层。<br><br>rc模式下,由于数据量不大只有10W。通过实验可以证明session 1上来就把该表的所有行都锁住了。<br>导致其他事务要对该表的所有现有记录做更新,是阻塞状态。为什么insert又能成功?<br>说明rc模式下for update语句没有上gap锁,所以不阻塞insert对范围加插入意向锁,所以更新成功。<br>session 1commit后,session 2执行成功。表明所有行的x锁是在事务提交完成以后才释放。<br><br>rr模式下,session 1和session 2与rc模式下都一样,说明rr模式下也对所有行上了X锁。<br>唯一的区别是insert也等待了,是因为rr模式下对没有索引的更新,聚簇索引上的所有记录，都被加上了X锁。其次，聚簇索引每条记录间的间隙(GAP)，也同时被加上了GAP锁。由于gap锁阻塞了insert要加的插入意向锁,导致insert也处于等待状态。只有当session 1 commit完成以后。session 1上的所有锁才会释放,S2,S3执行成功<br><br>由于例子中的数据量还比较小,如果数据量达到千万级别,就比较直观的能看出,上锁是逐行上锁的一个过程.扫描一条上一条,直到所有行扫描完,rc模式下对所有行上x锁。rr模式下不仅对所有行上X锁,还对所有区间上gap锁.直到事务提交或者回滚完成后,上的锁才会被释放。 <br></div>
+                            <span class="time">2018-12-26 18:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">分析得非常好。<br>两个模式下，各增加一个session 4 : update t set c=100 where id=10看看哦<br><br>基本就全了👍🏿</p>
+                                <p class="reply-time">2018-12-26 21:54</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f3/2d/711d73b2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">薛畅</span>
+                            </div>
+                            <div class="bd">回来老师的问题：<br>在 Read Committed 隔离级别下，会锁上聚簇索引中的所有记录；<br>在 Repeatable Read 隔离级别下，会锁上聚簇索引中的所有记录，并且会锁上聚簇索引内的所有 GAP；<br>在上面两个隔离级别的情况下，如果设置了 innodb_locks_unsafe_for_binlog 开启 semi-consistent read 的话，对于不满足查询条件的记录，MySQL 会提前放锁，不过加锁的过程是不可避免的。 <br></div>
+                            <span class="time">2018-12-26 08:48</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/73/4f/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">沙漠里的骆驼</span>
+                            </div>
+                            <div class="bd">@高枕<br>这里有些资料提供给你参考: <br>1. 何登成的技术博客: 加锁分析 http:&#47;&#47;hedengcheng.com&#47;?p=771<br>2. 锁的常见种类: http:&#47;&#47;www.aneasystone.com&#47;archives&#47;2017&#47;11&#47;solving-dead-locks-two.html <br></div>
+                            <span class="time">2018-12-26 23:44</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/07/1e/bdbe93f4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">尘封</span>
+                            </div>
+                            <div class="bd">课后问题：d这一列不存在，但是还是要加MDL锁，释放时间应该是事务提交时。 <br></div>
+                            <span class="time">2018-12-26 08:11</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">抱歉，是要写成where c=5 , 发起堪误了</p>
+                                <p class="reply-time">2018-12-26 09:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e7/7b/71da8283.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">似水流年</span>
+                            </div>
+                            <div class="bd">请问老师，为什么select blocking_pid from sys.schema_table_lock_waits;查不到mdl锁的进程id，显示为空。 <br></div>
+                            <span class="time">2018-12-28 10:11</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/41/05/5ba603f2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小李子</span>
+                            </div>
+                            <div class="bd">老师，为什么session B 执行了 select in share mode ，在等行锁的时候，session C 执行 <br>select * from sys.innodb_lock_waits where locked_table=&#39;`test`.`t`&#39; 会报这个错 <br>[Err] 1356 - View &#39;sys.innodb_lock_waits&#39; references invalid table(s) or column(s) or function(s) or definer&#47;invoker of view lack rights to use them，而超时之后，又可以查了？另外，\G 参数会报语法错误？ <br></div>
+                            <span class="time">2018-12-27 19:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e5/39/951f89c8.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">信信</span>
+                            </div>
+                            <div class="bd">老师你好，图3上方提到MySQL 5.7 版本修改了 MDL 的加锁策略，不能复现第六章的场景。但我认为只要仍然满足：DML操作加MDL读锁，DDL操作加MDL写锁，并且事务提交才释放锁，那么就可以复现啊。。。所以5.7到底是改了什么导致无法复现的呢？<br> <br></div>
+                            <span class="time">2018-12-27 00:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师我请教一个问题:<br>flush tables中close table的意思是说的把open_tables里的表全部关闭掉?下次如果有关于某张表的操作<br>又把frm file缓存进Open_table_definitions,把表名缓存到open_tables,还是open_table只是一个计数?<br>不是特别明白flush table和打开表是个什么流程 <br></div>
+                            <span class="time">2018-12-26 20:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">Flush tables是会关掉表，然后下次请求重新读表信息的<br><br>第一次打开表其实就是open_table_definitions，包括读表信息一类的<br><br>之后再有查询就是拷贝一个对象，加一个计数这样的</p>
+                                <p class="reply-time">2018-12-26 21:46</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">愉快的做一下思考题<br>begin;<br>select * from t where c=5 for update;<br>commit;<br>历史知识的结论是，innodb先锁全表的所有行，返回server层，判断c是否等于5，然后释放c！=5的行锁。<br>验证方法：<br>事务A执行 锁住一行c！=5的记录 比如id =3 c=3<br> select * from t where id = 3 for update 或者 update t set c=4 where id =3<br>然后启动新事务B执行上面的语句select * from t where c=5 for update; 看看有没有被阻塞。<br>用于判断事务B的语句会不会试图锁不满足条件的记录。<br>然后把事务A和事务B的执行顺序对调一下，也就是先执行B在执行A。看看有没有阻塞，<br>判断在事务B加锁成功的情况下会不会释放不满足查询条件记录的行锁。<br> <br></div>
+                            <span class="time">2018-12-26 11:08</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">👍🏿 思路清晰<br><br><br>隔离级别再愉快地改成RR试试😄</p>
+                                <p class="reply-time">2018-12-26 11:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/07/1e/bdbe93f4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">尘封</span>
+                            </div>
+                            <div class="bd">老师，有没有遇到过select语句一直处于killed状态的情况？ <br></div>
+                            <span class="time">2018-12-26 07:01</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">有😄 这个是在后面的文章中会用到的例子</p>
+                                <p class="reply-time">2018-12-26 09:57</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/5e/de/4e7ec66d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">蠢蠢欲动的腹肌</span>
+                            </div>
+                            <div class="bd">老师，您好<br>    我的mysql版本5.7.24，尝试的时候发现了如下问题<br>    锁住了表T<br>        mysql&gt; lock table T write;<br>        Query OK, 0 rows affected (0.00 sec)<br>   另一个terminal查询时被阻塞，但是查不到blocking_pid ，这是什么情况呢<br>   mysql&gt; select blocking_pid  from sys.schema_table_lock_waits;<br>   Empty set (0.00 sec)<br>  ps:发现查询schema_table_lock_waits表与lock table的语句不能放在一个terminal执行，否则会报<br>Table &#39;schema_table_lock_waits&#39; was not locked with LOCK TABLES<br>自行尝试的同学要注意下，老师有空的话也可以帮看看为什么。。。 <br></div>
+                            <span class="time">2018-12-28 14:26</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/bd/6c7d4230.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Tony Du</span>
+                            </div>
+                            <div class="bd">对于课后问题，select * from t where c=5 for update，<br>当级别为RR时，因为字段c上没有索引，会扫主键索引，这时会把表中的记录都加上X锁。同时，因为对于innodb来说，当级别为RR时，是可以解决幻读的，此时对于每条记录的间隙还要加上GAP锁。也就是说，表上每一条记录和每一个间隙都锁上了。<br>当级别为RC时，因为字段c上没有索引，会扫主键索引，这时会把表中的记录都加上X锁。<br><br>另外，之前看过相关文章，MySQL在实际实现中有些优化措施，比如当RC时，在MySQL server过滤条件，发现不满足后，会把不满足条件的记录释放锁（这里就是把 c!=5的记录释放锁），这里会违背两阶段的约束。当然，之前每条记录的加锁操作还是不能省略的。<br>还有，对于semi consistent read开启的情况下，也会提前释放锁。<br> <br></div>
+                            <span class="time">2018-12-27 12:53</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/c6/41/b868f086.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">小确幸</span>
+                            </div>
+                            <div class="bd">问一下：索引扫描与全表扫描，有什么异同点？ <br></div>
+                            <span class="time">2018-12-26 11:06</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">一般说全表扫描默认是值“扫瞄主键索引”</p>
+                                <p class="reply-time">2018-12-26 11:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/85/9b/fc33c974.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈旭</span>
+                            </div>
+                            <div class="bd">老师，最近遇到了一个问题，看您有什么建议。<br>业务场景是这样的：<br>1.开启事务<br>2.在表a插入一条记录<br>3.在表b更新一条记录<br>4.在表c更新一条记录<br>5.提交事务<br>看程序日志所有sql都没问题（没看数据库日志），但是结果是2的那条插入了，3和4都没更新，这个问题有哪几种情况？ <br></div>
+                            <span class="time">2018-12-26 09:26</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这是被别的并发事务又改回去了吗😓<br>要么是update的值跟原值相同<br>要么是update条件没有匹配到行<br>额，最好给一下每个语句执行后的affacted rows , 还有binlog里的日志内容，才好分析</p>
+                                <p class="reply-time">2018-12-26 10:02</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/JKKWS6TzhncvAA0p0NDiaATPIvMicSM76vNAg9IG1ibibcJYPAiaicYjZfq4gAV8GRtcTpOibfRD8vzqHBtL0ibmhwQsbg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">唐名之</span>
+                            </div>
+                            <div class="bd">show VARIABLES LIKE &#39;performance%&#39;;<br>performance_schema ON<br>配置已经是打开的 <br></div>
+                            <span class="time">2019-01-11 14:25</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">诶。。那奇怪了<br>执行<br>select * from performance_schema.metadata_locks; 看看？</p>
+                                <p class="reply-time">2019-01-11 15:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/JKKWS6TzhncvAA0p0NDiaATPIvMicSM76vNAg9IG1ibibcJYPAiaicYjZfq4gAV8GRtcTpOibfRD8vzqHBtL0ibmhwQsbg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">唐名之</span>
+                            </div>
+                            <div class="bd">环境：mysql-5.7.24<br>show VARIABLES LIKE &#39;performance%&#39;;<br>performance_schema ON<br><br>A窗口执行：lock table t WRITE;<br><br>B窗口执行：select * from t where id=1;<br><br>C窗口执行：show PROCESSLIST;<br>53	slave_user	DESKTOP-00HHFO4:63064		Binlog Dump	3027	Master has sent all binlog to slave; waiting for more updates	<br>54	root	localhost:64572		Sleep	157		<br>55	root	localhost:64573	mysql_action	Sleep	158		<br>56	root	localhost:64575	mysql_action	Sleep	156		<br>57	root	localhost:64576	mysql_action	Sleep	156		<br>58	root	localhost:64577	mysql_action	Sleep	156		<br>59	root	localhost:64578	mysql_action	Sleep	156		<br>60	root	localhost:64579	mysql_action	Sleep	144		<br>61	root	localhost:64581	mysql_action	Query	140	Waiting for table metadata lock	select * from t where id=1<br>62	root	localhost:64583	mysql_action	Query	0	starting	<br><br>show PROCESSLIST<br>已出现：“Waiting for table metadata ” 但这三张表都查不出数据，求解；<br>SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;<br>SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS；<br>SELECT * from sys.schema_table_lock_waits; <br></div>
+                            <span class="time">2019-01-11 09:44</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">SELECT * from sys.schema_table_lock_waits; 是需要配置里面把performance_schema打开的；<br><br>前面两个语句是只会显示跟innodb的行锁相关的，表级的锁不会显示在这两个表</p>
+                                <p class="reply-time">2019-01-11 12:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/e5/24/753e7a29.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">M</span>
+                            </div>
+                            <div class="bd">老师讲的很好 <br></div>
+                            <span class="time">2019-01-09 17:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">多谢鼓励<br><br>看文章的同学都很细致，不敢不认真😄</p>
+                                <p class="reply-time">2019-01-09 22:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/1d/b5/971261fd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alias cd=rm -rf</span>
+                            </div>
+                            <div class="bd">思考题<br>c无索引x锁应该是锁表。<br>解锁我觉得应该是sessionb的事物提交之后 <br></div>
+                            <span class="time">2019-01-08 09:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不是锁表哈，innodb里面除非明确写lock table，不会锁表；<br><br>解锁时机对的</p>
+                                <p class="reply-time">2019-01-10 18:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e7/f7/8427bb06.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">ʘᴗʘ小白帽ʘᴗʘ</span>
+                            </div>
+                            <div class="bd">涨知识了 <br></div>
+                            <span class="time">2019-01-04 10:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/2e/e0/b22a0145.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">体育菩萨</span>
+                            </div>
+                            <div class="bd">老师,回表是什么意思,有明确的定义吗?有执行的详细步骤吗?我在百度上搜不到相关的信息啊.回表的英文是什么?我想上google查一查 <br></div>
+                            <span class="time">2019-01-02 09:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">额前面的文章有😄 04篇</p>
+                                <p class="reply-time">2019-01-02 10:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

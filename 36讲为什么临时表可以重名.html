@@ -1,0 +1,459 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                36讲为什么临时表可以重名
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/9e/60/9e21a3bfe9b0741720115bdafb2e8b60.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="36讲为什么临时表可以重名.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="36讲为什么临时表可以重名.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p><span class="orange">今天是大年三十，在开始我们今天的学习之前，我要先和你道一声春节快乐！</span></p><p>在上一篇文章中，我们在优化join查询的时候使用到了临时表。当时，我们是这么用的：</p><pre><code>create temporary table temp_t like t1;
+alter table temp_t add index(b);
+insert into temp_t select * from t2 where b&gt;=1 and b&lt;=2000;
+select * from t1 join temp_t on (t1.b=temp_t.b);
+</code></pre><p>你可能会有疑问，为什么要用临时表呢？直接用普通表是不是也可以呢？</p><p>今天我们就从这个问题说起：临时表有哪些特征，为什么它适合这个场景？</p><p>这里，我需要先帮你厘清一个容易误解的问题：有的人可能会认为，临时表就是内存表。但是，这两个概念可是完全不同的。</p><ul>
+<li>
+<p>内存表，指的是使用Memory引擎的表，建表语法是create table … engine=memory。这种表的数据都保存在内存里，系统重启的时候会被清空，但是表结构还在。除了这两个特性看上去比较“奇怪”外，从其他的特征上看，它就是一个正常的表。</p>
+</li>
+<li>
+<p>而临时表，可以使用各种引擎类型 。如果是使用InnoDB引擎或者MyISAM引擎的临时表，写数据的时候是写到磁盘上的。当然，临时表也可以使用Memory引擎。</p>
+</li>
+</ul><p>弄清楚了内存表和临时表的区别以后，我们再来看看临时表有哪些特征。</p><h1>临时表的特性</h1><p>为了便于理解，我们来看下下面这个操作序列：</p><p><img src="https://static001.geekbang.org/resource/image/3c/e3/3cbb2843ef9a84ee582330fb1bd0d6e3.png" alt=""></p><center><span class="reference">图1 临时表特性示例</span></center><p>可以看到，临时表在使用上有以下几个特点：</p><ol>
+<li>
+<p>建表语法是create temporary table …。</p>
+</li>
+<li>
+<p>一个临时表只能被创建它的session访问，对其他线程不可见。所以，图中session A创建的临时表t，对于session B就是不可见的。</p>
+</li>
+<li>
+<p>临时表可以与普通表同名。</p>
+</li>
+<li>
+<p>session A内有同名的临时表和普通表的时候，show create语句，以及增删改查语句访问的是临时表。</p>
+</li>
+<li>
+<p>show tables命令不显示临时表。</p>
+</li>
+</ol><!-- [[[read_end]]] --><p>由于临时表只能被创建它的session访问，所以在这个session结束的时候，会自动删除临时表。也正是由于这个特性，<strong>临时表就特别适合我们文章开头的join优化这种场景</strong>。为什么呢？</p><p>原因主要包括以下两个方面：</p><ol>
+<li>
+<p>不同session的临时表是可以重名的，如果有多个session同时执行join优化，不需要担心表名重复导致建表失败的问题。</p>
+</li>
+<li>
+<p>不需要担心数据删除问题。如果使用普通表，在流程执行过程中客户端发生了异常断开，或者数据库发生异常重启，还需要专门来清理中间过程中生成的数据表。而临时表由于会自动回收，所以不需要这个额外的操作。</p>
+</li>
+</ol><h1>临时表的应用</h1><p>由于不用担心线程之间的重名冲突，临时表经常会被用在复杂查询的优化过程中。其中，分库分表系统的跨库查询就是一个典型的使用场景。</p><p>一般分库分表的场景，就是要把一个逻辑上的大表分散到不同的数据库实例上。比如。将一个大表ht，按照字段f，拆分成1024个分表，然后分布到32个数据库实例上。如下图所示：</p><p><img src="https://static001.geekbang.org/resource/image/dd/81/ddb9c43526dfd9b9a3e6f8c153478181.jpg" alt=""></p><center><span class="reference">图2 分库分表简图</span></center><p>一般情况下，这种分库分表系统都有一个中间层proxy。不过，也有一些方案会让客户端直接连接数据库，也就是没有proxy这一层。</p><p>在这个架构中，分区key的选择是以“减少跨库和跨表查询”为依据的。如果大部分的语句都会包含f的等值条件，那么就要用f做分区键。这样，在proxy这一层解析完SQL语句以后，就能确定将这条语句路由到哪个分表做查询。</p><p>比如下面这条语句：</p><pre><code>select v from ht where f=N;
+</code></pre><p>这时，我们就可以通过分表规则（比如，N%1024)来确认需要的数据被放在了哪个分表上。这种语句只需要访问一个分表，是分库分表方案最欢迎的语句形式了。</p><p>但是，如果这个表上还有另外一个索引k，并且查询语句是这样的：</p><pre><code>select v from ht where k &gt;= M order by t_modified desc limit 100;
+</code></pre><p>这时候，由于查询条件里面没有用到分区字段f，只能到所有的分区中去查找满足条件的所有行，然后统一做order by 的操作。这种情况下，有两种比较常用的思路。</p><p><strong>第一种思路是，</strong>在proxy层的进程代码中实现排序。</p><p>这种方式的优势是处理速度快，拿到分库的数据以后，直接在内存中参与计算。不过，这个方案的缺点也比较明显：</p><ol>
+<li>
+<p>需要的开发工作量比较大。我们举例的这条语句还算是比较简单的，如果涉及到复杂的操作，比如group by，甚至join这样的操作，对中间层的开发能力要求比较高；</p>
+</li>
+<li>
+<p>对proxy端的压力比较大，尤其是很容易出现内存不够用和CPU瓶颈的问题。</p>
+</li>
+</ol><p><strong>另一种思路就是，</strong>把各个分库拿到的数据，汇总到一个MySQL实例的一个表中，然后在这个汇总实例上做逻辑操作。</p><p>比如上面这条语句，执行流程可以类似这样：</p><ul>
+<li>在汇总库上创建一个临时表temp_ht，表里包含三个字段v、k、t_modified；</li>
+<li>在各个分库上执行</li>
+</ul><pre><code>select v,k,t_modified from ht_x where k &gt;= M order by t_modified desc limit 100;
+</code></pre><ul>
+<li>把分库执行的结果插入到temp_ht表中；</li>
+<li>执行</li>
+</ul><pre><code>select v from temp_ht order by t_modified desc limit 100; 
+</code></pre><p>得到结果。</p><p>这个过程对应的流程图如下所示：</p><p><img src="https://static001.geekbang.org/resource/image/f5/0d/f5ebe0f5af37deeb4d0b63d6fb11fc0d.jpg" alt=""></p><center><span class="reference">图3 跨库查询流程示意图</span></center><p><strong>在实践中，我们往往会发现每个分库的计算量都不饱和，所以会直接把临时表temp_ht放到32个分库中的某一个上。</strong>这时的查询逻辑与图3类似，你可以自己再思考一下具体的流程。</p><h1>为什么临时表可以重名？</h1><p>你可能会问，不同线程可以创建同名的临时表，这是怎么做到的呢？</p><p>接下来，我们就看一下这个问题。</p><p>我们在执行</p><pre><code>create temporary table temp_t(id int primary key)engine=innodb;
+</code></pre><p>这个语句的时候，MySQL要给这个InnoDB表创建一个frm文件保存表结构定义，还要有地方保存表数据。</p><p><strong>这个frm文件放在临时文件目录下，文件名的后缀是.frm，前缀是“#sql{进程id}_{线程id}_序列号”</strong>。你可以使用select @@tmpdir命令，来显示实例的临时文件目录。</p><p>而关于表中数据的存放方式，在不同的MySQL版本中有着不同的处理方式：</p><ul>
+<li>在5.6以及之前的版本里，MySQL会在临时文件目录下创建一个相同前缀、以.ibd为后缀的文件，用来存放数据文件；</li>
+<li>而从 5.7版本开始，MySQL引入了一个临时文件表空间，专门用来存放临时文件的数据。因此，我们就不需要再创建ibd文件了。</li>
+</ul><p>从文件名的前缀规则，我们可以看到，其实创建一个叫作t1的InnoDB临时表，MySQL在存储上认为我们创建的表名跟普通表t1是不同的，因此同一个库下面已经有普通表t1的情况下，还是可以再创建一个临时表t1的。</p><p>为了便于后面讨论，我先来举一个例子。</p><p><img src="https://static001.geekbang.org/resource/image/22/1b/22078eab5c7688c9fbfd6185555bd91b.png" alt=""></p><center><span class="reference">图4 临时表的表名</span></center><p>这个进程的进程号是1234，session A的线程id是4，session B的线程id是5。所以你看到了，session A和session B创建的临时表，在磁盘上的文件不会重名。</p><p>MySQL维护数据表，除了物理上要有文件外，内存里面也有一套机制区别不同的表，每个表都对应一个table_def_key。</p><ul>
+<li>一个普通表的table_def_key的值是由“库名+表名”得到的，所以如果你要在同一个库下创建两个同名的普通表，创建第二个表的过程中就会发现table_def_key已经存在了。</li>
+<li>而对于临时表，table_def_key在“库名+表名”基础上，又加入了“server_id+thread_id”。</li>
+</ul><p>也就是说，session A和sessionB创建的两个临时表t1，它们的table_def_key不同，磁盘文件名也不同，因此可以并存。</p><p>在实现上，每个线程都维护了自己的临时表链表。这样每次session内操作表的时候，先遍历链表，检查是否有这个名字的临时表，如果有就优先操作临时表，如果没有再操作普通表；在session结束的时候，对链表里的每个临时表，执行 “DROP TEMPORARY TABLE +表名”操作。</p><p>这时候你会发现，binlog中也记录了DROP TEMPORARY TABLE这条命令。你一定会觉得奇怪，临时表只在线程内自己可以访问，为什么需要写到binlog里面？</p><p>这，就需要说到主备复制了。</p><h1>临时表和主备复制</h1><p>既然写binlog，就意味着备库需要。</p><p>你可以设想一下，在主库上执行下面这个语句序列：</p><pre><code>create table t_normal(id int primary key, c int)engine=innodb;/*Q1*/
+create temporary table temp_t like t_normal;/*Q2*/
+insert into temp_t values(1,1);/*Q3*/
+insert into t_normal select * from temp_t;/*Q4*/
+</code></pre><p>如果关于临时表的操作都不记录，那么在备库就只有create table t_normal表和insert into t_normal select * from temp_t这两个语句的binlog日志，备库在执行到insert into t_normal的时候，就会报错“表temp_t不存在”。</p><p>你可能会说，如果把binlog设置为row格式就好了吧？因为binlog是row格式时，在记录insert into t_normal的binlog时，记录的是这个操作的数据，即：write_row event里面记录的逻辑是“插入一行数据（1,1)”。</p><p>确实是这样。如果当前的binlog_format=row，那么跟临时表有关的语句，就不会记录到binlog里。也就是说，只在binlog_format=statment/mixed 的时候，binlog中才会记录临时表的操作。</p><p>这种情况下，创建临时表的语句会传到备库执行，因此备库的同步线程就会创建这个临时表。主库在线程退出的时候，会自动删除临时表，但是备库同步线程是持续在运行的。所以，这时候我们就需要在主库上再写一个DROP TEMPORARY TABLE传给备库执行。</p><p><strong>之前有人问过我一个有趣的问题：</strong>MySQL在记录binlog的时候，不论是create table还是alter table语句，都是原样记录，甚至于连空格都不变。但是如果执行drop table t_normal，系统记录binlog就会写成：</p><pre><code>DROP TABLE `t_normal` /* generated by server */
+</code></pre><p>也就是改成了标准的格式。为什么要这么做呢 ？</p><p>现在你知道原因了，那就是：drop table命令是可以一次删除多个表的。比如，在上面的例子中，设置binlog_format=row，如果主库上执行 "drop table t_normal, temp_t"这个命令，那么binlog中就只能记录：</p><pre><code>DROP TABLE `t_normal` /* generated by server */
+</code></pre><p>因为备库上并没有表temp_t，将这个命令重写后再传到备库执行，才不会导致备库同步线程停止。</p><p>所以，drop table命令记录binlog的时候，就必须对语句做改写。“/* generated by server */”说明了这是一个被服务端改写过的命令。</p><p>说到主备复制，<strong>还有另外一个问题需要解决</strong>：主库上不同的线程创建同名的临时表是没关系的，但是传到备库执行是怎么处理的呢？</p><p>现在，我给你举个例子，下面的序列中实例S是M的备库。</p><p><img src="https://static001.geekbang.org/resource/image/74/ba/74e789024f10bcde515f21c0368847ba.png" alt=""></p><center><span class="reference">图5 主备关系中的临时表操作</span></center><p>主库M上的两个session创建了同名的临时表t1，这两个create temporary table t1 语句都会被传到备库S上。</p><p>但是，备库的应用日志线程是共用的，也就是说要在应用线程里面先后执行这个create 语句两次。（即使开了多线程复制，也可能被分配到从库的同一个worker中执行）。那么，这会不会导致同步线程报错 ？</p><p>显然是不会的，否则临时表就是一个bug了。也就是说，备库线程在执行的时候，要把这两个t1表当做两个不同的临时表来处理。这，又是怎么实现的呢？</p><p>MySQL在记录binlog的时候，会把主库执行这个语句的线程id写到binlog中。这样，在备库的应用线程就能够知道执行每个语句的主库线程id，并利用这个线程id来构造临时表的table_def_key：</p><ol>
+<li>
+<p>session A的临时表t1，在备库的table_def_key就是：库名+t1+“M的serverid”+“session A的thread_id”;</p>
+</li>
+<li>
+<p>session B的临时表t1，在备库的table_def_key就是 ：库名+t1+“M的serverid”+“session B的thread_id”。</p>
+</li>
+</ol><p>由于table_def_key不同，所以这两个表在备库的应用线程里面是不会冲突的。</p><h1>小结</h1><p>今天这篇文章，我和你介绍了临时表的用法和特性。</p><p>在实际应用中，临时表一般用于处理比较复杂的计算逻辑。由于临时表是每个线程自己可见的，所以不需要考虑多个线程执行同一个处理逻辑时，临时表的重名问题。在线程退出的时候，临时表也能自动删除，省去了收尾和异常处理的工作。</p><p>在binlog_format='row’的时候，临时表的操作不记录到binlog中，也省去了不少麻烦，这也可以成为你选择binlog_format时的一个考虑因素。</p><p>需要注意的是，我们上面说到的这种临时表，是用户自己创建的 ，也可以称为用户临时表。与它相对应的，就是内部临时表，在<a href="https://time.geekbang.org/column/article/73795">第17篇文章</a>中我已经和你介绍过。</p><p>最后，我给你留下一个思考题吧。</p><p>下面的语句序列是创建一个临时表，并将其改名：</p><p><img src="https://static001.geekbang.org/resource/image/33/f9/333ad95b2ce16de1931fe347128caff9.png" alt=""></p><center><span class="reference">图6 关于临时表改名的思考题</span></center><p>可以看到，我们可以使用alter table语法修改临时表的表名，而不能使用rename语法。你知道这是什么原因吗？</p><p>你可以把你的分析写在留言区，我会在下一篇文章的末尾和你讨论这个问题。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>上期的问题是，对于下面这个三个表的join语句，</p><pre><code>select * from t1 join t2 on(t1.a=t2.a) join t3 on (t2.b=t3.b) where t1.c&gt;=X and t2.c&gt;=Y and t3.c&gt;=Z;
+</code></pre><p>如果改写成straight_join，要怎么指定连接顺序，以及怎么给三个表创建索引。</p><p>第一原则是要尽量使用BKA算法。需要注意的是，使用BKA算法的时候，并不是“先计算两个表join的结果，再跟第三个表join”，而是直接嵌套查询的。</p><p>具体实现是：在t1.c&gt;=X、t2.c&gt;=Y、t3.c&gt;=Z这三个条件里，选择一个经过过滤以后，数据最少的那个表，作为第一个驱动表。此时，可能会出现如下两种情况。</p><p>第一种情况，如果选出来是表t1或者t3，那剩下的部分就固定了。</p><ol>
+<li>
+<p>如果驱动表是t1，则连接顺序是t1-&gt;t2-&gt;t3，要在被驱动表字段创建上索引，也就是t2.a 和 t3.b上创建索引；</p>
+</li>
+<li>
+<p>如果驱动表是t3，则连接顺序是t3-&gt;t2-&gt;t1，需要在t2.b 和 t1.a上创建索引。</p>
+</li>
+</ol><p>同时，我们还需要在第一个驱动表的字段c上创建索引。</p><p>第二种情况是，如果选出来的第一个驱动表是表t2的话，则需要评估另外两个条件的过滤效果。</p><p>总之，整体的思路就是，尽量让每一次参与join的驱动表的数据集，越小越好，因为这样我们的驱动表就会越小。</p><p>评论区留言点赞板：</p><blockquote>
+<p>@库淘淘 做了实验验证；<br>
+@poppy同学做了很不错的分析；<br>
+@dzkk 同学在评论中介绍了MariaDB支持的hash join，大家可以了解一下；<br>
+@老杨同志提了一个好问题，如果语句使用了索引a，结果还要对a排序，就不用MRR优化了，否则回表完还要增加额外的排序过程，得不偿失。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/4c/c8/bed1e08a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">辣椒</span>
+                            </div>
+                            <div class="bd">老师，不同线程可以使用同名的临时表，这个没有问题。但是如果在程序中，用的是连接池中的连接来操作的，而这些连接不会释放，和数据库保持长连接。这样使用临时表会有问题吗?。 <br></div>
+                            <span class="time">2019-02-07 07:07</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">会，“临时表会自动回收”这个功能，主要用于“应用程序异常断开、MySQL异常重启”后，不需要主动去删除表。<br><br>而平时正常使用的时候，用完删除，还是应该有的好习惯。😆<br><br>好问题，新年快乐~</p>
+                                <p class="reply-time">2019-02-07 09:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/09/98/b11c372b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">鸠翱</span>
+                            </div>
+                            <div class="bd">放假结束该补课了😅<br><br>评论区有个回答说到了连接池的问题问到会不会有问题……而老师您回答的是会有问题 可是临时表在session结束后不就删除了嘛 那么即使是用同一个线程又有什么问题呢？ <br></div>
+                            <span class="time">2019-02-12 11:02</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">是这样的，要看连接池怎么实现。<br><br>如果A客户端在执行过程中创建了临时表，用完了连接就放回池子里面，没有做别的清理工作，然后新的客户端B复用这个连接，就可能会看到A的临时表</p>
+                                <p class="reply-time">2019-02-12 21:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2b/58/11c05ccb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">One day</span>
+                            </div>
+                            <div class="bd">错过得还是得补上，新得一年，新的开始，加油 <br></div>
+                            <span class="time">2019-02-11 13:47</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐，加油💪</p>
+                                <p class="reply-time">2019-02-11 16:14</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/03/f7/3a493bec.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">老杨同志</span>
+                            </div>
+                            <div class="bd">新年快乐，老师好勤奋！<br>有个问题，insert into  select语句好像会给select的表加锁，如果没有索引，就锁全表，是不是这样？什么时候可以大胆的用这类语句？ <br></div>
+                            <span class="time">2019-02-04 23:55</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年好！<br><br>“insert into  select语句好像会给select的表加锁，如果没有索引，就锁全表”，是的。<br><br>这类最好不要很大胆😆，如果不是业务急需的，从源表导出来再写到目标表也是好的。<br><br> 后面第40篇会说到哈。<br><br></p>
+                                <p class="reply-time">2019-02-05 11:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/07/1e/bdbe93f4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">尘封</span>
+                            </div>
+                            <div class="bd">新年快乐 <br></div>
+                            <span class="time">2019-02-04 08:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐🤝</p>
+                                <p class="reply-time">2019-02-04 13:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/93/8a/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">亮</span>
+                            </div>
+                            <div class="bd">老师过年好呀，祝您猪年大吉，财源广进；老师咱们这个课结束后，再开一期好不好啊，没学够啊，这是我的新年愿望哦 <br></div>
+                            <span class="time">2019-02-04 08:51</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐，共同进步😄</p>
+                                <p class="reply-time">2019-02-04 13:40</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/40/5e/b8fada94.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ryoma</span>
+                            </div>
+                            <div class="bd">贴一下官方文档中的说明：To rename TEMPORARY tables, RENAME TABLE does not work. Use ALTER TABLE instead.<br>全文见：https:&#47;&#47;dev.mysql.com&#47;doc&#47;refman&#47;8.0&#47;en&#47;rename-table.html<br><br> <br></div>
+                            <span class="time">2019-02-14 14:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/57/6e/dd0eee5f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">夜空中最亮的星（华仔）</span>
+                            </div>
+                            <div class="bd">过年的时候课程落下了，给老师拜个年。 <br></div>
+                            <span class="time">2019-02-13 14:40</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐</p>
+                                <p class="reply-time">2019-02-13 16:49</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e1/09/9483f537.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">☞</span>
+                            </div>
+                            <div class="bd">老师新年好：<br>        请问老师一下我做的实验，主从情况下，binlog为row模式的时候，退出线程从主库的binlog中关于临时表只找到了DROP &#47;*!40005 TEMPORARY *&#47; TABLE IF EXISTS `temp_t`，没有找到create相关的信息，从库是怎么应用这部分create的呢，而且关于drop操作那里也提到了从库没有这个临时表，是不是有所冲突啊 <br></div>
+                            <span class="time">2019-02-11 17:01</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">正常create 语句也会记录的。<br><br>还有，因为drop 语句里面因为有TEMPORARY，所以拿到备库执行，即使备库没这个临时表，也没关系。</p>
+                                <p class="reply-time">2019-02-11 18:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/4f/78/c3d8ecb0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">undifined</span>
+                            </div>
+                            <div class="bd">老师 有几个问题<br>1. 在 session 结束的时候会执行 DROP TEMPORARY TABLE，如果数据库掉电，这个临时表什么时候会被清除<br>2. 如果binlog 中记录了临时表的操作，因为 session 不同，在从库中访问不到，这样做的意义是什么<br><br>辛苦老师解答一下，谢谢老师 <br></div>
+                            <span class="time">2019-02-11 13:58</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 好问题，重启以后MySQL会扫描临时目录，把表都删掉；<br>2. 就是我们文中说的，如果binlog是statement的时候，也需要同步到备库去，否则备库上执行一个<br>insert into t_normal (select * from t_temp) 就会报错了</p>
+                                <p class="reply-time">2019-02-11 16:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/A94RKUfWfwzRzb68T9xskctQ43TBgXSBIL78p0N0ria2tQxmsTTJebYmefhkbHK7zwpoxokxs43UxpgDTdwm5tg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">慕塔</span>
+                            </div>
+                            <div class="bd">打卡 新年快乐😲😲😲 <br></div>
+                            <span class="time">2019-02-04 23:54</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐、共同进步🤝<br><br>好勤奋呀😆</p>
+                                <p class="reply-time">2019-02-05 10:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/fd/20/2761ef0e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">cheriston</span>
+                            </div>
+                            <div class="bd">老师辛苦了，大年三十还给我们分享技术，老师新年好🎉. <br></div>
+                            <span class="time">2019-02-04 20:22</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">同祝新年好，共同进步😄</p>
+                                <p class="reply-time">2019-02-05 00:55</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/05/d4/e06bf86d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">长杰</span>
+                            </div>
+                            <div class="bd">老师，新年快乐，万事如意！ <br></div>
+                            <span class="time">2019-02-04 20:10</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新春快乐～</p>
+                                <p class="reply-time">2019-02-05 00:54</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/63/2d/80427196.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">杰</span>
+                            </div>
+                            <div class="bd">丁大大新春快乐 <br></div>
+                            <span class="time">2019-02-04 14:45</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐 工作顺利~</p>
+                                <p class="reply-time">2019-02-04 16:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师，新年快乐。由于自身原因，错过几期精彩的内容，年后上班以后在好好补补。 <br></div>
+                            <span class="time">2019-02-04 14:04</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">春节快乐 新年身体健康哈</p>
+                                <p class="reply-time">2019-02-04 16:48</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/0c/48/ba59d28d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">poppy</span>
+                            </div>
+                            <div class="bd">老师，新年快乐。<br>关于思考题，alter table temp_t rename to temp_t2,我的理解是mysql直接修改的是table_def_key，而对于rename table temp_t2 to temp_t3,mysql直接去mysql的data目录下该数据库的目录(例如老师实验用的应该是test数据库，所以对应的是test目录)下寻找名为temp_t2.frm的文件去修改名称，所以就出现了&quot;Can&#39;t find file &#39;.&#47;test&#47;temp_t2.frm&#39;(errno: 2 - No such file or directory) <br></div>
+                            <span class="time">2019-02-04 11:05</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">春节快乐<br><br>👍<br></p>
+                                <p class="reply-time">2019-02-04 16:49</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/93/8a/abb7bfe3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">亮</span>
+                            </div>
+                            <div class="bd">老师您好，在25课里面的置顶留言“6.表上无主键的情况(主库利用索引更改数据,备库回放只能用全表扫描,这种情况可以调整slave_rows_search_algorithms参数适当优化下)”<br>为啥会存在无主键的表呢，就算dba没创建主键，Innodb可以用rowid给自动建一个虚拟主键呀，这样不就是所有的表都有主键了吗？ <br></div>
+                            <span class="time">2019-02-04 09:47</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">用户没有显示指定主键的话，InnoDB引擎会自己创建一个隐藏的主键，但是这个主键对Server层是透明的，优化器用不上。<br><br>新年快乐~</p>
+                                <p class="reply-time">2019-02-04 16:52</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

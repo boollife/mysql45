@@ -1,0 +1,443 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  
+  
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                14讲count(*)这么慢，我该怎么办
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/ee/03/ee2882d95e26abb309a926c67e509a03.jpg">
+
+                <div>
+                    <audio controls="controls" height="100" width="100">
+                        <source src="14讲count这么慢，我该怎么办.mp3" type="audio/mp3" />
+                        <embed height="100" width="100" src="14讲count这么慢，我该怎么办.mp3" />
+                    </audio>
+                </div>
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在开发系统的时候，你可能经常需要计算一个表的行数，比如一个交易系统的所有变更记录总数。这时候你可能会想，一条select count(*) from t 语句不就解决了吗？</p><p>但是，你会发现随着系统中记录数越来越多，这条语句执行得也会越来越慢。然后你可能就想了，MySQL怎么这么笨啊，记个总数，每次要查的时候直接读出来，不就好了吗。</p><p>那么今天，我们就来聊聊count(*)语句到底是怎样实现的，以及MySQL为什么会这么实现。然后，我会再和你说说，如果应用中有这种频繁变更并需要统计表行数的需求，业务设计上可以怎么做。</p><h1>count(*)的实现方式</h1><p>你首先要明确的是，在不同的MySQL引擎中，count(*)有不同的实现方式。</p><ul>
+<li>MyISAM引擎把一个表的总行数存在了磁盘上，因此执行count(*)的时候会直接返回这个数，效率很高；</li>
+<li>而InnoDB引擎就麻烦了，它执行count(*)的时候，需要把数据一行一行地从引擎里面读出来，然后累积计数。</li>
+</ul><p>这里需要注意的是，我们在这篇文章里讨论的是没有过滤条件的count(*)，如果加了where 条件的话，MyISAM表也是不能返回得这么快的。</p><p>在前面的文章中，我们一起分析了为什么要使用InnoDB，因为不论是在事务支持、并发能力还是在数据安全方面，InnoDB都优于MyISAM。我猜你的表也一定是用了InnoDB引擎。这就是当你的记录数越来越多的时候，计算一个表的总行数会越来越慢的原因。</p><!-- [[[read_end]]] --><p>那<strong>为什么InnoDB不跟MyISAM一样，也把数字存起来呢？</strong></p><p>这是因为即使是在同一个时刻的多个查询，由于多版本并发控制（MVCC）的原因，InnoDB表“应该返回多少行”也是不确定的。这里，我用一个算count(*)的例子来为你解释一下。</p><p>假设表t中现在有10000条记录，我们设计了三个用户并行的会话。</p><ul>
+<li>会话A先启动事务并查询一次表的总行数；</li>
+<li>会话B启动事务，插入一行后记录后，查询表的总行数；</li>
+<li>会话C先启动一个单独的语句，插入一行记录后，查询表的总行数。</li>
+</ul><p>我们假设从上到下是按照时间顺序执行的，同一行语句是在同一时刻执行的。</p><p><img src="https://static001.geekbang.org/resource/image/5e/97/5e716ba1d464c8224c1c1f36135d0e97.png" alt=""></p><center><span class="reference">图1 会话A、B、C的执行流程</span></center><p>你会看到，在最后一个时刻，三个会话A、B、C会同时查询表t的总行数，但拿到的结果却不同。</p><p>这和InnoDB的事务设计有关系，可重复读是它默认的隔离级别，在代码上就是通过多版本并发控制，也就是MVCC来实现的。每一行记录都要判断自己是否对这个会话可见，因此对于count(*)请求来说，InnoDB只好把数据一行一行地读出依次判断，可见的行才能够用于计算“基于这个查询”的表的总行数。</p><blockquote>
+<p>备注：如果你对MVCC记忆模糊了，可以再回顾下第3篇文章<a href="https://time.geekbang.org/column/article/68963">《事务隔离：为什么你改了我还看不见？》</a>和第8篇文章<a href="https://time.geekbang.org/column/article/70562">《事务到底是隔离的还是不隔离的？》</a>中的相关内容。</p>
+</blockquote><p>当然，现在这个看上去笨笨的MySQL，在执行count(*)操作的时候还是做了优化的。</p><p>你知道的，InnoDB是索引组织表，主键索引树的叶子节点是数据，而普通索引树的叶子节点是主键值。所以，普通索引树比主键索引树小很多。对于count(*)这样的操作，遍历哪个索引树得到的结果逻辑上都是一样的。因此，MySQL优化器会找到最小的那棵树来遍历。<strong>在保证逻辑正确的前提下，尽量减少扫描的数据量，是数据库系统设计的通用法则之一。</strong></p><p>如果你用过show table status 命令的话，就会发现这个命令的输出结果里面也有一个TABLE_ROWS用于显示这个表当前有多少行，这个命令执行挺快的，那这个TABLE_ROWS能代替count(*)吗？</p><p>你可能还记得在第10篇文章<a href="https://time.geekbang.org/column/article/71173">《 MySQL为什么有时候会选错索引？》</a>中我提到过，索引统计的值是通过采样来估算的。实际上，TABLE_ROWS就是从这个采样估算得来的，因此它也很不准。有多不准呢，官方文档说误差可能达到40%到50%。<strong>所以，show table status命令显示的行数也不能直接使用。</strong></p><p>到这里我们小结一下：</p><ul>
+<li>MyISAM表虽然count(*)很快，但是不支持事务；</li>
+<li>show table status命令虽然返回很快，但是不准确；</li>
+<li>InnoDB表直接count(*)会遍历全表，虽然结果准确，但会导致性能问题。</li>
+</ul><p>那么，回到文章开头的问题，如果你现在有一个页面经常要显示交易系统的操作记录总数，到底应该怎么办呢？答案是，我们只能自己计数。</p><p>接下来，我们讨论一下，看看自己计数有哪些方法，以及每种方法的优缺点有哪些。</p><p>这里，我先和你说一下这些方法的基本思路：你需要自己找一个地方，把操作记录表的行数存起来。</p><h1>用缓存系统保存计数</h1><p>对于更新很频繁的库来说，你可能会第一时间想到，用缓存系统来支持。</p><p>你可以用一个Redis服务来保存这个表的总行数。这个表每被插入一行Redis计数就加1，每被删除一行Redis计数就减1。这种方式下，读和更新操作都很快，但你再想一下这种方式存在什么问题吗？</p><p>没错，缓存系统可能会丢失更新。</p><p>Redis的数据不能永久地留在内存里，所以你会找一个地方把这个值定期地持久化存储起来。但即使这样，仍然可能丢失更新。试想如果刚刚在数据表中插入了一行，Redis中保存的值也加了1，然后Redis异常重启了，重启后你要从存储redis数据的地方把这个值读回来，而刚刚加1的这个计数操作却丢失了。</p><p>当然了，这还是有解的。比如，Redis异常重启以后，到数据库里面单独执行一次count(*)获取真实的行数，再把这个值写回到Redis里就可以了。异常重启毕竟不是经常出现的情况，这一次全表扫描的成本，还是可以接受的。</p><p>但实际上，<strong>将计数保存在缓存系统中的方式，还不只是丢失更新的问题。即使Redis正常工作，这个值还是逻辑上不精确的。</strong></p><p>你可以设想一下有这么一个页面，要显示操作记录的总数，同时还要显示最近操作的100条记录。那么，这个页面的逻辑就需要先到Redis里面取出计数，再到数据表里面取数据记录。</p><p>我们是这么定义不精确的：</p><ol>
+<li>
+<p>一种是，查到的100行结果里面有最新插入记录，而Redis的计数里还没加1；</p>
+</li>
+<li>
+<p>另一种是，查到的100行结果里没有最新插入的记录，而Redis的计数里已经加了1。</p>
+</li>
+</ol><p>这两种情况，都是逻辑不一致的。</p><p>我们一起来看看这个时序图。</p><p><img src="https://static001.geekbang.org/resource/image/39/33/39898af053695dad37227d71ae288e33.png" alt=""></p><center><span class="reference">图2 会话A、B执行时序图</span></center><p>图2中，会话A是一个插入交易记录的逻辑，往数据表里插入一行R，然后Redis计数加1；会话B就是查询页面显示时需要的数据。</p><p>在图2的这个时序里，在T3时刻会话B来查询的时候，会显示出新插入的R这个记录，但是Redis的计数还没加1。这时候，就会出现我们说的数据不一致。</p><p>你一定会说，这是因为我们执行新增记录逻辑时候，是先写数据表，再改Redis计数。而读的时候是先读Redis，再读数据表，这个顺序是相反的。那么，如果保持顺序一样的话，是不是就没问题了？我们现在把会话A的更新顺序换一下，再看看执行结果。</p><p><img src="https://static001.geekbang.org/resource/image/5c/db/5c2f786beae1d8917cdc5033b7bf0bdb.png" alt=""></p><center><span class="reference">图3 调整顺序后，会话A、B的执行时序图</span></center><p>你会发现，这时候反过来了，会话B在T3时刻查询的时候，Redis计数加了1了，但还查不到新插入的R这一行，也是数据不一致的情况。</p><p>在并发系统里面，我们是无法精确控制不同线程的执行时刻的，因为存在图中的这种操作序列，所以，我们说即使Redis正常工作，这个计数值还是逻辑上不精确的。</p><h1>在数据库保存计数</h1><p>根据上面的分析，用缓存系统保存计数有丢失数据和计数不精确的问题。那么，<strong>如果我们把这个计数直接放到数据库里单独的一张计数表C中，又会怎么样呢？</strong></p><p>首先，这解决了崩溃丢失的问题，InnoDB是支持崩溃恢复不丢数据的。</p><blockquote>
+<p>备注：关于InnoDB的崩溃恢复，你可以再回顾一下第2篇文章<a href="https://time.geekbang.org/column/article/68633">《日志系统：一条SQL更新语句是如何执行的？》</a>中的相关内容。</p>
+</blockquote><p>然后，我们再看看能不能解决计数不精确的问题。</p><p>你会说，这不一样吗？无非就是把图3中对Redis的操作，改成了对计数表C的操作。只要出现图3的这种执行序列，这个问题还是无解的吧？</p><p>这个问题还真不是无解的。</p><p>我们这篇文章要解决的问题，都是由于InnoDB要支持事务，从而导致InnoDB表不能把count(*)直接存起来，然后查询的时候直接返回形成的。</p><p>所谓以子之矛攻子之盾，现在我们就利用“事务”这个特性，把问题解决掉。</p><p><img src="https://static001.geekbang.org/resource/image/9e/e3/9e4170e2dfca3524eb5e92adb8647de3.png" alt=""></p><center><span class="reference">图4 会话A、B的执行时序图</span></center><p>我们来看下现在的执行结果。虽然会话B的读操作仍然是在T3执行的，但是因为这时候更新事务还没有提交，所以计数值加1这个操作对会话B还不可见。</p><p>因此，会话B看到的结果里， 查计数值和“最近100条记录”看到的结果，逻辑上就是一致的。</p><h1>不同的count用法</h1><p>在前面文章的评论区，有同学留言问到：在select count(?) from t这样的查询语句里面，count(*)、count(主键id)、count(字段)和count(1)等不同用法的性能，有哪些差别。今天谈到了count(*)的性能问题，我就借此机会和你详细说明一下这几种用法的性能差别。</p><p>需要注意的是，下面的讨论还是基于InnoDB引擎的。</p><p>这里，首先你要弄清楚count()的语义。count()是一个聚合函数，对于返回的结果集，一行行地判断，如果count函数的参数不是NULL，累计值就加1，否则不加。最后返回累计值。</p><p>所以，count(*)、count(主键id)和count(1) 都表示返回满足条件的结果集的总行数；而count(字段），则表示返回满足条件的数据行里面，参数“字段”不为NULL的总个数。</p><p>至于分析性能差别的时候，你可以记住这么几个原则：</p><ol>
+<li>
+<p>server层要什么就给什么；</p>
+</li>
+<li>
+<p>InnoDB只给必要的值；</p>
+</li>
+<li>
+<p>现在的优化器只优化了count(*)的语义为“取行数”，其他“显而易见”的优化并没有做。</p>
+</li>
+</ol><p>这是什么意思呢？接下来，我们就一个个地来看看。</p><p><strong>对于count(主键id)来说</strong>，InnoDB引擎会遍历整张表，把每一行的id值都取出来，返回给server层。server层拿到id后，判断是不可能为空的，就按行累加。</p><p><strong>对于count(1)来说</strong>，InnoDB引擎遍历整张表，但不取值。server层对于返回的每一行，放一个数字“1”进去，判断是不可能为空的，按行累加。</p><p>单看这两个用法的差别的话，你能对比出来，count(1)执行得要比count(主键id)快。因为从引擎返回id会涉及到解析数据行，以及拷贝字段值的操作。</p><p><strong>对于count(字段)来说</strong>：</p><ol>
+<li>
+<p>如果这个“字段”是定义为not null的话，一行行地从记录里面读出这个字段，判断不能为null，按行累加；</p>
+</li>
+<li>
+<p>如果这个“字段”定义允许为null，那么执行的时候，判断到有可能是null，还要把值取出来再判断一下，不是null才累加。</p>
+</li>
+</ol><p>也就是前面的第一条原则，server层要什么字段，InnoDB就返回什么字段。</p><p><strong>但是count(*)是例外</strong>，并不会把全部字段取出来，而是专门做了优化，不取值。count(*)肯定不是null，按行累加。</p><p>看到这里，你一定会说，优化器就不能自己判断一下吗，主键id肯定非空啊，为什么不能按照count(*)来处理，多么简单的优化啊。</p><p>当然，MySQL专门针对这个语句进行优化，也不是不可以。但是这种需要专门优化的情况太多了，而且MySQL已经优化过count(*)了，你直接使用这种用法就可以了。</p><p>所以结论是：按照效率排序的话，count(字段)&lt;count(主键id)&lt;count(1)≈count(*)，所以我建议你，尽量使用count(*)。</p><h1>小结</h1><p>今天，我和你聊了聊MySQL中获得表行数的两种方法。我们提到了在不同引擎中count(*)的实现方式是不一样的，也分析了用缓存系统来存储计数值存在的问题。</p><p>其实，把计数放在Redis里面，不能够保证计数和MySQL表里的数据精确一致的原因，是<strong>这两个不同的存储构成的系统，不支持分布式事务，无法拿到精确一致的视图。</strong>而把计数值也放在MySQL中，就解决了一致性视图的问题。</p><p>InnoDB引擎支持事务，我们利用好事务的原子性和隔离性，就可以简化在业务开发时的逻辑。这也是InnoDB引擎备受青睐的原因之一。</p><p>最后，又到了今天的思考题时间了。</p><p>在刚刚讨论的方案中，我们用了事务来确保计数准确。由于事务可以保证中间结果不被别的事务读到，因此修改计数值和插入新记录的顺序是不影响逻辑结果的。但是，从并发系统性能的角度考虑，你觉得在这个事务序列里，应该先插入操作记录，还是应该先更新计数表呢？</p><p>你可以把你的思考和观点写在留言区里，我会在下一篇文章的末尾给出我的参考答案。感谢你的收听，也欢迎你把这篇文章分享给更多的朋友一起阅读。</p><h1>上期问题时间</h1><p>上期我给你留的问题是，什么时候使用alter table t engine=InnoDB会让一个表占用的空间反而变大。</p><p>在这篇文章的评论区里面，大家都提到了一个点，就是这个表，本身就已经没有空洞的了，比如说刚刚做过一次重建表操作。</p><p>在DDL期间，如果刚好有外部的DML在执行，这期间可能会引入一些新的空洞。</p><p>@飞翔 提到了一个更深刻的机制，是我们在文章中没说的。在重建表的时候，InnoDB不会把整张表占满，每个页留了1/16给后续的更新用。也就是说，其实重建表之后不是“最”紧凑的。</p><p>假如是这么一个过程：</p><ol>
+<li>
+<p>将表t重建一次；</p>
+</li>
+<li>
+<p>插入一部分数据，但是插入的这些数据，用掉了一部分的预留空间；</p>
+</li>
+<li>
+<p>这种情况下，再重建一次表t，就可能会出现问题中的现象。</p>
+</li>
+</ol><p>评论区留言点赞板：</p><blockquote>
+<p>@W_T 等同学提到了数据表本身紧凑的情况；<br>
+@undifined 提了一个好问题， @帆帆帆帆帆帆帆帆 同学回答了这个问题；<br>
+@陈飞 @郜 @wang chen wen 都提了很不错的问题，大家可以去看看。</p>
+</blockquote><p><img src="https://static001.geekbang.org/resource/image/09/77/09c1073f99cf71d2fb162a716b5fa577.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/61/57/6f3c81dd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿建</span>
+                            </div>
+                            <div class="bd">从并发系统性能的角度考虑，应该先插入操作记录，再更新计数表。<br><br>知识点在《行锁功过：怎么减少行锁对性能的影响？》<br>因为更新计数表涉及到行锁的竞争，先插入再更新能最大程度地减少了事务之间的锁等待，提升了并发度。 <br></div>
+                            <span class="time">2018-12-14 01:44</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">好几个同学说对，你第一个标明出处👍🏿</p>
+                                <p class="reply-time">2018-12-14 09:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/36/d2/c7357723.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">发条橙子 。</span>
+                            </div>
+                            <div class="bd">老师 ，我这边有几个问题  ：<br><br>1. 看到老师回复评论说 count(id) 也是走普通索引 ，那是不是也算是优化了 ， 我以为 count(字段) 是走的聚集索引 。老师的意思是 count(字段) 是走二级索引，但是不一定是数据最少的索引树的意思是么 <br><br>2. count(*) 的话， innodb 还会有取数判空这样的判断逻辑么 ，还是直接取行数 +1 了 ， 还是按所取索引类型分情况。 允许为 null 的索引是不是行数比较少， 取的总数会不会有问题呢<br><br>3.  我这边试了一下 ， 库里总共 30w 数据 。 第一次用 count(*) 是 120多ms , 第二次就是 60多 ms 。 第三次用了 count(1) ，也是60多ms 。 请问 count(*) 这两次的前后时间差是什么原因，也会走缓存 ？<br><br>4. 另一个问题是一个题外话 ，我看老师的例子事务级别应该都是 rr 。 我偶然看到我们公司事务隔离级别是  rc 。 我比较惊讶，就去问 DBA 为什么是 rc 而不是默认的 rr 。 她说一般都是用的 rc  ，我想问现在公司一般都是 rc 么， 请问老师现在用的隔离级别是什么 ？？ 在我的印象里 ，rr 保证事务的隔离性会更好一些吧 。 我google 了一下， rc 会不会在某些场景下出现一些问题，但是没有查出来相关结果。老师能不能讲解一下，rc 的话会在哪些场景下会踩坑么 。 （我之前码代码都是按照 rr 级别下的思维码的代码） <br></div>
+                            <span class="time">2018-12-15 15:32</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 如果有索引用到这个字段的话，比较大可能会用到这个索引，比主键索引小<br><br>2. 索引字段就算是NULL，上面的id也不是的<br><br>3.  进了Buffer pool 的原因吧<br><br>4. 嗯，rc用得挺多的，但是原因可能只是因为“以前是这么用的”。 使用rc可能有问题，也可能没问题。但是我觉得DBA不知道为什么这么选，这个是问题。<br><br>rc本身的问题其实前面我们说过一些，比如不是一致性读。后面也会有文章说到。</p>
+                                <p class="reply-time">2018-12-15 18:20</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/34/5c/6b4757a0.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">倪大人</span>
+                            </div>
+                            <div class="bd">看到有同学说会话A是幻读，其实图一的会话B才是幻读吧？ <br></div>
+                            <span class="time">2018-12-15 14:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这些都不叫幻读，幻读的意思是“用一个事务里面，后一个请求看到的比之前相同请求看到的，多了记录出来”。<br>改了不算<br><br>大家关注一下这个问题。<br>好问题<br></p>
+                                <p class="reply-time">2018-12-15 18:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/76/93/c78a132a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">果然如此</span>
+                            </div>
+                            <div class="bd">一、请问计数用这个MySQL+redis方案如何：<br>1.开启事务（程序中的事务）<br>2.MySQL插入数据<br>3.原子更新redis计数<br>4.如果redis更新成功提交事务，如果redis更新失败回滚事务。<br><br>二、.net和java程序代码的事务和MySQL事务是什么关系，有什么相关性？ <br></div>
+                            <span class="time">2018-12-14 20:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 好问题，不会还是没解决我们说的一致性问题。如果在3、4之间插入了 Session B的逻辑呢<br><br>2. 我估计就是启动事务（执行begin),结束时提交（执行commit)吧，没有了解过所有框架，不确定哈</p>
+                                <p class="reply-time">2018-12-15 20:19</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/21/30/8ecce1e1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">北天魔狼</span>
+                            </div>
+                            <div class="bd">老师说过：事务开启后，更新操作放到最后。较少锁等待时间的影响 <br></div>
+                            <span class="time">2018-12-14 06:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/ba/48/c892a35b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">崔根禄</span>
+                            </div>
+                            <div class="bd">老师：<br>1.count(*) 不取值，<br>         InnoDB还做遍历表的操作吗，也不用给server层返回值吗？<br>2.count(1) 不取值，<br>        但是要遍历表。原文中：<br>        “server 层对于返回的每一行，放一个数字“1”进去”<br>        这个“返回的每一行” ：到底返回的啥？是每一行记录吗？还是形式的返回空行，然后用1填充？<br><br>3. count(1),count(*),count(主键id)<br>       这三个做比较，哪个会快？时间消耗在哪个环节？<br>      是否遍历表；是否取值；返回给server层内容    细节上从哪个角度考虑？<br>          <br></div>
+                            <span class="time">2018-12-14 18:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">老师我先问个本章之外的问题:<br>1.rr模式下,一张表上没有主键和唯一键,有二级索引c.如果是一张大表,删除一条数据delete t where c=1.<br>在主库上利用二级索引,在根据虚拟的主键列回表删除还挺快.但是在备库上回放特别慢,而且状态是system lock,是因为binlog event里没有包含虚拟主键列.导致在备库回放的时候,必须全表扫描,耗时特别久?还是其他原因<br><br>2.回放过程中,在备库delete一条语句是被阻塞的,insert又是可以的,说明只在记录上的X锁没有gap锁。<br>但是如果在主库session A begin,delete where c=1.在开启一个session B,在主库上操作也是delete阻塞,insert正常.不过等session A执行完成,不提交.insert都阻塞了,说明最后上了gap锁。有点没明白这儿的上锁逻辑是什么？<br><br>3.还有就是备库回放binlog,相对于主库的一条update语句流程来说,从库回放哪些流程是省略了的啊,<br>server层的应该都省略了,应该主要是引擎层的回放,这里有点模糊从库是怎么回放的binlog event?<br>因为第一个问题从库回放的时候,从库上的二级索引貌似没起作用,直接就在聚簇索引上做的更新。<br><br>感谢老师 <br></div>
+                            <span class="time">2018-12-14 15:10</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">1. 对，这个是个bug, 从库上会全表扫描。MariaDB 的版本有解决这个问题。生产上我们最好不允许没有主键的表<br><br>2. 按照你问的,gap锁没问题了。delete 被锁是因为行锁吧。从库重放就是因为走全表扫描按行锁下来触发的<br><br>3. 出现这个问题肯定是binlog设置了row格式。<br>这样binlog里面有所有值。如果你有主键的话，就是主键查，没有的话…就是全表了</p>
+                                <p class="reply-time">2018-12-14 15:28</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/ea/9a/02d589f9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">斜面镜子 Bill</span>
+                            </div>
+                            <div class="bd">先插入操作纪录，再更新计数表，因为计数表相当于热点行，加锁时间需要考虑足够短！ <br></div>
+                            <span class="time">2018-12-14 13:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f8/70/f3a33a14.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">某、人</span>
+                            </div>
+                            <div class="bd">谈谈自己的理解,有不对之处还请老师指出:<br>数据一致性问题目前来说主要分为三类<br>1.主从不一致<br>解决办法:半同步复制after_commit,after_sync,MGR(after_prepare)。但是都不能完成满足完全实时一致,由于等待的ack点不同,相对来说一致性的强度是递增.<br>2.数据库与缓存的不一致<br>解决办法:读操作直接读缓存,写操作先更新到数据库,淘汰缓存(程序需要保证两个操作的原子性).由于该key的缓存已经清理掉,那么下次读的时候需要先读数据库,在重建缓存.<br>由于redis是单线程,保证了一个操作的原子性.可以通过设置appendfsync always来保证每次操作都把该操作记录并落盘到aof文件里(不过一般redis该值为everysec),毕竟使用redis的目的不是为了保证acid.还是要根据业务来选择<br>3.一个事务跨多个节点或者多种数据库(分库分表和银行转账这种例子)<br>目前好像都是通过2pc,3pc来保证的。<br><br>count(字段值):如果该字段上有null值.每行的行头有一个标记位,标记该行是否为null.所以多了一层判断。相对更耗时<br>count(主键id):即便是选择的有null值的二级索引,但是也可以挺快的正确计数。因为null的话字段值虽然为null,但是该行上主键id以及指向聚簇索引该id的指针还是存在的,所以不影响计数,也不用做判断,直接遍历该二级索引,取出id值,按行累加就行。<br>count(1)和count(*):看官方文档上说是5.7.18版本之前是扫描聚簇索引,之后是二级索引。虽然不取值,只计数。但是二级索引比聚簇索引需要扫描的页数相对来说更少,这应该也是一种优化,不过我做测试percona版本的5.6都是选择了二级索引<br>这期干货挺多的,学会了如果某表上有count比较多的操作,最好是用count(1)或者count(*),然后选择一列占用字节数最少的建立索引(比如tinyint类型)<br><br>还有个问题请教下老师:<br>1.如果某列设置为not null建立索引.那么是不是count(id)走该索引和count(该列)效率是不是一样的？都不用做判断,两者都是需要把整个二级索引传给server层计数?还是说count(id)只需要传id,而count(字段)只需要传字段值给server层做计数？ <br></div>
+                            <span class="time">2018-12-16 14:32</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/d4/f3/b73d8abf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">三木子</span>
+                            </div>
+                            <div class="bd">一直以为带*查询效率是最差的，平时查询特意加了 count(ID) 查询。罪过啊。 <br></div>
+                            <span class="time">2018-12-15 15:26</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">😄 来得及来得及</p>
+                                <p class="reply-time">2018-12-15 18:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">萧萧木叶</span>
+                            </div>
+                            <div class="bd">歪个楼请教个业务中遇到的问题：<br>表结构如下：<br> CREATE TABLE `tablename` (<br>  `id` int(10) NOT NULL AUTO_INCREMENT,<br>  `uid` bigint(20) NOT NULL DEFAULT &#39;0&#39;,<br>  `status` tinyint(1) NOT NULL DEFAULT &#39;1&#39; ,<br>  `date` varchar(8) NOT NULL DEFAULT &#39;0&#39; COMMENT &#39;日期&#39;,<br>  `source` varchar(20) NOT NULL DEFAULT &#39;&#39; COMMENT &#39;来源&#39;,<br>  `ctime` datetime NOT NULL DEFAULT &#39;0000-00-00 00:00:00&#39; COMMENT &#39;创建时间&#39;,<br>  `etime` datetime NOT NULL DEFAULT &#39;0000-00-00 00:00:00&#39; COMMENT &#39;更新时间&#39;,<br>  PRIMARY KEY (`id`),<br>  UNIQUE KEY `idx_uid_date` (`uid`,`date`),<br>  KEY `idx_ctime` (`ctime`)<br>) ENGINE=InnoDB AUTO_INCREMENT=685725 DEFAULT CHARSET=utf8<br><br>其中 UNIQUE KEY `idx_uid_date` (`uid`,`date`)<br><br>查询指定date下uid个数：<br>方式一：select count(uid) from tablename where date = &#39;20181201&#39;;<br>+------------+<br>| count(uid) |<br>+------------+<br>|       8330 |<br>+------------+<br>方式二：select count(distinct uid) from tablename where date = &#39;20181201&#39;;<br>+---------------------+<br>| count(distinct uid) |<br>+---------------------+<br>|                8243         <br>+---------------------+<br>方式三：<br>select count(*) from (select distinct uid from tablename where date = &#39;20181201&#39;) as t;<br>+----------+<br>| count(*) |<br>+----------+<br>|     8330 |<br>+----------+<br>与方式一查询结果一致<br><br>问题：为何方式二和方式一、三的结果不一样呢？ <br></div>
+                            <span class="time">2018-12-26 14:54</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e7/56/87f45704.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Bin</span>
+                            </div>
+                            <div class="bd">答：先插入操作记录，再更新计数表。<br>       在InnoDB事务中，行锁是在需要的时候才加上, 等到事务结束(commit)的时候才释放。<br>       案例中的更新操作很多时候都是更新同一个数据对象, 如果是先更新计数表，那么持有的锁时间会更长. <br></div>
+                            <span class="time">2018-12-14 18:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/e8/45/c58cb283.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">帆帆帆帆帆帆帆帆</span>
+                            </div>
+                            <div class="bd">如果字段上有索引，且字段非空，count(字段)的效率就不是最差的了吧。 <br></div>
+                            <span class="time">2018-12-14 09:31</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">还是的。<br><br>注意：count(id)也是可以使用普通索引的</p>
+                                <p class="reply-time">2018-12-14 12:46</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/cb/f8/f4adadcb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">陈天境</span>
+                            </div>
+                            <div class="bd">碰到大部分情形都是带条件查询的count,，这个怎么解？ <br></div>
+                            <span class="time">2018-12-14 08:54</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">索引条件过滤完后还多少行？如果行数少（几百行？）就没关系直接执行了</p>
+                                <p class="reply-time">2018-12-14 09:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://thirdwx.qlogo.cn/mmopen/vi_32/77Dr13EtDbXyBcuvvJ1BNR41nIhT8BxHMk2y1qrKRghoRKSSt0icrT0Hko0SUnlJkzcQcGqZSlSavuZNazYogGg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ivy</span>
+                            </div>
+                            <div class="bd">老师，文章中反复强调不取值，这是什么概念呢？引擎不取值server怎么拿到数据又怎么计数呢？能不能大概解释一下引擎读取数据返回给server的过程呀？ <br></div>
+                            <span class="time">2019-01-04 10:42</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">就是返回一个空行，但是高度server层“不是空值，可以计数”<br><br>过程上，其实是server层调用引擎接口，一行一行取</p>
+                                <p class="reply-time">2019-01-04 11:06</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://thirdwx.qlogo.cn/mmopen/vi_32/77Dr13EtDbXyBcuvvJ1BNR41nIhT8BxHMk2y1qrKRghoRKSSt0icrT0Hko0SUnlJkzcQcGqZSlSavuZNazYogGg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ivy</span>
+                            </div>
+                            <div class="bd">老师，你好，<br>如果这个“字段”是定义为 not null 的话，一行行地从记录里面读出这个字段，判断不能为 null，按行累加；<br>这段话没读懂，既然已经知道not null为何还要再次判断不能为 null？直接读出来累加不就可以了吗？另外是否我对引擎层面的数据读取有误解，是否说无论使用哪种 count 方式，引擎都一定要逐行去读只是在是否使用索引和是否返回给server层具体数据的区别？ <br></div>
+                            <span class="time">2019-01-04 10:33</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">嗯，我的看法跟你一样，不过MySQL 现在就是这么做的😓</p>
+                                <p class="reply-time">2019-01-04 11:42</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/7e/36/7c5503d9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">寂寞红尘</span>
+                            </div>
+                            <div class="bd">插入数据的时候加入分布式锁，事务完成后且redis加一后再释放锁；获取计数的时候也同样获取相同的分布式锁。这样是不是能解决redis计数不准确的问题。 <br></div>
+                            <span class="time">2018-12-30 10:53</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">还是不行哦。你看一下我们例子中的场景</p>
+                                <p class="reply-time">2018-12-30 20:03</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ruian</span>
+                            </div>
+                            <div class="bd">老师您好，上次我这边问了您一个问题，您这边做了回复，我这边做了补充和回答，并有新的疑惑，再次请教下老师。。<br><br>老师，我有一个问题请教下您。我的mysql数据库 有一张表project_des (850万数据) count(1) 只要0.05s 和从表project（6500条数据）关联后需要15s 查看执行计划发现都走索引了。不知道为啥这么慢？<br>查询语句 select count(1) from project_des a,project b where a.project_id=b.id 我换exists 和in 也这么慢<br>2018-12-28<br> 作者回复<br>你这个是笛卡尔积肯定慢的…你的业务需求是啥，这个语句的业务意义是什么<br><br>答：业务需求是这样的，页面需要显示出两张表关联后的某些字段，还需要显示关联后的总数。<br>      老师上面说笛卡尔积肯定是慢的，我这边把数据导入oracle数据库做了比较。结果如下：<br>       请教老师mysql为啥会比较慢，跟哪些因素有关？<br><br><br><br>mysql 环境下<br>select count(*) from project; --11616条记录  0.045s<br>select count(*) from project_des; --3712995条记录  0.045s<br>select count(*) from project_des a, project b where a.project_id=b.id  --3152651条记录  17.71s<br>select count(*) from project_des a where a.project_id in (select b.id from project b where a.project_id=b.id) --3152651条记录  17.66s<br>select count(*) from project_des a where  exists(select 1 from project b where a.project_id=b.id)  --3152651条记录  42.06s<br><br><br>oracle 环境下<br>select count(*) from project; --11616条记录  0.04s<br>select count(*) from project_des; --3712995条记录  0.16s<br>select count(*) from project_des a, project b where a.project_id=b.id  --3152651条记录  0.82s<br>select count(*) from project_des a where a.project_id in (select b.id from project b where a.project_id=b.id) --3152651条记录  0.93s<br>select count(*) from project_des a where  exists(select 1 from project b where a.project_id=b.id)  --3152651条记录  0.91s <br></div>
+                            <span class="time">2018-12-29 14:50</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/1d/b5/971261fd.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alias cd=rm -rf</span>
+                            </div>
+                            <div class="bd">先插入，在更新。因为更新会锁数据影响性能 <br></div>
+                            <span class="time">2018-12-29 08:58</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对的</p>
+                                <p class="reply-time">2018-12-29 09:13</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Ruian</span>
+                            </div>
+                            <div class="bd">老师，我有一个问题请教下您。我的mysql数据库 有一张表project_des (850万数据) count(1) 只要0.05s   和从表project（6500条数据）关联后需要15s       查看执行计划发现都走索引了。不知道为啥这么慢？<br>查询语句 select count(1) from project_des a,project b where a.project_id=b.id 我换exists 和in 也这么慢 <br></div>
+                            <span class="time">2018-12-28 15:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你这个是笛卡尔积肯定慢的…你的业务需求是啥，这个语句的业务意义是什么</p>
+                                <p class="reply-time">2018-12-28 18:58</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
