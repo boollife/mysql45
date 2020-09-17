@@ -93,9 +93,9 @@
     let right = '';
     for (let i = 0; i < data.length; i++) {
         if (i < 23) {
-            left += "<div class='li_width' ><a href=" + data[i] + '.html target="_blank">' + data[i] + "</a></div>";
+            left += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
         } else {
-            right += "<div class='li_width' ><a href=" + data[i] + '.html target="_blank">' + data[i] + "</a></div>";
+            right += "<div class='li_width' ><a href=" + data[i].replace(" ", "") + '.html target="_blank">' + data[i] + "</a></div>";
         }
     }
     document.getElementById("left").innerHTML = left;
